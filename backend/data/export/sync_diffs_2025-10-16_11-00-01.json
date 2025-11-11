@@ -1,0 +1,48 @@
+[
+  {
+    "nome": "Daniel Guerra Da Silva",
+    "cnh": "05949646660",
+    "categoria": "D",
+    "emissao_cnh": "2013-12-06 00:00:00",
+    "validade_cnh": "2034-06-13 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)98610-5165",
+    "email": "danielguerra1990@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Instalador Tecnico",
+    "endereco": "Ru Cumina",
+    "complemento": "Lt 4 Qd 45",
+    "bairro": "Jd Olavo Bilac",
+    "municipio": "Duque De Caxias",
+    "cep": "25.036-370",
+    "banco": "001 – Banco Do Brasil",
+    "agencia": "3298",
+    "conta": "1214853",
+    "pix": "12696316759",
+    "data_nascimento": "1990-11-30 00:00:00",
+    "cpf": "126.963.167-59",
+    "rg": "24.116.855-8",
+    "estado_civil": "Casado(A)",
+    "filhos": "2",
+    "nome_familiar": "Dayana Amorim Da Rocha",
+    "contato_familiar": "(21)97685-3090",
+    "indicado": "Paulo",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/ts9ytbnjs70gk3rh57i4f/1760621827854_Daniel-Guerra-Da-Silva-cnh_arquivo.pdf?rlkey=fu68uy03byvmv5evzwt3ymxkc&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/qp2dnj7nbij5bx7tarvku/1760621829707_Daniel-Guerra-Da-Silva-comprovante_residencia.pdf?rlkey=di3mkj3h674prjrt6foapw78y&dl=0"
+      ],
+      "curriculo": []
+    },
+    "data_envio_utc": "2025-10-16 13:37:12.654000",
+    "data_envio_local": "2025-10-16 10:37:12"
+  }
+]

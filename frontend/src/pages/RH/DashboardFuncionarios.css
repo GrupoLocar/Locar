@@ -1,0 +1,197 @@
+.titulo-dashboard {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.grafico-box {
+  flex: 1 1 30%;
+  min-width: 280px;
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+}
+
+.resumo-box {
+  margin-top: 0px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 2px solid #0074FF;
+  border-radius: 8px;
+}
+
+.resumo-box h2 {
+  margin-bottom: 0px;
+}
+
+.tabela-perfil-ideal {
+  width: 0px;
+  border-collapse: collapse;
+}
+
+.tabela-perfil-ideal th,
+.tabela-perfil-ideal td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.config-perfil-box {
+  border: 2px solid #0074FF;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f9f9f9;
+  max-width: 230px;
+  border-radius: 5px;
+}
+
+.config-perfil-box input[type="number"] {
+  width: 30px;
+  padding: 3px;
+}
+
+.config-perfil-box select {
+  width: 100px;
+  padding: 3px;
+}
+
+.config-perfil-box label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.config-perfil-box button {
+  margin-top: 10px;
+  background-color: #FF6700;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: bold;
+  padding: 6px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.config-perfil-box button:hover {
+  background-color: #FCDE0B;
+  color: #181893;
+}
+
+.titulo-perfil-ideal {
+  margin: 10px 30px 30px 20px;
+  font-size: 22px;
+  background-color: #181893;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.tabela-perfil-ideal thead th {
+  background-color: #181893 !important;
+  color: #ffffff !important;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.perfil-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+/* Mesmo altura para ambos */
+.config-perfil-box,
+.resumo-box {
+  height: 400px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+/* ROLAGEM interna só na TABELA */
+.tabela-perfil-ideal {
+  flex: 1;
+  overflow-y: auto;
+  display: block;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Exemplo: ajustar largura das colunas da tabela */
+.tabela-perfil-ideal th:nth-child(1),  /* Nome */
+.tabela-perfil-ideal td:nth-child(1) {
+  width: 250px;
+}
+
+.tabela-perfil-ideal th:nth-child(2),  /* Idade */
+.tabela-perfil-ideal td:nth-child(2) {
+  width: 30px;
+  text-align: center;
+}
+
+.tabela-perfil-ideal th:nth-child(3),  /* Estado Civil */
+.tabela-perfil-ideal td:nth-child(3) {
+  width: 60px;
+}
+
+.tabela-perfil-ideal th:nth-child(4),  /* Filhos */
+.tabela-perfil-ideal td:nth-child(4) {
+  width: 5px;
+  text-align: center;
+}
+
+.tabela-perfil-ideal th:nth-child(5),  /* Tempo Habilitação */
+.tabela-perfil-ideal td:nth-child(5) {
+  width: 60px;
+  text-align: center;
+}
+
+.tabela-perfil-ideal th:nth-child(6),  /* Categoria CNH */
+.tabela-perfil-ideal td:nth-child(6) {
+  width: 30px;
+  text-align: center;
+}
+
+.titulo-perfil-ideal-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 30px 30px 20px;
+}
+
+.botao-exportar {
+  font-weight: bold;
+  background-color: #FF6700;
+  color: #FFFFFF;
+  border: none;
+  padding: 6px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao-exportar:hover {
+  background-color: #FCDE0B;
+  color: #181893;
+}

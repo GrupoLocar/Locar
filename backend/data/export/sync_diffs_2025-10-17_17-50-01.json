@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Carlos Couto Da Silva",
+    "cnh": "04517534906",
+    "categoria": "Ab",
+    "emissao_cnh": "2008-12-04 00:00:00",
+    "validade_cnh": "2034-01-17 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)99087-3786",
+    "email": "coutocarlos373@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Manobrista",
+    "endereco": "Rua Osorio Baltazar, 33",
+    "complemento": "1",
+    "bairro": "Itauna",
+    "municipio": "Sao Goncalo",
+    "cep": "24.473-270",
+    "banco": "341 – ItaÚ Unibanco S.A.",
+    "agencia": "6408",
+    "conta": "613435",
+    "pix": "115.601.077-23",
+    "data_nascimento": "1986-06-25 00:00:00",
+    "cpf": "115.601.077-23",
+    "rg": "20.378.312-1",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "1",
+    "nome_familiar": "Laura",
+    "contato_familiar": "(21)98690-1484",
+    "indicado": "1",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/c3hjj1sg1j7wg2uxs5w5d/1760733993363_Carlos-Couto-Da-Silva-cnh_arquivo.jpeg?rlkey=4zkod5lv9krdaocbrm5lmpzns&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/m3epgxo2epzg7x88pkhxi/1760733995274_Carlos-Couto-Da-Silva-comprovante_residencia.jpg?rlkey=53la1ltqo61ep802xe3stquuy&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/bqpyliqy0e9i871xrtgvq/1760733996827_Carlos-Couto-Da-Silva-curriculo.pdf?rlkey=x59rm0mv2llupxyxa5rqxoz2s&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/31wecf1ri9b40mq08r6ld/1760733998414_Carlos-Couto-Da-Silva-nada_consta.jpg?rlkey=lsvlgvxs3iknua4newur8eis7&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-17 20:46:40.976000",
+    "data_envio_local": "2025-10-17 17:46:40"
+  }
+]

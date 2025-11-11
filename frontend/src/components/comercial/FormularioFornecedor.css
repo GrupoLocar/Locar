@@ -1,0 +1,102 @@
+/* fieldset da seção */
+/* .secao {
+    margin: 0 auto;
+    /* garante centralização
+    width: 100%;
+    max-width: 1100px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    */
+    /* padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+} 
+*/
+
+/* título da seção */
+.secao legend {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0 8px;
+}
+
+/* cada campo */
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: 0.95rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* botões principais */
+.botoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 12px;
+}
+
+.btnSalvar,
+.btnNovo {
+    background-color: #181893;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btnSalvar:hover,
+.btnNovo:hover {
+    background-color: #0f0f66;
+}
+
+/* botão modal */
+.botao {
+    background: #181893;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #0f0f66;
+}
+
+/* Centralizar horizontalmente o fieldset e limitar a largura máxima */
+.form-section-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.secao {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px 16px;
+}
+

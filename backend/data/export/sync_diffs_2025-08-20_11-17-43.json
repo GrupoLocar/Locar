@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Ricardo Manco Soares Xavier",
+    "cnh": "00470350979",
+    "categoria": "B",
+    "emissao_cnh": "1998-12-22 00:00:00",
+    "validade_cnh": "2031-04-27 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)96982-9791",
+    "email": "rmsx2809@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Anfrade Pinto, 16",
+    "complemento": "Casa 101",
+    "bairro": "Madureira",
+    "municipio": "Rio De Janeiro",
+    "cep": "21.310-140",
+    "banco": "290 – Pagseguro Internet InstituiÇãO De Pagamento S.A.",
+    "agencia": "0001",
+    "conta": "52294990-8",
+    "pix": "52871481000104",
+    "data_nascimento": "1979-09-28 00:00:00",
+    "cpf": "079.467.527-17",
+    "rg": "11.422.960-2",
+    "estado_civil": "Casado(A)",
+    "filhos": "2",
+    "nome_familiar": "Ana",
+    "contato_familiar": "(21)96599-1504",
+    "indicado": "Site",
+    "observacao": "NÃO Tenho Curriculo",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/gv3pej2fgz4vykyhtkba2/1755698725800_Ricardo-Manco-Soares-Xavier-cnh_arquivo.jpg?rlkey=465qtaixxlg129g0ka7zat2jm&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/x0eiqh5jhbuxbt9bs1las/1755698727974_Ricardo-Manco-Soares-Xavier-comprovante_residencia.jpg?rlkey=oxsnyaqtoo2811hx9uvhu0xev&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/e5w265ipdiqfzbk7ns5xt/1755698729874_Ricardo-Manco-Soares-Xavier-curriculo.jpg?rlkey=h53w1z3sw7ccg95q5ehezmrqy&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/ztcfqet3w064ioyne1tq2/1755698731601_Ricardo-Manco-Soares-Xavier-nada_consta.jpg?rlkey=hazivo21ywk7h2n7gjf0bh83n&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-08-20 14:05:34.577000",
+    "data_envio_local": "2025-08-20 11:05:34"
+  }
+]

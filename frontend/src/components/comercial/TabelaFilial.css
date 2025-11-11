@@ -1,0 +1,22 @@
+/* src/components/comercial/TabelaFilial.css */
+.tabela-filial {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+  }
+  
+  .tabela-filial thead th {
+    background: #181893;
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+  }
+  
+  .tabela-filial thead th:first-child { border-top-left-radius: 10px; }
+  .tabela-filial thead th:last-child  { border-top-right-radius: 10px; }
+  
+  .tabela-filial tbody td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  

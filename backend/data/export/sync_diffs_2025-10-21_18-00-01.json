@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Cristiano Ribeiro Da Silva",
+    "cnh": "06653846600",
+    "categoria": "B",
+    "emissao_cnh": "2016-07-07 00:00:00",
+    "validade_cnh": "2026-03-03 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97279-3659",
+    "email": "cristianoficial94@hotmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista Uber",
+    "endereco": "Avenida Chrisostomo Pimentel De Oliveira",
+    "complemento": "1631 Blo 7 Apt 203 Pavuna",
+    "bairro": "Pavuna",
+    "municipio": "Rio De Janeiro",
+    "cep": "21.655-613",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "0001",
+    "conta": "91569869",
+    "pix": "21972793659",
+    "data_nascimento": "1994-04-14 00:00:00",
+    "cpf": "168.147.107-81",
+    "rg": "25.554.260-7",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "0",
+    "nome_familiar": "Felipe Ribeiro",
+    "contato_familiar": "(21)98951-4378",
+    "indicado": "Antonio Carlos Nascimento ( Tony )",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/rlsqef9902ps8uzxi9zhv/1761079888472_Cristiano-Ribeiro-Da-Silva-cnh_arquivo.jpeg?rlkey=43wnygsjlw8wdy5edwhy39ka4&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/rt4ieg2z2i9qf8ksdtbtr/1761079890055_Cristiano-Ribeiro-Da-Silva-comprovante_residencia.pdf?rlkey=hg4w6nsqilxkaaptr4m36upjp&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/kga936hdmy6s6j9rz3my1/1761079891479_Cristiano-Ribeiro-Da-Silva-curriculo.pdf?rlkey=ubdlxj5esihxb8t2auh53sokv&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/5hjagpwoqm6g9jmirf8wn/1761079893008_Cristiano-Ribeiro-Da-Silva-nada_consta.pdf?rlkey=m8f6hlszsxmeidw2qkiscgr88&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-21 20:51:35.741000",
+    "data_envio_local": "2025-10-21 17:51:35"
+  }
+]

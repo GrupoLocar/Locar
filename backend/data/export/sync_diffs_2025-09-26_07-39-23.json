@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Ernani Dos Santos Machado",
+    "cnh": "04059457424",
+    "categoria": "B",
+    "emissao_cnh": "1985-07-25 00:00:00",
+    "validade_cnh": "2027-10-19 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)99997-3028",
+    "email": "ernanivaranda@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Autonomo",
+    "endereco": "Rua Horario Cartier 34",
+    "complemento": "Casa",
+    "bairro": "Cordovil",
+    "municipio": "Rio De Janeiro",
+    "cep": "21.010-140",
+    "banco": "104 – Caixa EconÔMica Federal",
+    "agencia": "0207",
+    "conta": "0007698078869",
+    "pix": "21999973028",
+    "data_nascimento": "1967-02-12 00:00:00",
+    "cpf": "921.244.617-53",
+    "rg": "07.585.085-8",
+    "estado_civil": "Casado(A)",
+    "filhos": "2",
+    "nome_familiar": "Varanda Machado",
+    "contato_familiar": "(21)99452-0437",
+    "indicado": "Sidney Dos Santos",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/qndozzv9r6ylxjp0c70js/1758839094227_Ernani-Dos-Santos-Machado-cnh_arquivo.pdf?rlkey=0a1u9i5nk6nd30x70ry3sqc21&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/ktl6ktyvrtxxpmtmab9ih/1758839096135_Ernani-Dos-Santos-Machado-comprovante_residencia.pdf?rlkey=6ef7oy5n6dh9fyws1sf8xmhwg&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/d8s17embrc9u8xfjnfd94/1758839097707_Ernani-Dos-Santos-Machado-curriculo.pdf?rlkey=r3nisxot2yz2x2nbq2odjvfsz&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-25 22:25:00.221000",
+    "data_envio_local": "2025-09-25 19:25:00"
+  }
+]

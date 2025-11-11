@@ -1,0 +1,120 @@
+/* src/pages/Comercial/CadastroFilial.css */
+.pagina-cadastro-filial {
+  min-height: 100vh;
+  padding: 20px;
+  color: #fff;
+}
+
+.titulo-pagina {
+  text-align: center;
+  margin: 0 0 10px;
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* herda o mesmo look & feel da página de Fornecedores */
+.filtros-superiores{
+  background: linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  color: #222;
+}
+
+.filtro-bloco label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+.filtro-bloco select,
+.filtro-bloco input {
+  min-width: 160px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.botao{
+  font-weight: bold;
+  background-color: #FF6700;
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+.botao:hover {
+  background-color: #FCDE0B;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subtitulo {
+  margin: 0;
+  color: #000;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.formulario-container {
+  background: linear-gradient(135deg, #f5f7fa, #e2eafc);
+  padding: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  color: #222;
+}
+
+.cabecalho-tabela {
+  position: relative;
+  margin-top: 28px;
+  min-height: 44px;
+}
+.cabecalho-tabela .subtitulo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tabela-wrapper {
+  background: linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Botão flutuante topo (igual ao usado em Fornecedores) */
+.btn-voltar-topo {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1000;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.25));
+}
+.btn-voltar-topo img {
+  width: 56px;
+  height: 56px;
+  display: block;
+}
+.btn-voltar-topo:hover img {
+  transform: translateY(-2px);
+  transition: transform .2s ease;
+}

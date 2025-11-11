@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Carlos Alberto Parente E Silva",
+    "cnh": "00035085001",
+    "categoria": "D",
+    "emissao_cnh": "1992-10-22 00:00:00",
+    "validade_cnh": "2031-06-10 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)98458-4724",
+    "email": "carlosparente51@hotmail.com",
+    "sexo": "Masculino",
+    "profissao": "Tec. Em Telecomunicacoes",
+    "endereco": "Rua Tancredo Lopes",
+    "complemento": "296a",
+    "bairro": "Centro",
+    "municipio": "Nilopolis",
+    "cep": "26.526-050",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "0001",
+    "conta": "278521711",
+    "pix": "21984584724",
+    "data_nascimento": "1973-08-18 00:00:00",
+    "cpf": "036.446.097-05",
+    "rg": "09.123.844-4",
+    "estado_civil": "Casado(A)",
+    "filhos": "1",
+    "nome_familiar": "Elza Cristina",
+    "contato_familiar": "(21)98458-4724",
+    "indicado": "Esposa",
+    "observacao": "Locar Rh",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/aspda2tr0a8al90mhowpm/1758473934098_Carlos-Alberto-Parente-E-Silva-cnh_arquivo.jpg?rlkey=jk7e2a0c9h39m7gyemdlrt1c2&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/024lws2ukaqs8b5efgune/1758473935995_Carlos-Alberto-Parente-E-Silva-comprovante_residencia.jpg?rlkey=z1ss4h11rbct92me6vv2fdm4z&dl=0"
+      ],
+      "nada_consta": [],
+      "curriculo": [],
+      "comprovante_mei": [
+        "https://www.dropbox.com/scl/fi/xesbkhomcmiuwynx1o0ec/1758473937868_Carlos-Alberto-Parente-E-Silva-comprovante_mei.pdf?rlkey=i9ypft717sm42ac64i5p2u86v&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-21 16:59:00.495000",
+    "data_envio_local": "2025-09-21 13:59:00"
+  }
+]

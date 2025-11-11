@@ -1,0 +1,16 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fundo-img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .home-text {
+    font-size: 24px;
+    color: #333;
+  }
+  

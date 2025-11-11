@@ -1,0 +1,48 @@
+[
+  {
+    "nome": "Everton Borges De Albuquerque",
+    "cnh": "05114138702",
+    "categoria": "Ab",
+    "emissao_cnh": "2010-12-27 00:00:00",
+    "validade_cnh": "2032-02-21 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(32)98715-7355",
+    "email": "evertonb106@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Vigia Motorizado",
+    "endereco": "Rua Imaculada Conceicao",
+    "complemento": "67",
+    "bairro": "Dom Bosco",
+    "municipio": "Juiz De Fora",
+    "cep": "36.025-590",
+    "banco": "104 – Caixa EconÔMica Federal",
+    "agencia": "1641",
+    "conta": "000960268817-9",
+    "pix": "078.793.226-47",
+    "data_nascimento": "1987-03-26 00:00:00",
+    "cpf": "078.793.226-47",
+    "rg": "78.793.224-7",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "2",
+    "nome_familiar": "Maria Aparecida Borges De Albuquerque",
+    "contato_familiar": "(32)98837-7537",
+    "indicado": "Everton Borges De Albuquerque",
+    "observacao": "0000",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/42mya4kzvsj45iwhk7dbf/1759928770640_Everton-Borges-De-Albuquerque-cnh_arquivo.jpeg?rlkey=ghmsb869q8ppeqfu5sp0zv9t1&dl=0"
+      ],
+      "comprovante_residencia": [],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/jyk0tu6dqv7f0dlrdsttr/1759928772596_Everton-Borges-De-Albuquerque-curriculo.jpg?rlkey=paw69xo6dgdhz1rhn3b7y54ds&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-08 13:06:15.240000",
+    "data_envio_local": "2025-10-08 10:06:15"
+  }
+]

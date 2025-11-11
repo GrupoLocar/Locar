@@ -1,0 +1,38 @@
+/* Cabeçalho conforme solicitado */
+.botao{
+  align-items: center;
+}
+
+.tabela-fornecedores {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.tabela-fornecedores thead th {
+  background: #181893;
+  color: #fff;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+/* Bordas superiores arredondadas */
+.tabela-fornecedores thead th:first-child {
+  border-top-left-radius: 10px;
+}
+.tabela-fornecedores thead th:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* Células corpo (herda da tabela de clientes, mas garantimos consistência) */
+.tabela-fornecedores tbody td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* linha vazia */
+.tabela-fornecedores .td-vazio {
+  text-align: center;
+  padding: 16px;
+  color: #555;
+}

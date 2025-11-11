@@ -1,0 +1,144 @@
+/* Container do formulário (mantém seu layout atual) */
+.form-filial {
+width: 100%;
+}
+
+/* src/components/comercial/FormularioFilial.css */
+.form-filial .secao {
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    padding: 16px;
+    background: #fff;
+    color: #000;
+  }
+  
+  .form-filial .secao legend {
+    padding: 0 8px;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .form-filial .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px 16px;
+  }
+  
+  .form-filial .campo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-filial .campo label {
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  
+  .form-filial input,
+  .form-filial select,
+  .form-filial textarea {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #fff;
+    color: #000;
+  }
+  
+  .form-filial .botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+    justify-content: flex-end;
+  }
+  
+  .form-filial .btnSalvar,
+  .form-filial .btnNovo {
+    font-weight: bold;
+    background-color: #FF6700;
+    color: #FFFFFF;
+    border-radius: 12px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-filial .btnSalvar:hover,
+  .form-filial .btnNovo:hover {
+    background-color: #FCDE0B;
+    color: #FFFFFF;
+  }
+  
+
+/* === Centralização da área de botões === */
+.form-filial .botoes {
+  display: flex;
+  justify-content: center;   /* <- centraliza */
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+/* === Botões: aparência consistente com FormularioFornecedor === */
+.form-filial .btnSalvar,
+.form-filial .btnNovo {
+  min-width: 85px;      /* largura consistente */
+  height: 40px;          /* altura consistente */
+  padding: 0 18px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform .04s ease, filter .15s ease, opacity .15s ease;
+  color: #fff;
+}
+
+/* Salvar (verde) */
+.form-filial .btnSalvar {
+  background: #FF6700;
+}
+.form-filial .btnSalvar:hover { filter: brightness(0.95); }
+.form-filial .btnSalvar:active { transform: translateY(1px); }
+
+/* Novo (tema azul institucional ou equivalente) */
+.form-filial .btnNovo {
+  background: #181893;
+}
+.form-filial .btnNovo:hover { filter: brightness(0.95); }
+.form-filial .btnNovo:active { transform: translateY(1px); }
+
+/* Acessibilidade */
+.form-filial .btnSalvar:focus,
+.form-filial .btnNovo:focus {
+  outline: 2px solid #00000033;
+  outline-offset: 2px;
+}
+
+button.btnSalvar,
+button.btnNovo {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Cores dos botões do formulário */
+button.btnSalvar {
+  background-color: #FF6700;
+  color: #FFFFFF;
+}
+button.btnSalvar:hover {
+  background-color: #FCDE0B;
+  color: #181893;
+}
+button.btnNovo {
+  background-color: #181893;
+  color: #FFFFFF;
+}
+button.btnNovo:hover {
+  background-color: #FCDE0B;
+  color: #181893;
+}

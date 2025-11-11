@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Diego Soares Benjamim",
+    "cnh": "03223261167",
+    "categoria": "Ad",
+    "emissao_cnh": "2004-03-11 00:00:00",
+    "validade_cnh": "2034-07-10 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)96412-2143",
+    "email": "diegosoares80@hotmail.com",
+    "sexo": "Masculino",
+    "profissao": "Sanitarista",
+    "endereco": "Rua Ana Clara",
+    "complemento": "Vila Jardim Novo",
+    "bairro": "Realengo",
+    "municipio": "Rio De Janeiro",
+    "cep": "21.760-540",
+    "banco": "380 – Picpay InstituiÇãO De Pagamento S.A.",
+    "agencia": "0001",
+    "conta": "699412218",
+    "pix": "diegosoares80@hotmail.com",
+    "data_nascimento": "1980-05-18 00:00:00",
+    "cpf": "052.180.097-84",
+    "rg": "11.372.287-0",
+    "estado_civil": "Casado(A)",
+    "filhos": "1",
+    "nome_familiar": "Flavia Pessoa Rodrigues Benjamim",
+    "contato_familiar": "(21)97979-0949",
+    "indicado": "Sim",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/k85enffin1953hpv4cuwx/1758203713253_Diego-Soares-Benjamim-cnh_arquivo.pdf?rlkey=35g2sy2yuthzohjgmhcaq7766&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/gosgpl30ro2ukmxlylvsm/1758203715138_Diego-Soares-Benjamim-comprovante_residencia.pdf?rlkey=zlkfe4gzquftwdzy9wemaal4a&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/y7yzlub1zzqda2kp90tql/1758203716744_Diego-Soares-Benjamim-curriculo.pdf?rlkey=40eebk23474exnjvkjvswm6nn&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/jwa4zij35ata3qlvbdlzj/1758203719056_Diego-Soares-Benjamim-nada_consta.pdf?rlkey=fddgujxgmd2vmxip1xofk52vu&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-18 13:55:22.006000",
+    "data_envio_local": "2025-09-18 10:55:22"
+  }
+]

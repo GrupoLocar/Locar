@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Rafael Caetano",
+    "cnh": "04598448841",
+    "categoria": "Ab",
+    "emissao_cnh": "2011-10-15 00:00:00",
+    "validade_cnh": "2030-10-15 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97035-4928",
+    "email": "rafael.lucasbb@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Almoxarife",
+    "endereco": "Avenida Chrisostomo Pimentel De Oliveira",
+    "complemento": "477",
+    "bairro": "Anchieta",
+    "municipio": "Rio De Janeiro",
+    "cep": "22.164-552",
+    "banco": "104 – Caixa EconÔMica Federal",
+    "agencia": "3880",
+    "conta": "9047196479",
+    "pix": "rafael.lucasbb@gmail.com",
+    "data_nascimento": "1982-07-25 00:00:00",
+    "cpf": "110.704.771-76",
+    "rg": "12.389.738-1",
+    "estado_civil": "Casado(A)",
+    "filhos": "2",
+    "nome_familiar": "Rafael",
+    "contato_familiar": "(22)19703-5492",
+    "indicado": "Nao",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/748xmhfgktd9gtj4eiapb/1760533245547_Rafael-Caetano-cnh_arquivo.pdf?rlkey=2abv1mxlz0qe9yi5p1rze0xug&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/2ivs4hdf4ywt0ohrvrxqe/1760533247526_Rafael-Caetano-comprovante_residencia.pdf?rlkey=fyqzxsesxt72b29go3ftz03qg&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/44xtf5lyraj6wqr7iktag/1760533249046_Rafael-Caetano-curriculo.pdf?rlkey=d67dp5z7pniwk70z8b1d0tdn5&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-15 13:00:51.791000",
+    "data_envio_local": "2025-10-15 10:00:51"
+  }
+]

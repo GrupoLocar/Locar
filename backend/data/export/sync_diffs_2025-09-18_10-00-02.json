@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Andressa Goncalves Silva",
+    "cnh": "05658341246",
+    "categoria": "Ad",
+    "emissao_cnh": "2012-12-05 00:00:00",
+    "validade_cnh": "2031-08-09 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(22)99941-2898",
+    "email": "andressa_leona@hotmail.com",
+    "sexo": "Feminino",
+    "profissao": "Motorista",
+    "endereco": "Rua Hermandina Jacob Perenha",
+    "complemento": "Lote 10 Quadra 4",
+    "bairro": "Unamar",
+    "municipio": "Cabo Frio",
+    "cep": "28.928-570",
+    "banco": "536 – Neon Pagamentos S.A. – InstituiÇãO De Pagamento",
+    "agencia": "0655",
+    "conta": "138201200",
+    "pix": "13358139778",
+    "data_nascimento": "1989-07-25 00:00:00",
+    "cpf": "133.581.397-78",
+    "rg": "26.878.872-6",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "0",
+    "nome_familiar": "Andressa Goncalves Silva",
+    "contato_familiar": "(22)98105-8909",
+    "indicado": "Balcao De Vagas",
+    "observacao": "NÃO Tenho Filhos",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/35rsr2kzgdzozc0o671il/1758197599066_Andressa-Goncalves-Silva-cnh_arquivo.pdf?rlkey=2ysltu67c3lf9rd191t7c8b0l&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/i2yvsk5g78ccrs4mx4wti/1758197601907_Andressa-Goncalves-Silva-comprovante_residencia.pdf?rlkey=vmst6p3d4jjz21hbicfj2isn0&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/82f1lw1xnxfs76inpgb9z/1758197603429_Andressa-Goncalves-Silva-curriculo.pdf?rlkey=ndo1skfzee64v7cgdzbwliqt5&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/dyxahsl3kst803729du49/1758197604864_Andressa-Goncalves-Silva-nada_consta.pdf?rlkey=bvtvz2odxhv7yfor2qybwuhz1&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-18 12:13:27.495000",
+    "data_envio_local": "2025-09-18 09:13:27"
+  }
+]

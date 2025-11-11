@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Graziela Lima Barbosa",
+    "cnh": "20576491300",
+    "categoria": "E",
+    "emissao_cnh": "2015-07-14 00:00:00",
+    "validade_cnh": "2015-07-14 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97408-1909",
+    "email": "grazioliver140@gmail.com",
+    "sexo": "Feminino",
+    "profissao": "Servicos Gerais",
+    "endereco": "Rua Pio X 54",
+    "complemento": "Casa 3",
+    "bairro": "Vale Da Simpatia",
+    "municipio": "Sjm",
+    "cep": "25.565-450",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "0001",
+    "conta": "360242111",
+    "pix": "grazioliver140@gmail.com",
+    "data_nascimento": "1983-04-14 00:00:00",
+    "cpf": "099.849.307-42",
+    "rg": "20.576.491-3",
+    "estado_civil": "Divorciado(A)",
+    "filhos": "2",
+    "nome_familiar": "Nyckollas",
+    "contato_familiar": "(55)21992-7228",
+    "indicado": "000000",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/47otwr0qmpcoiownt564s/1756404404355_Graziela-Lima-Barbosa-cnh_arquivo.jpg?rlkey=asiyh05lxku6b3ziaz8jddnxq&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/4i4grptzwv3ahf3cietel/1756404406256_Graziela-Lima-Barbosa-comprovante_residencia.jpg?rlkey=cgwplurixqw51dj0cuzosll6o&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/wsb8g28geoi8cq2tqonvi/1756404408163_Graziela-Lima-Barbosa-curriculo.jpg?rlkey=ufdv1603a3yz9dw2c7qk4t9jl&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-08-28 18:06:50.973000",
+    "data_envio_local": "2025-08-28 15:06:50"
+  }
+]

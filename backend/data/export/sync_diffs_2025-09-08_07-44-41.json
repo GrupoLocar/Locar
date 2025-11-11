@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "George De Souza Lourenco",
+    "cnh": "04444492634",
+    "categoria": "B",
+    "emissao_cnh": "2008-09-02 00:00:00",
+    "validade_cnh": "2034-09-23 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97958-2050",
+    "email": "georgesl725@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Manobrista",
+    "endereco": "Av. Tenente Armindo Leal Goncalves",
+    "complemento": "143 Apt 301",
+    "bairro": "Sao Vicente",
+    "municipio": "Belford Roxo",
+    "cep": "26.178-400",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "0001",
+    "conta": "31510361",
+    "pix": "12260776760",
+    "data_nascimento": "1989-06-18 00:00:00",
+    "cpf": "122.607.767-60",
+    "rg": "21.536.273-2",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "2",
+    "nome_familiar": "Helena",
+    "contato_familiar": "(21)97601-1574",
+    "indicado": "Victor",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/l18263rrcwugs43mgq1ek/1757165292679_George-De-Souza-Lourenco-cnh_arquivo.pdf?rlkey=6y2abcak78kj8dpfe918xqg7s&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/1hy1oiu2kqnikf6aufnt1/1757165294593_George-De-Souza-Lourenco-comprovante_residencia.jpg?rlkey=9hmw1t37lqo3gcnxxhd1ne1fy&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/a0cxo51q2epe5yx0xrykp/1757165297005_George-De-Souza-Lourenco-curriculo.jpg?rlkey=sq8h3w3n97arp51glkgpxo0jv&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-06 13:28:19.629000",
+    "data_envio_local": "2025-09-06 10:28:19"
+  }
+]

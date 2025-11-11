@@ -1,0 +1,96 @@
+[
+  {
+    "nome": "Lucas Goncalves De Araujo",
+    "cnh": "08089275097",
+    "categoria": "Ab",
+    "emissao_cnh": "2023-02-01 00:00:00",
+    "validade_cnh": "2031-10-28 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)96416-1133",
+    "email": "lucas.bizzle25@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Avelar 11",
+    "complemento": "Casa",
+    "bairro": "Parque Araruama",
+    "municipio": "Sao Joao De Meriti",
+    "cep": "25.585-530",
+    "banco": "536 – Neon Pagamentos S.A. – InstituiÇãO De Pagamento",
+    "agencia": "0655",
+    "conta": "56257244",
+    "pix": "16931784781",
+    "data_nascimento": "1998-02-28 00:00:00",
+    "cpf": "169.317.847-81",
+    "rg": "23.806.527-0",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "0",
+    "nome_familiar": "Meliana Claudino",
+    "contato_familiar": "(21)96416-1133",
+    "indicado": "Mae",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/adb9vdrs36rna4dfypdnz/1758315577916_Lucas-Goncalves-De-Araujo-cnh_arquivo.pdf?rlkey=yiil8cghi2sm43zvvsok9z5pk&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/linch98hfbnr6bjapzyvs/1758315579712_Lucas-Goncalves-De-Araujo-comprovante_residencia.pdf?rlkey=61ky9d28qfsxaaxwn8766wn4i&dl=0"
+      ],
+      "curriculo": []
+    },
+    "data_envio_utc": "2025-09-19 20:59:42.546000",
+    "data_envio_local": "2025-09-19 17:59:42"
+  },
+  {
+    "nome": "Rosangela Rosa Da Silva",
+    "cnh": "00000000000",
+    "categoria": "B",
+    "emissao_cnh": "2024-09-11 00:00:00",
+    "validade_cnh": "2035-09-19 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)96674-8170",
+    "email": "rosangela3022rosa.rosa@gmail.com",
+    "sexo": "Feminino",
+    "profissao": "Confeiteira",
+    "endereco": "Rua Ferrando Luis 25",
+    "complemento": "0",
+    "bairro": "Prata",
+    "municipio": "Belford Roxo",
+    "cep": "25.130-400",
+    "banco": "237 – Banco Bradesco S.A.",
+    "agencia": "2079",
+    "conta": "10050596",
+    "pix": "65002369715",
+    "data_nascimento": "1968-10-10 00:00:00",
+    "cpf": "650.023.697-15",
+    "rg": "08.170.209-4",
+    "estado_civil": "Casado(A)",
+    "filhos": "2",
+    "nome_familiar": "Joao Passos Da Silva",
+    "contato_familiar": "(21)97963-7613",
+    "indicado": "J",
+    "observacao": ".",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/l0dhwx5zyljuh1zxgxp19/1758335747321_Rosangela-Rosa-Da-Silva-cnh_arquivo.jpg?rlkey=odryyhf9gf1rgi29j47a3zh79&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/e6b02af1kep5isfmve64l/1758335749525_Rosangela-Rosa-Da-Silva-comprovante_residencia.pdf?rlkey=8slhnjidu4eqegxhjkwvlsjdh&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/vcktf8bue4fr0zmiauwis/1758335750923_Rosangela-Rosa-Da-Silva-curriculo.pdf?rlkey=0gs6f6aimc3wsyq699ye603g1&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-20 02:35:53.752000",
+    "data_envio_local": "2025-09-19 23:35:53"
+  }
+]

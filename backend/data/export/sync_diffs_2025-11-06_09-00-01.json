@@ -1,0 +1,54 @@
+[
+  {
+    "nome": "Cleiton Ferreira Fournier",
+    "cnh": "06217333865",
+    "categoria": "D",
+    "emissao_cnh": "2014-10-30 00:00:00",
+    "validade_cnh": "2032-07-20 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)96825-9538",
+    "email": "cleiton.enviocurriculos@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Doutor Bernardino 419 Apto 402",
+    "complemento": "Praca Seca",
+    "bairro": "Praca Seca",
+    "municipio": "Rio De Janeiro",
+    "cep": "21.320-020",
+    "banco": "260 – Nu Pagamentos S.A.",
+    "agencia": "0001",
+    "conta": "7728088989",
+    "pix": "63321428000156",
+    "data_nascimento": "1985-05-23 00:00:00",
+    "cpf": "112.854.957-30",
+    "rg": "20.338.873-1",
+    "estado_civil": "Casado(A)",
+    "filhos": "1",
+    "nome_familiar": "Marcely Fournier",
+    "contato_familiar": "(21)99274-4276",
+    "indicado": "Recado Esposa",
+    "observacao": "000000000",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/6lq4253ai7jqfcwcfayb4/1762428962654_Cleiton-Ferreira-Fournier-cnh_arquivo.pdf?rlkey=vxlx44b22dynmvia6qvpexmq1&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/jl22v010glrbfdu7a27yf/1762428964432_Cleiton-Ferreira-Fournier-comprovante_residencia.pdf?rlkey=wmk3q69cxiymoxpuvn83u564r&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/5pd25ctqzrr89r5hya0sn/1762428965840_Cleiton-Ferreira-Fournier-curriculo.pdf?rlkey=abh9lfu4qrlxtcz2k1zlqnyjm&dl=0"
+      ],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/t744xsivukrlfczy49l06/1762428967301_Cleiton-Ferreira-Fournier-nada_consta.pdf?rlkey=xz4mtyqr9okerifrn4xcmkydb&dl=0"
+      ],
+      "comprovante_mei": [
+        "https://www.dropbox.com/scl/fi/0pu13gkf64rpnqqk58dd1/1762428968735_Cleiton-Ferreira-Fournier-comprovante_mei.pdf?rlkey=ju48ot13j5h2682d13ccczmkr&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-11-06 11:36:11.401000",
+    "data_envio_local": "2025-11-06 08:36:11"
+  }
+]

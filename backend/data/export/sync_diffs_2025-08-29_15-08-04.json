@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Lucas Diniz Da Silva",
+    "cnh": "08576677432",
+    "categoria": "B",
+    "emissao_cnh": "2024-02-28 00:00:00",
+    "validade_cnh": "2033-03-29 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97870-7520",
+    "email": "lucas_diniz02@hotmail.com",
+    "sexo": "Masculino",
+    "profissao": "Comercial",
+    "endereco": "Entrada Alarico De Souza",
+    "complemento": "734b",
+    "bairro": "Atalia",
+    "municipio": "Niteroi",
+    "cep": "24.315-000",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "0001",
+    "conta": "128710217",
+    "pix": "21978707520",
+    "data_nascimento": "2002-06-25 00:00:00",
+    "cpf": "186.785.077-05",
+    "rg": "00.000.000-0",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "0",
+    "nome_familiar": "Maria Domingas",
+    "contato_familiar": "(21)98454-1248",
+    "indicado": "0",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/6wcf7e59imqwxgjx8cmrr/1756490512206_Lucas-Diniz-Da-Silva-cnh_arquivo.pdf?rlkey=93mm4x1edcf8wkyz0wvedaelp&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/8fale2r3llv59urhplqme/1756490513960_Lucas-Diniz-Da-Silva-comprovante_residencia.pdf?rlkey=pve10o22b9rnc8j18u87zi9ez&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/imchaf9v7jzhqcfzxwi5e/1756490515693_Lucas-Diniz-Da-Silva-curriculo.pdf?rlkey=rsrz472h7jl7etope8sloxfnb&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/psfq0si2up48hui75yq6a/1756490517352_Lucas-Diniz-Da-Silva-nada_consta.pdf?rlkey=s1lvlj32th6pl3rw9cy9imrpb&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-08-29 18:02:00.205000",
+    "data_envio_local": "2025-08-29 15:02:00"
+  }
+]

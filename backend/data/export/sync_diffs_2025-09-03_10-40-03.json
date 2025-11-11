@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Arlon Santos Barboza",
+    "cnh": "06696050903",
+    "categoria": "Ab",
+    "emissao_cnh": "2016-09-06 00:00:00",
+    "validade_cnh": "2032-09-17 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(22)99910-9183",
+    "email": "santosarlon397@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Miguel Oliveira Da Silva",
+    "complemento": "Proxima Ao Mercado Gomes",
+    "bairro": "Madre Silva",
+    "municipio": "Saquarema",
+    "cep": "28.990-000",
+    "banco": "341 – ItaÚ Unibanco S.A.",
+    "agencia": "4142",
+    "conta": "078254",
+    "pix": "22999109183",
+    "data_nascimento": "1992-03-14 00:00:00",
+    "cpf": "059.974.985-73",
+    "rg": "13.166.649-5",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "0",
+    "nome_familiar": "Duane Santos Barboza",
+    "contato_familiar": "(71)99103-4881",
+    "indicado": "Marcio",
+    "observacao": "Rg 136664953",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/9ggrixe6xvxubb8r6gdqa/1756906337887_Arlon-Santos-Barboza-cnh_arquivo.jpg?rlkey=sioc9zw9jxkjmshdrl70uec0g&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/meptp0teaj9ri0ks6uxlo/1756906340880_Arlon-Santos-Barboza-comprovante_residencia.pdf?rlkey=o2jxz6xbx730gistm308vdict&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/o5o1tyv6lzimvnobzm50t/1756906342607_Arlon-Santos-Barboza-curriculo.jpg?rlkey=6jhgwztuca2sl6jlfx6dku1r2&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-03 13:32:25.871000",
+    "data_envio_local": "2025-09-03 10:32:25"
+  }
+]

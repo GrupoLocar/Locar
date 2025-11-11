@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Leonardo Amorim Machado",
+    "cnh": "03332421861",
+    "categoria": "Ab",
+    "emissao_cnh": "2004-06-16 00:00:00",
+    "validade_cnh": "2032-06-06 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97133-9586",
+    "email": "amorim220@hotmail.com",
+    "sexo": "Masculino",
+    "profissao": "Aux.Administrtivo Atualmente Motorista De Aplicativos",
+    "endereco": "Rua Oito, 60",
+    "complemento": "3 Andar",
+    "bairro": "Parque Das Missoes",
+    "municipio": "String:Duque De Caxias",
+    "cep": "25.086-520",
+    "banco": "341 – ItaÚ Unibanco S.A.",
+    "agencia": "7676",
+    "conta": "059962",
+    "pix": "21 971339586",
+    "data_nascimento": "1981-02-23 00:00:00",
+    "cpf": "096.992.987-07",
+    "rg": "20.062.622-4",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "1",
+    "nome_familiar": "Fernanda Silva Candido",
+    "contato_familiar": "(21)98604-6652",
+    "indicado": "Pastor Juarez Basilio",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/0h75qolx2qxzrpmc3w3st/1760716740870_Leonardo-Amorim-Machado-cnh_arquivo.pdf?rlkey=n6esxhpsyhs6zomn5qkdwogb0&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/4vmeopfwe7va8h3cddecw/1760716742776_Leonardo-Amorim-Machado-comprovante_residencia.jpg?rlkey=qtpjmv2suoe3ajd4d68xyuiai&dl=0"
+      ],
+      "curriculo": [],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/pmcze1jp6yor6fnch8hty/1760716745608_Leonardo-Amorim-Machado-nada_consta.pdf?rlkey=ue9g8od4zhctss3nwtprq5vsh&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-17 15:59:08.637000",
+    "data_envio_local": "2025-10-17 12:59:08"
+  }
+]

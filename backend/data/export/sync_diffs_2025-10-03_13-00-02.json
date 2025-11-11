@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Bruno Vicente De Jesus",
+    "cnh": "03555244320",
+    "categoria": "Ab",
+    "emissao_cnh": "2025-10-03 00:00:00",
+    "validade_cnh": "2031-08-07 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)98419-4886",
+    "email": "jurunaprev@yahoo.com.br",
+    "sexo": "Masculino",
+    "profissao": "Motorista De Uber Taxi 15 Anos",
+    "endereco": "Avenida Doutor Jose Geraldo Bezerra De Menezes, 1012",
+    "complemento": "Casa 1",
+    "bairro": "Itaipu",
+    "municipio": "Niteroi",
+    "cep": "24.340-045",
+    "banco": "237 – Banco Bradesco S.A.",
+    "agencia": "6746",
+    "conta": "03812987",
+    "pix": "21984194886",
+    "data_nascimento": "1983-05-09 00:00:00",
+    "cpf": "098.860.247-47",
+    "rg": "20.509.580-5",
+    "estado_civil": "Casado(A)",
+    "filhos": "0",
+    "nome_familiar": "Eliete",
+    "contato_familiar": "(21)98419-4886",
+    "indicado": "Deus",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/itvktfy73z1t1mt4184b2/1759503114801_Bruno-Vicente-De-Jesus-cnh_arquivo.jpg?rlkey=u67uum1evhqpnz5gc2c8syjn9&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/0ea3lbldk56upopetxv09/1759503116645_Bruno-Vicente-De-Jesus-comprovante_residencia.jpg?rlkey=kzrhoxmb4mn3v5pv84tqx5qi5&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/7swukiokolrq3zmbh80jz/1759503118322_Bruno-Vicente-De-Jesus-curriculo.pdf?rlkey=jeimtwd2conjt7knjqlnk532m&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/k8uk2zapzwu1xijy98ebg/1759503119948_Bruno-Vicente-De-Jesus-nada_consta.jpg?rlkey=g4kqc3cos7l7nr7az2bi0ygnr&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-03 14:52:02.684000",
+    "data_envio_local": "2025-10-03 11:52:02"
+  }
+]

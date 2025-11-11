@@ -1,0 +1,168 @@
+.pagina-cadastro-funcionario {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+  color: #fff;
+}
+
+form {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  max-width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: flex-start;
+  min-width: 1400px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  margin: 0;
+}
+
+.form-field label {
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #333;
+  line-height: 1;
+}
+
+.form-field input {
+  padding: 6px 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: rgb(95, 80, 80);
+  margin-top: 2px;
+}
+
+.form-field input:read-only {
+  background-color: #eee;
+  color: #666;
+}
+
+.botoes-estatisticas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-status {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-status:hover {
+  background-color: #d32f2f;
+}
+
+.btn-selecionado {
+  background-color: #007bff;
+  color: white;
+}
+
+.btnVencido:hover {
+  background-color: rgb(60, 156, 56);
+  color: aliceblue;
+}
+
+.form-row-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  margin-bottom: 12px;
+  min-width: 1400px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+}
+
+.form-field label {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.form-field input {
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.filtro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 10px 0;
+}
+
+.filtro-container input {
+  padding: 28px;
+  width: 600px;
+}
+
+.formulario-e-estatisticas {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+.formulario-container {
+  flex: 1 1 800px;
+  max-width: 1000px;
+}
+
+.lateral-estatisticas {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 200px;
+}
+
+.quadro-situacao,
+.quadro-status-cnh {
+  margin: 0 10px;
+}
+
+.botao {
+  font-weight: bold;
+  background-color: #FF6700;
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 6px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #FCDE0B;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+

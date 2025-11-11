@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Rogerio Madriaga De Oliveira",
+    "cnh": "00373567751",
+    "categoria": "B",
+    "emissao_cnh": "1998-09-08 00:00:00",
+    "validade_cnh": "2028-09-24 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)96886-5020",
+    "email": "rogeriomadriaga50@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Braulir Dias Guimaraes N°373",
+    "complemento": "Casa 1",
+    "bairro": "Chacrinha",
+    "municipio": "Japeri",
+    "cep": "26.440-515",
+    "banco": "341 – ItaÚ Unibanco S.A.",
+    "agencia": "6089",
+    "conta": "26627-1",
+    "pix": "21968865020",
+    "data_nascimento": "1970-11-26 00:00:00",
+    "cpf": "010.313.247-39",
+    "rg": "08.812.411-0",
+    "estado_civil": "Casado(A)",
+    "filhos": "2",
+    "nome_familiar": "Denise Da Silva Canario De Oliveira",
+    "contato_familiar": "(21)99471-4042",
+    "indicado": "Augustus",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/zxizkp7bsh45n25bodlt8/1760646037139_Rogerio-Madriaga-De-Oliveira-cnh_arquivo.jpeg?rlkey=1evsa2rsomy3gagx3m2giz9ek&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/r2bc4f02ybr9utwuahggs/1760646038846_Rogerio-Madriaga-De-Oliveira-comprovante_residencia.pdf?rlkey=rxtk0fkxcbsvty7ukva2acgyq&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/6i2jr56hek7lx0xajk1wl/1760646040379_Rogerio-Madriaga-De-Oliveira-curriculo.jpeg?rlkey=5y0kaa0yu0ucf6ptb3277hcev&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/i3ipivlaob0nvk7vhnyhr/1760646041867_Rogerio-Madriaga-De-Oliveira-nada_consta.pdf?rlkey=9dhgli4k9oajosg5nedpbs3ak&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-16 20:20:44.426000",
+    "data_envio_local": "2025-10-16 17:20:44"
+  }
+]

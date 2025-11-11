@@ -1,0 +1,164 @@
+/* Página de Cadastro de Fornecedores – espelha o CadastroClientes.css */
+.pagina-cadastro-fornecedores {
+  min-height: 100vh;
+  padding: 20px;
+  color: #fff;
+}
+
+/* Título principal (mesmo estilo de Clientes) */
+.titulo-pagina {
+  text-align: center;
+  margin: 0 0 10px;
+  color: #000;          /* preto */
+  font-size: 28px;      /* tamanho base do título */
+  font-weight: 700;
+}
+
+/* Barra principal de filtro por texto (mantém o roxo) */
+.barra-filtro-texto {
+  background: #181893;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 12px;
+}
+
+.input-filtro-texto {
+  width: 300px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Botões (laranja / hover amarelo), igual ao Clientes/Funcionário */
+.botao {
+  font-weight: bold;
+  background-color: #FF6700;
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+.botao:hover {
+  background-color: #FCDE0B;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Filtros (bloco claro) — usado para Estado/Cidade também */
+.filtros-superiores {
+  background: linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  color: #222;
+}
+.filtro-bloco label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+.filtro-bloco select,
+.filtro-bloco input {
+  min-width: 160px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+/* Subtítulos e containers (form) */
+.subtitulo {
+  margin: 0px 0px 0px 0px;
+  color: #fff;
+  text-align: center;
+}
+
+.formulario-container {
+  background: linear-gradient(135deg, #f5f7fa, #e2eafc);
+  padding: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  color: #222;
+}
+
+/* Cabeçalho da Tabela (centraliza o título) */
+.cabecalho-tabela {
+  position: relative;
+  margin-top: 28px;
+  min-height: 44px;
+}
+.cabecalho-tabela .subtitulo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #000;          /* preto */
+  font-size: 28px;      /* igual ao .titulo-pagina */
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Wrapper da tabela (mesmo visual do Clientes) */
+.tabela-wrapper {
+  background: linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Exportar (centralizado abaixo do título) */
+.exportar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.exportar-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.exportar-menu {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 10px;
+  z-index: 999;
+  min-width: 200px;
+  text-align: center;
+}
+
+/* Botão flutuante "Voltar ao topo" — idêntico a Clientes/Funcionário */
+.btn-voltar-topo {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1000;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.25));
+}
+.btn-voltar-topo img {
+  width: 56px;
+  height: 56px;
+  display: block;
+}
+.btn-voltar-topo:hover img {
+  transform: translateY(-2px);
+  transition: transform .2s ease;
+}

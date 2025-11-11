@@ -1,0 +1,43 @@
+/* Cabeçalho igual ao de Filiais (#181893 + branco) */
+.tabela-psl {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+  }
+  
+  .tabela-psl thead th {
+    background: #181893;
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+  }
+  
+  .tabela-psl thead th:first-child { border-top-left-radius: 10px; }
+  .tabela-psl thead th:last-child  { border-top-right-radius: 10px; }
+  
+  .tabela-psl tbody td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  /* Cabeçalho igual ao de Filiais (#181893 + branco) */
+.tabela-psl {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.tabela-psl thead th {
+  background: #181893;
+  color: #fff;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.tabela-psl thead th:first-child { border-top-left-radius: 10px; }
+.tabela-psl thead th:last-child  { border-top-right-radius: 10px; }
+
+.tabela-psl tbody td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e5e7eb;
+}

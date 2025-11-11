@@ -1,0 +1,48 @@
+[
+  {
+    "nome": "Andre Gon Silva",
+    "cnh": "06985973710",
+    "categoria": "B",
+    "emissao_cnh": "2022-08-01 00:00:00",
+    "validade_cnh": "2032-07-28 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)96498-9927",
+    "email": "andre.974724297@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Av:Marco Aurelio",
+    "complemento": "Lote 09 Quadra 17",
+    "bairro": "Jardim Do Ipe",
+    "municipio": "Belford Roxo",
+    "cep": "26.180-150",
+    "banco": "033 – Banco Santander (Brasil) S.A.",
+    "agencia": "3839",
+    "conta": "010898928",
+    "pix": "21969825348",
+    "data_nascimento": "1979-12-16 00:00:00",
+    "cpf": "093.155.027-01",
+    "rg": "11.785.104-8",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "3",
+    "nome_familiar": "Janete Gonc Gomes",
+    "contato_familiar": "(21)97458-2884",
+    "indicado": "Trabalhei Pela Speed E Depois Passei Pra Black",
+    "observacao": "NÃO Consigo Mandar O Comprovante De ResidÊNcia , E Nem Enviar O CurrÍCulo , Acho Q Nem Tenho Algum Pronto",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/891wgmsaduzt673n94rg8/1759846123681_Andre-Gon-Silva-cnh_arquivo.jpeg?rlkey=46mta8ipzpv39nxnf1e1fjmsk&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/xgmhsooo80bjotqodblmd/1759846125673_Andre-Gon-Silva-comprovante_residencia.pdf?rlkey=uezwyl1crxewi315rwh8ow2rd&dl=0"
+      ],
+      "curriculo": []
+    },
+    "data_envio_utc": "2025-10-07 14:08:48.344000",
+    "data_envio_local": "2025-10-07 11:08:48"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Amanda Aguiar Sales Costa",
+    "cnh": "03595964905",
+    "categoria": "B",
+    "emissao_cnh": "2005-05-17 00:00:00",
+    "validade_cnh": "2034-06-12 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)96984-0772",
+    "email": "amanda@amandasalescosta.com.br",
+    "sexo": "Feminino",
+    "profissao": "Supervisora",
+    "endereco": "Avenida Claudio Besserman Vianna 3",
+    "complemento": "Bloco 10 Ap 608",
+    "bairro": "Barra Olimpica",
+    "municipio": "Rio De Janeiro",
+    "cep": "22.775-076",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "0001",
+    "conta": "2979046-8",
+    "pix": "21969775937",
+    "data_nascimento": "1975-01-15 00:00:00",
+    "cpf": "024.122.357-16",
+    "rg": "10.463.888-7",
+    "estado_civil": "Casado(A)",
+    "filhos": "1",
+    "nome_familiar": "Mario Costa",
+    "contato_familiar": "(21)96984-0772",
+    "indicado": "Marido",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/9yh3cnis1vyytt3w2orji/1756483956397_Amanda-Aguiar-Sales-Costa-cnh_arquivo.jpg?rlkey=zdanui4yton2q2entimmrb06a&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/az5vu3ev3wax659f978s9/1756483958434_Amanda-Aguiar-Sales-Costa-comprovante_residencia.pdf?rlkey=l70dql5y1erplbltexlvrw4cv&dl=0"
+      ],
+      "curriculo": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/2qdyniwfs0cdn6l9o05l8/1756483960070_Amanda-Aguiar-Sales-Costa-nada_consta.pdf?rlkey=hwa6c6jfil3vdvc8kdfihgdan&dl=0"
+      ],
+      "comprovante_mei": [
+        "https://www.dropbox.com/scl/fi/c40ck4v8s1sesv1ahezdk/1756483961808_Amanda-Aguiar-Sales-Costa-comprovante_mei.pdf?rlkey=usdqfn8ytls6ligfteam28au8&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-08-29 16:12:45.021000",
+    "data_envio_local": "2025-08-29 13:12:45"
+  }
+]

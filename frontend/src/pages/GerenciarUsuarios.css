@@ -1,0 +1,114 @@
+.gerenciar-usuarios-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.gerenciar-usuarios-container h2 {
+    margin-bottom: 130px;
+    color: #0074FF; /* título em azul claro */
+}
+
+.titulo {
+    margin: 10px 30px 30px 20px;
+    font-size: 22px;
+    color: #080808;
+}
+
+.botao-novo {
+    margin: 5px 30px 10px 20px;
+    padding: 5px 12px;
+    font-weight: bold;
+    background-color: #FF6700;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.botao-novo:hover {
+    background-color: #FCDE0B;
+    color: #181893;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao {
+    font-weight: bold;
+    background-color: #181893;
+    color: #FFFFFF;
+    border: none;
+    padding: 6px 12px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #FCDE0B;
+    color: #181893;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.gerenciar-usuarios-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    border: 2px solid #0074FF;
+}
+
+.gerenciar-usuarios-container th {
+    border: 1px solid #0074FF;
+    padding: 8px 5px;
+    text-align: left;
+    line-height: 1.0;
+    background-color: #181893;
+    color: #FFFFFF;
+}
+
+.gerenciar-usuarios-container td {
+    border: 1px solid #0074FF;
+    padding: 0px 5px;
+    text-align: left;
+    line-height: 1;
+}
+
+
+.gerenciar-usuarios-container th {
+    background-color: #181893;
+    color: #FFFFFF;
+}
+
+.modal-edicao {
+    margin: 0px 30px 30px 20px;
+    padding: 20px 50px 20px 20px;
+    border: 2px solid #0074FF;
+    background-color: linear-gradient(135deg, rgb(223, 233, 243) 0%, rgb(245, 247, 250) 100%);
+    max-width: 600px;
+    color: #000000;
+}
+
+.modal-edicao input {
+    margin: 1px 0;
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #0074FF;
+    background-color: #FFFFFF;
+    color: #000000;
+    line-height: 1.0;
+}
+
+.modal-edicao button {
+    margin: 20px 10px 10px 10px;
+    padding: 6px 12px;
+    font-weight: bold;
+    background-color: #FF6700;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-edicao button:hover {
+    background-color: #FCDE0B;
+    color: #181893;
+}
+
+

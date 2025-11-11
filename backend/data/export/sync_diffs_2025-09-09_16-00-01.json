@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Andre Basilio Da Silva",
+    "cnh": "05394533714",
+    "categoria": "D",
+    "emissao_cnh": "2012-01-04 00:00:00",
+    "validade_cnh": "2032-06-27 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97639-3797",
+    "email": "basiliocarequinha@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Vigilante",
+    "endereco": "Av Guanabara 6",
+    "complemento": "Casa 6",
+    "bairro": "Parada De Lucas",
+    "municipio": "Rio De Janeiro",
+    "cep": "21.010-810",
+    "banco": "260 – Nu Pagamentos S.A.",
+    "agencia": "0001",
+    "conta": "25507201",
+    "pix": "21977315118",
+    "data_nascimento": "1979-05-21 00:00:00",
+    "cpf": "084.617.547-94",
+    "rg": "11.043.410-7",
+    "estado_civil": "Casado(A)",
+    "filhos": "2",
+    "nome_familiar": "Elizandra M.Inacio.D.Silva",
+    "contato_familiar": "(21)96890-0437",
+    "indicado": "Uma Pessoa Da Localiza",
+    "observacao": "NÃO Informei O Nome Da Pessoa AtÉ Porque NÃO Mi Lembro",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/yqrudi88wdidybhpsgl99/1757442521881_Andre-Basilio-Da-Silva-cnh_arquivo.pdf?rlkey=mes5fef7qg1zvhn5nyoo7esyw&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/w8jy3gzvd8uua5prm270j/1757442524153_Andre-Basilio-Da-Silva-comprovante_residencia.pdf?rlkey=f04lovqipwumpiujkef2nh19r&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/lmi13m7dtks3blyig304n/1757442526054_Andre-Basilio-Da-Silva-curriculo.pdf?rlkey=2hhjwdug2fffmlcjit1v00ojg&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-09 18:28:49.050000",
+    "data_envio_local": "2025-09-09 15:28:49"
+  }
+]

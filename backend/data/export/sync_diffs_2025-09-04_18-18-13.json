@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Dimas Ferreira Neves Sobrinho",
+    "cnh": "03661128231",
+    "categoria": "B",
+    "emissao_cnh": "2005-08-16 00:00:00",
+    "validade_cnh": "2029-12-16 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)98368-2020",
+    "email": "d989298599@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Eloi Macedo",
+    "complemento": "25",
+    "bairro": "Figueira",
+    "municipio": "Duque De Caxias",
+    "cep": "25.231-040",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "0001",
+    "conta": "475658817",
+    "pix": "84553405415",
+    "data_nascimento": "1974-11-06 00:00:00",
+    "cpf": "845.534.054-15",
+    "rg": "29.763.990-0",
+    "estado_civil": "Casado(A)",
+    "filhos": "1",
+    "nome_familiar": "Elizete Cristina",
+    "contato_familiar": "(21)98368-2020",
+    "indicado": "Elizete",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/dba90rcaq4wcaveneb54w/1757018902996_Dimas-Ferreira-Neves-Sobrinho-cnh_arquivo.pdf?rlkey=pcly4z11pyyui9syvnwcwj7l5&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/wg44ki8arl9bwzm21whee/1757018905157_Dimas-Ferreira-Neves-Sobrinho-comprovante_residencia.pdf?rlkey=cksnbgs97kkg471gewixf5c1i&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/6mjzh4vyhkpe5znp30zzt/1757018906906_Dimas-Ferreira-Neves-Sobrinho-curriculo.jpeg?rlkey=zuw6ghvocuqqdz4xak3z81uth&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-04 20:48:30.183000",
+    "data_envio_local": "2025-09-04 17:48:30"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "nome": "Robinson Peixoto Do Nascimento",
+    "cnh": "03731826149",
+    "categoria": "Ad",
+    "emissao_cnh": "2005-11-23 00:00:00",
+    "validade_cnh": "2033-11-23 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)98693-0789",
+    "email": "teleriorobinho@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Ametista",
+    "complemento": "Lote 20 Quadra 53",
+    "bairro": "Coelho Da Rocha",
+    "municipio": "Sao Joao De Meriti",
+    "cep": "25.550-460",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "001",
+    "conta": "35243309",
+    "pix": "teleriorobinho@gmail.com",
+    "data_nascimento": "1984-07-04 00:00:00",
+    "cpf": "103.645.967-59",
+    "rg": "12.595.579-9",
+    "estado_civil": "Casado(A)",
+    "filhos": "3",
+    "nome_familiar": "Ingrid Peixoto",
+    "contato_familiar": "(21)97603-6512",
+    "indicado": "Welington",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/jztyeg3eb2k7ofl8p3nn1/1756143671789_Robinson-Peixoto-Do-Nascimento-cnh_arquivo.pdf?rlkey=1g9ivfnpiakxbus8if0j8kivu&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/ho61sntdmq2o9u6p1qkll/1756143673793_Robinson-Peixoto-Do-Nascimento-comprovante_residencia.pdf?rlkey=3urmty9cw2iynicdnsv3fpdho&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/8bafkoeraz2iwwcngdq1e/1756143675709_Robinson-Peixoto-Do-Nascimento-curriculo.pdf?rlkey=djx0az70l6j74e79n7cuom2je&dl=0"
+      ],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/4y7ucio947g4emuc5phzp/1756143677388_Robinson-Peixoto-Do-Nascimento-nada_consta.pdf?rlkey=e4j4mmf6eixlovxjj7f7nw420&dl=0"
+      ],
+      "comprovante_mei": [
+        "https://www.dropbox.com/scl/fi/g87mkhkqt3pgs4pn2hfgk/1756143678945_Robinson-Peixoto-Do-Nascimento-comprovante_mei.pdf?rlkey=6v3esvhstwcke7pxm7vur23a4&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-08-25 17:41:22.026000",
+    "data_envio_local": "2025-08-25 14:41:22"
+  }
+]

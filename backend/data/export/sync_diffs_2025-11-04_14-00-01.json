@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Victor Saldanha Ferreira Da Silva",
+    "cnh": "08020487310",
+    "categoria": "B",
+    "emissao_cnh": "2022-11-25 00:00:00",
+    "validade_cnh": "2031-11-15 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)98070-2328",
+    "email": "saldanhaviktor@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Estrada Deodoro De Azevedo, 3345",
+    "complemento": "00",
+    "bairro": "Guriri",
+    "municipio": "Cabo Frio / Rj",
+    "cep": "28.923-382",
+    "banco": "260 – Nu Pagamentos S.A.",
+    "agencia": "000",
+    "conta": "000",
+    "pix": "21980702328",
+    "data_nascimento": "1989-12-17 00:00:00",
+    "cpf": "121.190.297-84",
+    "rg": "22.259.335-2",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "0",
+    "nome_familiar": "Wilmie",
+    "contato_familiar": "(22)99102-2189",
+    "indicado": "Ismael",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/nb2nqh2joymww7put2li8/1762273538023_Victor-Saldanha-Ferreira-Da-Silva-cnh_arquivo.pdf?rlkey=jghhzipvpuh9xkz6mz53jlhha&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/3svz8zwzqsklicjkff6g1/1762273539917_Victor-Saldanha-Ferreira-Da-Silva-comprovante_residencia.pdf?rlkey=44jfsg0totjpp4izfxa8a7vxk&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/mmlntbzxklfl4ryvh4gpl/1762273541464_Victor-Saldanha-Ferreira-Da-Silva-curriculo.pdf?rlkey=8m5e3teywtpemd8cqb1rg15vt&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/96g12cb4jdcla9iulnhvc/1762273543189_Victor-Saldanha-Ferreira-Da-Silva-nada_consta.jpg?rlkey=6hptz3tdosym07w18pwlsuq2b&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-11-04 16:25:46.007000",
+    "data_envio_local": "2025-11-04 13:25:46"
+  }
+]

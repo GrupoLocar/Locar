@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Eryk Rocha Crispim Guimaraes",
+    "cnh": "07071130941",
+    "categoria": "B",
+    "emissao_cnh": "2018-06-14 00:00:00",
+    "validade_cnh": "2034-03-12 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)99036-3455",
+    "email": "eryk.crispim@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Do Trabalho",
+    "complemento": "Casa 3",
+    "bairro": "Vila Da Penha",
+    "municipio": "Rio De Janeiro",
+    "cep": "21.211-210",
+    "banco": "033 – Banco Santander (Brasil) S.A.",
+    "agencia": "2286",
+    "conta": "01027831-2",
+    "pix": "21993064341",
+    "data_nascimento": "1998-04-27 00:00:00",
+    "cpf": "169.297.377-04",
+    "rg": "29.454.596-7",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "0",
+    "nome_familiar": "Patricia Rocha Da Silva",
+    "contato_familiar": "(21)96437-1283",
+    "indicado": "Sim",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/4clglfzbyu50b0ry7i8yh/1760634629105_Eryk-Rocha-Crispim-Guimaraes-cnh_arquivo.jpg?rlkey=4wu2wbw3o2d0py7lnwh3sappm&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/7wqg1prh04ak56v130k6i/1760634631238_Eryk-Rocha-Crispim-Guimaraes-comprovante_residencia.jpg?rlkey=xoa56bbh8x26300ibzdcre7dy&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/7y8e8xsr1mrels8eil3hn/1760634633075_Eryk-Rocha-Crispim-Guimaraes-curriculo.pdf?rlkey=7e9mkkhebz9cpcruy9yn4jnu0&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-16 17:10:36.610000",
+    "data_envio_local": "2025-10-16 14:10:36"
+  }
+]

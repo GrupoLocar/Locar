@@ -1,0 +1,56 @@
+Criar agendamentos automáticos dessa sincronização;
+Mostrar notificação visual no frontend após sincronizar;
+
+
+
+utilize o script C:\Locar\backend\scripts\syncFuncionarios.js para criar uma rotina para sincronizar a coleção "formulario.funcionarios" do banco de dados "grupolocar.igzhyps.mongodb.net" (MongoDB Atlas) com a coleção "grupolocar.funcionarios" (MongoDB Local Compass), apenas com os novos registros ou alterados sem apagar a coleção atual, utilizando o campo "data_envio_local" como parâmetro, ou seja, se houver mais de um registro no banco de dados "grupolocar.igzhyps.mongodb.net" (MongoDB Atlas) com o mesmo CPF e não tiver esses registros no banco de dados "grupolocar.funcionarios" (MongoDB Local Compass) a rotina deverá importar somente os registros mais recentes para atualizar o banco de dados local, mas se os dois bancos de dados estiveram iguais a rotina deve abortar a sincronização, essa rotina deve rodar sempre que o usuário rh fizer login para atualizar os dados do banco de dados do sistema local com o banco de dados "grupolocar.igzhyps.mongodb.net" (MongoDB Atlas):
+
+BANCO DE DADOS 1: grupolocar.igzhyps.mongodb.net (MongoDB Atlas)
+ATLAS_URI=mongodb+srv://usuario:senha@grupolocar.igzhyps.mongodb.net/formulario?retryWrites=true&w=majority&appName=grupolocar
+
+BANCO DE DADOS 2: grupolocar (MongoDB Local Compass)
+LOCAL_URI=mongodb://localhost:27017/grupolocar
+
+
+
+O script corrigido import_local.py está pronto para download:
+
+👉 Clique para baixar import_local_corrigido.py
+
+Este script agora remove o campo _id antes de importar para o banco local, garantindo que todos os 109 registros do Atlas sejam importados corretamente. 
+
+
+1/2
+
+
+
+
+
+
+
+
+
+CPFs Duplicados
+---------------
+1	114.570.007-17		2
+2	129.172.167-35		2
+3	855.678.687-15		2
+4	132.627.997-18		4
+5	095.728.587-69		2
+6	086.208.277-31		2
+7	104.356.757-70		2
+8	134.330.517-98		2
+
+
+O arquivo formulario_atlas_2025-07-22_17-19-47.json contém:
+
+✅ 110 registros no total
+🧾 100 CPFs únicos
+⚠️ 8 CPFs estão duplicados (com mais de um registro no arquivo)
+
+Essas duplicações de CPF fazem com que, ao importar para o banco local com updateOne(..., upsert=True), apenas o último registro de cada CPF seja considerado. Os anteriores são sobrescritos, não aumentando a contagem total de documentos.
+
+Por isso, mesmo com 110 registros no Atlas, apenas 100 são inseridos/atualizados no MongoDB local.
+
+Se desejar preservar todos os registros (inclusive os duplicados por CPF), será necessário usar um campo diferente como _id ou uuid para diferenciar os documentos.
+

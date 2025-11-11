@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Mauricio Miranda",
+    "cnh": "07014054940",
+    "categoria": "Ab",
+    "emissao_cnh": "2018-03-06 00:00:00",
+    "validade_cnh": "2032-03-30 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)98281-4614",
+    "email": "gabrielmathias211140@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Autonomo",
+    "endereco": "Avenida Gomes Freire",
+    "complemento": "Casa",
+    "bairro": "Vila Santo Antonio",
+    "municipio": "Duque De Caxias",
+    "cep": "25.040-160",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "0001",
+    "conta": "157347885",
+    "pix": "21-982814614",
+    "data_nascimento": "1998-05-05 00:00:00",
+    "cpf": "172.938.847-70",
+    "rg": "30.611.576-7",
+    "estado_civil": "Casado(A)",
+    "filhos": "1",
+    "nome_familiar": "Nathalia Ambrosia",
+    "contato_familiar": "(21)96877-3902",
+    "indicado": "Emerson Galdino",
+    "observacao": "0",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/xmu11tc9vmd585dcqxy9q/1756842420564_Mauricio-Miranda-cnh_arquivo.pdf?rlkey=e63g44vk4459ut9bk0r48spgu&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/2ltstteqms0pl2mnlh77j/1756842422406_Mauricio-Miranda-comprovante_residencia.jpg?rlkey=ri21jhzqpz42ruszhh2z7foa9&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/jh1z5mt2v4uwkdpoxq13n/1756842424198_Mauricio-Miranda-curriculo.jpg?rlkey=uwx88w8u9ig8imxnuzc3rt3ri&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-02 19:47:07.031000",
+    "data_envio_local": "2025-09-02 16:47:07"
+  }
+]

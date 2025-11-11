@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Jorge Ferreira De Lima",
+    "cnh": "00223093537",
+    "categoria": "Ad",
+    "emissao_cnh": "1997-05-31 00:00:00",
+    "validade_cnh": "2032-01-25 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)96987-5453",
+    "email": "jorge.ferra.lima@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Avenida Carolina Pereira Cossick",
+    "complemento": "Qt Lt 21",
+    "bairro": "Coelho Da Rocha",
+    "municipio": "Sao Joao De Meriti",
+    "cep": "25.555-070",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "0001",
+    "conta": "34333056/ 3",
+    "pix": "020.547.467-54",
+    "data_nascimento": "1973-02-12 00:00:00",
+    "cpf": "020.547.467-54",
+    "rg": "09.417.288-9",
+    "estado_civil": "Casado(A)",
+    "filhos": "2",
+    "nome_familiar": "Alessandra Dos Santos Torres",
+    "contato_familiar": "(21)98056-0233",
+    "indicado": "Artur",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/p1u637v0hxu71p7v00mns/1756491847399_Jorge-Ferreira-De-Lima-cnh_arquivo.pdf?rlkey=zg6j4ezdutbd0qvfehs0uqu01&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/ax9tjt5pc9bglwfu0y6zj/1756491848997_Jorge-Ferreira-De-Lima-comprovante_residencia.pdf?rlkey=2srambpk3hi1b788c6znok1w4&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/f7mfsjh063oye7tb2ed3v/1756491850661_Jorge-Ferreira-De-Lima-curriculo.pdf?rlkey=oi5bvyynvg02c3lqvqs6n09qf&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": []
+    },
+    "data_envio_utc": "2025-08-29 18:24:13.194000",
+    "data_envio_local": "2025-08-29 15:24:13"
+  }
+]

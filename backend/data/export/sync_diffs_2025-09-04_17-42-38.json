@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Andre Luis Haller Queiroz",
+    "cnh": "00457362610",
+    "categoria": "D",
+    "emissao_cnh": "1992-10-27 00:00:00",
+    "validade_cnh": "2027-07-07 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97379-5650",
+    "email": "anhallerpqdt01@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista Categoria D",
+    "endereco": "Rua Sierpe Lima 38",
+    "complemento": "Casa",
+    "bairro": "Santo Antonio Da Prata",
+    "municipio": "Belford Roxo",
+    "cep": "26.135-830",
+    "banco": "104 – Caixa EconÔMica Federal",
+    "agencia": "3880",
+    "conta": "935979708-7",
+    "pix": "01954163762",
+    "data_nascimento": "1972-11-28 00:00:00",
+    "cpf": "019.541.637-62",
+    "rg": "12.039.829-2",
+    "estado_civil": "Casado(A)",
+    "filhos": "3",
+    "nome_familiar": "Haller Queiroz",
+    "contato_familiar": "(21)96500-3416",
+    "indicado": "Amanda Carraro Queiroz",
+    "observacao": "Filha",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/yk2fu5kdwqya1waxc00m7/1757018419760_Andre-Luis-Haller-Queiroz-cnh_arquivo.pdf?rlkey=r6896tr1oar09rex22plik49i&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/w74z67hcwhxg4oujkjkt3/1757018421978_Andre-Luis-Haller-Queiroz-comprovante_residencia.pdf?rlkey=lahren9yy4ttgreeiz6q0styz&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/9707y9iha5ccv8kz0kbuk/1757018423655_Andre-Luis-Haller-Queiroz-curriculo.pdf?rlkey=ypjyc1oc9tdunw6c980ylobo4&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-04 20:40:26.503000",
+    "data_envio_local": "2025-09-04 17:40:26"
+  }
+]

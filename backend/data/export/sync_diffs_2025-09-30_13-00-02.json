@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Walmir Costa Goncalves",
+    "cnh": "04296214500",
+    "categoria": "B",
+    "emissao_cnh": "1986-06-13 00:00:00",
+    "validade_cnh": "2028-05-11 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)96462-4400",
+    "email": "walmircosta53@yahoo.com",
+    "sexo": "Masculino",
+    "profissao": "Advogado",
+    "endereco": "Rua Dom Antonio De Macedo",
+    "complemento": "Numero 100",
+    "bairro": "Ilha Do Governador- Jardim Guanabara",
+    "municipio": "Rio De Janeiro",
+    "cep": "21.931-200",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "0001",
+    "conta": "019576448-0",
+    "pix": "002.320.307-23",
+    "data_nascimento": "1967-12-15 00:00:00",
+    "cpf": "002.320.307-23",
+    "rg": "00.717.606-4",
+    "estado_civil": "Casado(A)",
+    "filhos": "0",
+    "nome_familiar": "Jacqueline",
+    "contato_familiar": "(21)96462-5115",
+    "indicado": "Walmir",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/5gvctelngvkmb1xuembk6/1759246047741_Walmir-Costa-Goncalves-cnh_arquivo.pdf?rlkey=mvpswuz97tqqluedn1p9262rq&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/26ulrl9ltgdbn26iqcpet/1759246049612_Walmir-Costa-Goncalves-comprovante_residencia.jpg?rlkey=lz16iw33mjgxi059j88p9qgdl&dl=0"
+      ],
+      "curriculo": [],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/t9ey9fvjn8ewuv35xv0fs/1759246051522_Walmir-Costa-Goncalves-nada_consta.jpg?rlkey=xyh2tmgup9etlr386bhaw45sp&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-30 15:27:34.334000",
+    "data_envio_local": "2025-09-30 12:27:34"
+  }
+]

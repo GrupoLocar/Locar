@@ -1,0 +1,48 @@
+[
+  {
+    "nome": "Luciano Simoes",
+    "cnh": "02019113140",
+    "categoria": "Ad",
+    "emissao_cnh": "2001-10-11 00:00:00",
+    "validade_cnh": "2031-01-02 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)99128-0682",
+    "email": "lucianossimoesc10@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Sao Roque 135",
+    "complemento": "Casa",
+    "bairro": "Parque Araruama",
+    "municipio": "Sao Joao",
+    "cep": "25.585-460",
+    "banco": "001 – Banco Do Brasil",
+    "agencia": "21482",
+    "conta": "C/C",
+    "pix": "21991280682",
+    "data_nascimento": "2025-10-06 00:00:00",
+    "cpf": "056.153.397-05",
+    "rg": "13.059.639-8",
+    "estado_civil": "Casado(A)",
+    "filhos": "2",
+    "nome_familiar": "Raphael",
+    "contato_familiar": "(21)96951-5358",
+    "indicado": "Olx",
+    "observacao": "Esperiencia Em Viagem",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/2yfdxg5au5w98uga69v2k/1759780529061_Luciano-Simoes-cnh_arquivo.jpeg?rlkey=wkqlphi8ch7eels7kjf0qz2kq&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/87y2c1t1ncezrhwmjb8e2/1759780530861_Luciano-Simoes-comprovante_residencia.pdf?rlkey=hgwwdm456s1ey5r35iz6vs6cb&dl=0"
+      ],
+      "curriculo": []
+    },
+    "data_envio_utc": "2025-10-06 19:55:33.568000",
+    "data_envio_local": "2025-10-06 16:55:33"
+  }
+]

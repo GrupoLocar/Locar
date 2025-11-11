@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "William Jaime Coelho Sales",
+    "cnh": "07086898776",
+    "categoria": "Ab",
+    "emissao_cnh": "2018-07-12 00:00:00",
+    "validade_cnh": "2033-05-01 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97401-5273",
+    "email": "williamcoelhocaua@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Administrador",
+    "endereco": "Rua Mousinho De Albuquerque 602",
+    "complemento": "Casa",
+    "bairro": "Vila Verde",
+    "municipio": "Belford Roxo",
+    "cep": "26.178-080",
+    "banco": "237 – Banco Bradesco S.A.",
+    "agencia": "2773. Poupanca",
+    "conta": "1001549-9",
+    "pix": "21974015273",
+    "data_nascimento": "1982-07-03 00:00:00",
+    "cpf": "097.533.767-07",
+    "rg": "21.320.947-1",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "0",
+    "nome_familiar": "Carlos Irmao",
+    "contato_familiar": "(21)97954-9369",
+    "indicado": "Roberta Lopes",
+    "observacao": "Gerente Executiva Comercial",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/tfp52v9twhugf38h7o3hs/1756929440716_William-Jaime-Coelho-Sales-cnh_arquivo.jpg?rlkey=71jeppcq8m1prx9p62zliuxlg&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/uu2tgbuns4d7raj3e9b6z/1756929442905_William-Jaime-Coelho-Sales-comprovante_residencia.pdf?rlkey=9rcpe6dsto5wstz62rf2c08uy&dl=0"
+      ],
+      "curriculo": [],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/j2qsb14n9cs7nl1823c8s/1756929444734_William-Jaime-Coelho-Sales-nada_consta.png?rlkey=ttvg51ms03g2ib0p3at5urypw&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-03 19:57:28.067000",
+    "data_envio_local": "2025-09-03 16:57:28"
+  }
+]

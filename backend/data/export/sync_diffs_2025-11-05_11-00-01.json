@@ -1,0 +1,54 @@
+[
+  {
+    "nome": "Renilto Cesar De Mattos",
+    "cnh": "02248115894",
+    "categoria": "Ad",
+    "emissao_cnh": "1992-04-10 00:00:00",
+    "validade_cnh": "2030-02-04 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)99709-9256",
+    "email": "stcmattos@hotmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Av. Das Americas 1155",
+    "complemento": "302",
+    "bairro": "Barra Da Tijuca",
+    "municipio": "Rio De Janeiro",
+    "cep": "22.631-903",
+    "banco": "341 – ItaÚ Unibanco S.A.",
+    "agencia": "0584",
+    "conta": "125793",
+    "pix": "21997099256",
+    "data_nascimento": "1974-01-08 00:00:00",
+    "cpf": "147.200.688-71",
+    "rg": "24.211.955-5",
+    "estado_civil": "Divorciado(A)",
+    "filhos": "1",
+    "nome_familiar": "Eren",
+    "contato_familiar": "(21)98382-1001",
+    "indicado": "Contato",
+    "observacao": "Principal",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/nkv31hjnz6a519a73jzr8/1762347711596_Renilto-Cesar-De-Mattos-cnh_arquivo.png?rlkey=i2o107twsf73olorkq6o0rh7h&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/2au95bthycrx13vwam2t8/1762347713332_Renilto-Cesar-De-Mattos-comprovante_residencia.png?rlkey=bnga1boc811763hqk8i6khwh3&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/n7zf1mpmk3shwcfoz3rd9/1762347714831_Renilto-Cesar-De-Mattos-curriculo.png?rlkey=m0kqhv5dhp98huckv2ap8pcxe&dl=0"
+      ],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/yzvz243r0fqqv10b6plri/1762347716318_Renilto-Cesar-De-Mattos-nada_consta.png?rlkey=l9oava24wtechxmb818814iyc&dl=0"
+      ],
+      "comprovante_mei": [
+        "https://www.dropbox.com/scl/fi/6pc3j3jvfd3fhmcxxcl8f/1762347717905_Renilto-Cesar-De-Mattos-comprovante_mei.png?rlkey=ase1du4gatumf71gkgtt5gjaq&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-11-05 13:02:00.415000",
+    "data_envio_local": "2025-11-05 10:02:00"
+  }
+]

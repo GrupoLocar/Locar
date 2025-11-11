@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Rafael Lopes Oliveira",
+    "cnh": "05569626999",
+    "categoria": "Ab",
+    "emissao_cnh": "2012-08-18 00:00:00",
+    "validade_cnh": "2031-11-25 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)96534-2166",
+    "email": "lopesoliveirarafael16@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Germano Firmino Dos Santos",
+    "complemento": "Bloco 72 Apto 207",
+    "bairro": "Manguinhos",
+    "municipio": "Rio De Janeiro",
+    "cep": "21.041-600",
+    "banco": "001 – Banco Do Brasil",
+    "agencia": "0001",
+    "conta": "148135528",
+    "pix": "11788094719",
+    "data_nascimento": "1988-03-14 00:00:00",
+    "cpf": "117.880.947-19",
+    "rg": "20.838.816-5",
+    "estado_civil": "Casado(A)",
+    "filhos": "1",
+    "nome_familiar": "Carmem Ferreira",
+    "contato_familiar": "(21)96982-8362",
+    "indicado": "Esposa",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/q50leyvglv5vm8szd7pvc/1756922755668_Rafael-Lopes-Oliveira-cnh_arquivo.pdf?rlkey=tt058l85xhkx3ga0fy73ao81n&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/wezp6ku4qu2msadhln5is/1756922757761_Rafael-Lopes-Oliveira-comprovante_residencia.pdf?rlkey=ocywl6jy1vbzli11m0r6dipkb&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/nzw1uwcumgigx1eljilag/1756922759424_Rafael-Lopes-Oliveira-curriculo.pdf?rlkey=du51ktoz1of9d44bsb88wb4r6&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/r4gt85ype0h4ojlj9f8rg/1756922761059_Rafael-Lopes-Oliveira-nada_consta.pdf?rlkey=y20l24uucx3il6l4y2eg7f92l&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-03 18:06:04.629000",
+    "data_envio_local": "2025-09-03 15:06:04"
+  }
+]

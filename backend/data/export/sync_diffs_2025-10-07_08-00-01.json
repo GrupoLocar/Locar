@@ -1,0 +1,100 @@
+[
+  {
+    "nome": "Samuel Jose De Oliveira Baptista",
+    "cnh": "00181927178",
+    "categoria": "B",
+    "emissao_cnh": "1997-06-13 00:00:00",
+    "validade_cnh": "2034-11-07 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97015-9172",
+    "email": "samuelbaptista@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Autonomo",
+    "endereco": "Estrada Das Tachas 814",
+    "complemento": "814",
+    "bairro": "Guaratiba",
+    "municipio": "Rio De Janeiro",
+    "cep": "23.020-010",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "0001",
+    "conta": "343739542",
+    "pix": "21 970159172",
+    "data_nascimento": "1975-03-28 00:00:00",
+    "cpf": "034.085.687-40",
+    "rg": "11.106.308-7",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "1",
+    "nome_familiar": "Paulo",
+    "contato_familiar": "(21)97015-9172",
+    "indicado": "Samuel",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/y20q21q5ovtzhj24a5cm8/1759784372258_Samuel-Jose-De-Oliveira-Baptista-cnh_arquivo.jpg?rlkey=3cwpsi6dli6trykfp4d3orlvx&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/5h27hgg9s7540flwnw5b8/1759784374058_Samuel-Jose-De-Oliveira-Baptista-comprovante_residencia.pdf?rlkey=ik2l9dx9n0xt5pq8iqx97qppn&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/b4e25vf8qog43qztr0hx9/1759784375536_Samuel-Jose-De-Oliveira-Baptista-curriculo.jpg?rlkey=3xok70zgzfym7t1sb1qc2p88o&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-06 20:59:38.384000",
+    "data_envio_local": "2025-10-06 17:59:38"
+  },
+  {
+    "nome": "Leandro Valenca Ferreira",
+    "cnh": "00210658109",
+    "categoria": "Ae",
+    "emissao_cnh": "1997-09-16 00:00:00",
+    "validade_cnh": "2032-12-15 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)99337-0917",
+    "email": "thutuzinho16@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Benta Pereira, 151",
+    "complemento": "Casa",
+    "bairro": "Nova Cidade",
+    "municipio": "Sao Goncalo",
+    "cep": "24.455-650",
+    "banco": "104 – Caixa EconÔMica Federal",
+    "agencia": "3028",
+    "conta": "8285122920",
+    "pix": "07872247747",
+    "data_nascimento": "1977-07-19 00:00:00",
+    "cpf": "078.722.477-47",
+    "rg": "13.112.319-2",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "2",
+    "nome_familiar": "Aline Xavier",
+    "contato_familiar": "(21)98099-0359",
+    "indicado": "Marcio",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/ddeldxkntzr4iixfnsssm/1759801335595_Leandro-Valenca-Ferreira-cnh_arquivo.pdf?rlkey=xkt4ylyiniom1a8hbxb7g3onf&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/f9h4w2wenzcr2sxo6izt7/1759801337343_Leandro-Valenca-Ferreira-comprovante_residencia.pdf?rlkey=knv6cx6hjrxby6pyhvcc5n6ib&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/qg7gwpow1mjjciqnqkllm/1759801338784_Leandro-Valenca-Ferreira-curriculo.pdf?rlkey=prg7lz5pjuwig7i1kebbve73p&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/lbqh276jryj4w46l4w3tw/1759801340434_Leandro-Valenca-Ferreira-nada_consta.png?rlkey=ui1piuuya72kn3e13hmqgb5vm&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-07 01:42:23.223000",
+    "data_envio_local": "2025-10-06 22:42:23"
+  }
+]

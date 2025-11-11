@@ -1,0 +1,54 @@
+[
+  {
+    "nome": "Franklin Dos Santos Figueira",
+    "cnh": "06438602528",
+    "categoria": "D",
+    "emissao_cnh": "2024-06-27 00:00:00",
+    "validade_cnh": "2034-06-23 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)98155-5178",
+    "email": "franklin.sf91@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Jardim Maringa",
+    "complemento": "Casa",
+    "bairro": "Sao Vicente",
+    "municipio": "Belford Roxo",
+    "cep": "26.187-090",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "0001",
+    "conta": "157188540",
+    "pix": "21981555178",
+    "data_nascimento": "1991-10-20 00:00:00",
+    "cpf": "146.671.657-66",
+    "rg": "26.665.735-2",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "2",
+    "nome_familiar": "Ana Caroline Marinho",
+    "contato_familiar": "(21)97979-9962",
+    "indicado": "0",
+    "observacao": "0",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/2nez84a3o311dmf6ijtu1/1755015864856_Franklin-Dos-Santos-Figueira-cnh_arquivo.pdf?rlkey=2sy0v6nkflg8ss7v2iy6nv7dv&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/lmyce7oryubue9y3x74yx/1755015866871_Franklin-Dos-Santos-Figueira-comprovante_residencia.pdf?rlkey=zi681nwln99hl3y2x71crfpc1&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/7i07qj8ocax3nfq0ze1dg/1755015868641_Franklin-Dos-Santos-Figueira-curriculo.pdf?rlkey=ditf0z1fc9pvx5ky5jla5rcyx&dl=0"
+      ],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/au4soc2s0jb38rsn5yiib/1755015870372_Franklin-Dos-Santos-Figueira-nada_consta.pdf?rlkey=wb6aablxyrv21oid4yie0qhqi&dl=0"
+      ],
+      "comprovante_mei": [
+        "https://www.dropbox.com/scl/fi/vu21rq10bmz4gbyu75jdl/1755015871977_Franklin-Dos-Santos-Figueira-comprovante_mei.pdf?rlkey=5e3an3s1wmcrch58kb6qalzvk&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-08-12 16:24:34.785000",
+    "data_envio_local": "2025-08-12 13:24:34"
+  }
+]

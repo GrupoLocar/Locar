@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Allan Goncalves Santiago Vital",
+    "cnh": "07242578957",
+    "categoria": "Ad",
+    "emissao_cnh": "2019-04-11 00:00:00",
+    "validade_cnh": "2032-05-01 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97922-0244",
+    "email": "allanvital68@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Vermancio Adres",
+    "complemento": "Casa 159",
+    "bairro": "Olavo Bilac",
+    "municipio": "Duque De Caxias",
+    "cep": "25.035-340",
+    "banco": "260 – Nu Pagamentos S.A.",
+    "agencia": "0001",
+    "conta": "58014766-1",
+    "pix": "21979220244",
+    "data_nascimento": "1997-10-03 00:00:00",
+    "cpf": "289.803.017-07",
+    "rg": "30.662.603-7",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "1",
+    "nome_familiar": "Allan",
+    "contato_familiar": "(55)21987-9109",
+    "indicado": "Por Lider Marcio",
+    "observacao": "...",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/a03hwhkdncam51lxzso50/1756510828600_Allan-Goncalves-Santiago-Vital-cnh_arquivo.pdf?rlkey=cyuh8870mueilf1s15gx11qbe&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/67i2bbl445a1vzs5djr5j/1756510830430_Allan-Goncalves-Santiago-Vital-comprovante_residencia.pdf?rlkey=co4y8hlyt9amlczhm91mpi9vw&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/e2h8axojyhyaemkqkk7w2/1756510832154_Allan-Goncalves-Santiago-Vital-curriculo.pdf?rlkey=q64697amoszw4unn1ypbfasa6&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-08-29 23:40:34.773000",
+    "data_envio_local": "2025-08-29 20:40:34"
+  }
+]

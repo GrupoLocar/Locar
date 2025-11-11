@@ -1,0 +1,36 @@
+rotina para sincronizar a coleção "formulario.funcionarios" do banco de dados "grupolocar.igzhyps.mongodb.net" (MongoDB Atlas) para a coleção "grupolocar.funcionarios" (MongoDB Local Compass), apenas de novos registros ou alterados sem apagar a coleção atual, utilizando o campo "data_envio_local" como parâmetro, ou seja, se houver mais de um registro no banco de dados "grupolocar.igzhyps.mongodb.net" (MongoDB Atlas) com o mesmo CPF e não tiver esses registros no banco de dados "grupolocar.funcionarios" (MongoDB Local Compass) a rotina deverá importar somente o registro mais recente para atualizar o banco de dados local, mas se os dois bancos de dados estiveram iguais a rotina deve abortar a sincronização, essa rotina deve rodar sempre que o usuário rh fizer login para atualizar os dados do banco de dados do sistema local com o banco de dados "grupolocar.igzhyps.mongodb.net" (MongoDB Atlas):
+
+BANCO DE DADOS 1: grupolocar.igzhyps.mongodb.net (MongoDB Atlas)
+ATLAS_URI=mongodb+srv://usuario:senha@grupolocar.igzhyps.mongodb.net/formulario?retryWrites=true&w=majority&appName=grupolocar
+
+BANCO DE DADOS 2: grupolocar (MongoDB Local Compass)
+LOCAL_URI=mongodb://localhost:27017/grupolocar
+
+
+
+BANCO DE DADOS 1: grupolocar.igzhyps.mongodb.net (MongoDB Atlas)
+ATLAS_URI=mongodb+srv://controladorialocar:hkgXARHPvA6yKsj0@grupolocar.igzhyps.mongodb.net/formulario?retryWrites=true&w=majority&appName=grupolocar
+
+BANCO DE DADOS 2: grupolocar (MongoDB Local Compass)
+LOCAL_URI=mongodb://localhost:27017/grupolocar
+
+
+devo utilizar src do frontend ou devo criar src na raiz do projeto ?
+
+Estrutura do sistema:
+
+\backend
+	\controllers
+	\middlewares
+	\model
+	\routes
+	\scripts
+	\utils
+\frontend
+	\public
+	\src
+		\components
+		\img
+		\pages
+		\style
+		\utils

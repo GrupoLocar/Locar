@@ -1,0 +1,48 @@
+[
+  {
+    "nome": "Lucianno Jorge Dos Santos Estiene",
+    "cnh": "06861323159",
+    "categoria": "B",
+    "emissao_cnh": "2017-06-15 00:00:00",
+    "validade_cnh": "2032-04-12 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(22)99524-2017",
+    "email": "luuh.estiene@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Alvaro Lopes Martins, 502",
+    "complemento": "Casa",
+    "bairro": "Porto Velho",
+    "municipio": "Sao Goncalo",
+    "cep": "24.426-500",
+    "banco": "260 – Nu Pagamentos S.A.",
+    "agencia": "0001",
+    "conta": "31302348-2",
+    "pix": "luuh.estiene@gmail.com",
+    "data_nascimento": "1989-09-30 00:00:00",
+    "cpf": "127.877.637-90",
+    "rg": "22.106.274-8",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "0",
+    "nome_familiar": "Santos Estiene",
+    "contato_familiar": "(21)99693-6608",
+    "indicado": "Mae",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/8cnd7mehlw1oh6i25qfem/1761732989941_Lucianno-Jorge-Dos-Santos-Estiene-cnh_arquivo.jpg?rlkey=9ke39isbgqu7yv41gq0uslyzd&dl=0"
+      ],
+      "comprovante_residencia": [],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/7afapqup8et2gintum0jf/1761732992010_Lucianno-Jorge-Dos-Santos-Estiene-curriculo.jpg?rlkey=frgpnbtd2jk7vqr61geb4s7yz&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-29 10:16:34.721000",
+    "data_envio_local": "2025-10-29 07:16:34"
+  }
+]

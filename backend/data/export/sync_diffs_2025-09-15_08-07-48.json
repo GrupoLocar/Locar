@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Christian Al Salles Provencano",
+    "cnh": "06105936059",
+    "categoria": "B",
+    "emissao_cnh": "2014-06-28 00:00:00",
+    "validade_cnh": "2033-02-14 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)98315-3831",
+    "email": "christianalex88@icloud.com",
+    "sexo": "Masculino",
+    "profissao": "Bombeiro Civil",
+    "endereco": "Rua Correa De Oliveira",
+    "complemento": "Casa",
+    "bairro": "Vila Isabel",
+    "municipio": "Rio De Janeiro",
+    "cep": "20.551-200",
+    "banco": "260 – Nu Pagamentos S.A.",
+    "agencia": "5502",
+    "conta": "099285153148",
+    "pix": "21983153831",
+    "data_nascimento": "1988-09-07 00:00:00",
+    "cpf": "133.339.827-14",
+    "rg": "21.031.660-0",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "4",
+    "nome_familiar": "Sarah",
+    "contato_familiar": "(21)99372-1602",
+    "indicado": "Por Mim Mesmo",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/h2zo0fmqpl4aru0aqhycq/1757704070702_Christian-Al-Salles-Provencano-cnh_arquivo.jpg?rlkey=zit22d0do76kh3xmxxkiowjsi&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/7m0dzvj3jny0u9ysw1gug/1757704072583_Christian-Al-Salles-Provencano-comprovante_residencia.pdf?rlkey=kjyb0gd7pa5j1dwrke9emuke8&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/ssvjmf8769d15fcbupj9t/1757704074170_Christian-Al-Salles-Provencano-curriculo.jpeg?rlkey=b3p0f8sscnr66twdz8ehnfzci&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-12 19:07:56.894000",
+    "data_envio_local": "2025-09-12 16:07:56"
+  }
+]

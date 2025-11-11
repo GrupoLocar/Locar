@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Leandro Lucas Da Conceicao",
+    "cnh": "08251588639",
+    "categoria": "Ab",
+    "emissao_cnh": "2023-08-01 00:00:00",
+    "validade_cnh": "2032-10-02 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97432-0747",
+    "email": "leandro.daconceicao@hotmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Das Marrecas Numero 700",
+    "complemento": "Casa",
+    "bairro": "Nova Brasilia",
+    "municipio": "Nova Iguacu",
+    "cep": "26.053-310",
+    "banco": "290 – Pagseguro Internet InstituiÇãO De Pagamento S.A.",
+    "agencia": "0001",
+    "conta": "076745439",
+    "pix": "21 974320747",
+    "data_nascimento": "1982-08-16 00:00:00",
+    "cpf": "092.841.317-90",
+    "rg": "12.783.682-3",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "2",
+    "nome_familiar": "Simone Lucas",
+    "contato_familiar": "(21)98770-3611",
+    "indicado": "Cleber",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/v4t2l4hqaw4i9pesyfle3/1756734587717_Leandro-Lucas-Da-Conceicao-cnh_arquivo.pdf?rlkey=3e7dk1xpqafm2jwtfv53hph9v&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/by7ztil2ve45jsi8o8udu/1756734589721_Leandro-Lucas-Da-Conceicao-comprovante_residencia.pdf?rlkey=xb1nhip5ug9af7c82vcuortz8&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/d7adlwyz04k8p8vedlnct/1756734591346_Leandro-Lucas-Da-Conceicao-curriculo.pdf?rlkey=hiknzh2oh2e6dkavbm7m97zfs&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/hlncca5c75l5kui2mmilo/1756734592915_Leandro-Lucas-Da-Conceicao-nada_consta.pdf?rlkey=rns8slhr1jz9z4a7057wmb054&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-09-01 13:49:55.728000",
+    "data_envio_local": "2025-09-01 10:49:55"
+  }
+]

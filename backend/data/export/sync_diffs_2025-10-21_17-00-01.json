@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Luiz Pedro Medeiros De Oliveira",
+    "cnh": "05335634790",
+    "categoria": "B",
+    "emissao_cnh": "2011-10-26 00:00:00",
+    "validade_cnh": "2032-05-16 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97978-4592",
+    "email": "luizpedrotec2017@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Corretor",
+    "endereco": "Rua Flora De Araujo",
+    "complemento": "Casa 1",
+    "bairro": "Prata",
+    "municipio": "Nova Iguacu",
+    "cep": "26.010-570",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "0001",
+    "conta": "403974097",
+    "pix": "21979784592",
+    "data_nascimento": "1988-04-12 00:00:00",
+    "cpf": "127.969.157-35",
+    "rg": "41.032.147-0",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "1",
+    "nome_familiar": "Fernanda Santos Da Silva",
+    "contato_familiar": "(21)96560-5159",
+    "indicado": "Umberto Da Silva Santos",
+    "observacao": "00000",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/84qtwu528f7y83asl43r9/1761074711272_Luiz-Pedro-Medeiros-De-Oliveira-cnh_arquivo.pdf?rlkey=fxoibrua6ktydvl5c2zdc3e65&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/x9z8bj66t5c7cxglpevxr/1761074712997_Luiz-Pedro-Medeiros-De-Oliveira-comprovante_residencia.jpg?rlkey=3j320729lv5b58xtk9dhowb9c&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/vha3p1g6gaqvd94ww7acx/1761074714601_Luiz-Pedro-Medeiros-De-Oliveira-curriculo.pdf?rlkey=oo0djkq8f87xmwhrdyzyj0duz&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-21 19:25:17.364000",
+    "data_envio_local": "2025-10-21 16:25:17"
+  }
+]

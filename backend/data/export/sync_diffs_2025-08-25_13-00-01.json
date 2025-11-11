@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Eduardo Felipe Souza Rodrigues",
+    "cnh": "09061824608",
+    "categoria": "B",
+    "emissao_cnh": "2025-07-24 00:00:00",
+    "validade_cnh": "2026-07-23 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)98022-2897",
+    "email": "eduardomago455@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Montador De Veiculo",
+    "endereco": "Av. Perimetral Emilio De Menezes",
+    "complemento": "Q.38 Lt.14",
+    "bairro": "Jardim Primavera",
+    "municipio": "Duque De Caxias",
+    "cep": "25.215-255",
+    "banco": "341 – ItaÚ Unibanco S.A.",
+    "agencia": "6585",
+    "conta": "24805-4",
+    "pix": "eduardomago455@gmail.com",
+    "data_nascimento": "2001-05-09 00:00:00",
+    "cpf": "195.382.847-71",
+    "rg": "31.094.505-0",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "0",
+    "nome_familiar": "Paulo Dos Santos Lopes",
+    "contato_familiar": "(21)98169-0402",
+    "indicado": "Estevam",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/yo5qpqq1ema6etat3awte/1756134993057_Eduardo-Felipe-Souza-Rodrigues-cnh_arquivo.pdf?rlkey=olvfz4n7trwjxyn40hbknzajo&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/erkhem01rlhsa0tv2dlv6/1756134995220_Eduardo-Felipe-Souza-Rodrigues-comprovante_residencia.jpg?rlkey=4art3kckbr5x98adp8r2nnjed&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/x5xhxcphes1h2gzxau794/1756134997066_Eduardo-Felipe-Souza-Rodrigues-curriculo.pdf?rlkey=36asmvs9fpijx49ip1a43ii6c&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-08-25 15:16:40.177000",
+    "data_envio_local": "2025-08-25 12:16:40"
+  }
+]

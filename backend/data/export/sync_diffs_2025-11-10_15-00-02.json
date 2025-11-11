@@ -1,0 +1,98 @@
+[
+  {
+    "nome": "Marcos Dos Santos Azeredo",
+    "cnh": "06530143802",
+    "categoria": "D",
+    "emissao_cnh": "2015-12-17 00:00:00",
+    "validade_cnh": "2028-02-15 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)99191-0043",
+    "email": "mzaqueu609@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Servicos Gerais",
+    "endereco": "Avenida Joaquim De Oliveira",
+    "complemento": "Numero 706",
+    "bairro": "Boa Vista",
+    "municipio": "Sao Goncalo",
+    "cep": "24.466-142",
+    "banco": "104 – Caixa EconÔMica Federal",
+    "agencia": "0194",
+    "conta": "01376846901",
+    "pix": "99191-0043",
+    "data_nascimento": "1969-11-28 00:00:00",
+    "cpf": "078.723.937-27",
+    "rg": "07.459.575-2",
+    "estado_civil": "Casado(A)",
+    "filhos": "0",
+    "nome_familiar": "Marcos",
+    "contato_familiar": "(21)99191-0043",
+    "indicado": "Ninguem",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/uxp2zfvunr813bf1u5j2f/1762794630251_Marcos-Dos-Santos-Azeredo-cnh_arquivo.pdf?rlkey=f5xjlmqox9tuyocy7cm9pw620&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/ucdz4mo4hxx619ja2o6ym/1762794631967_Marcos-Dos-Santos-Azeredo-comprovante_residencia.pdf?rlkey=3m7sr4fzpbdwag6meioda8qz9&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/z8l0f0ch2ivoneh1mcb4l/1762794633566_Marcos-Dos-Santos-Azeredo-curriculo.pdf?rlkey=vgb31kqu56j3533k51p9j1b1y&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-11-10 17:10:36.185000",
+    "data_envio_local": "2025-11-10 14:10:36"
+  },
+  {
+    "nome": "Leandro Dos Santos Barbosa",
+    "cnh": "02574009872",
+    "categoria": "Ad",
+    "emissao_cnh": "2002-10-22 00:00:00",
+    "validade_cnh": "2034-11-06 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)99265-7724",
+    "email": "leobarbosasjm@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Maria Das Dores De Andrade E Silva",
+    "complemento": "77",
+    "bairro": "Tomazinho",
+    "municipio": "Sao Joao De Meriti",
+    "cep": "25.530-670",
+    "banco": "341 – ItaÚ Unibanco S.A.",
+    "agencia": "6031",
+    "conta": "95030-3",
+    "pix": "098.041.277-33",
+    "data_nascimento": "1982-06-01 00:00:00",
+    "cpf": "098.041.277-33",
+    "rg": "12.454.097-2",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "1",
+    "nome_familiar": "Silvana",
+    "contato_familiar": "(21)98146-5441",
+    "indicado": "Ex Mulher",
+    "observacao": "Sem ObrigaÇõEs",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/oyvbpp3pyxvzfmmgyhsyx/1762797040779_Leandro-Dos-Santos-Barbosa-cnh_arquivo.jpg?rlkey=7poinktn7flz1me23zqirrgnc&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/9b5qqkyn1m4sjxh3sd7fe/1762797042757_Leandro-Dos-Santos-Barbosa-comprovante_residencia.jpg?rlkey=tu93q74a91wwkaojprtr8xwma&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/xyw1vk329a4ht48trqda4/1762797044458_Leandro-Dos-Santos-Barbosa-curriculo.jpg?rlkey=25bppsk0cz0qyeizta4hdk4dp&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-11-10 17:50:47.065000",
+    "data_envio_local": "2025-11-10 14:50:47"
+  }
+]

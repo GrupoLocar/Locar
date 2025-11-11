@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Marcelo Goncalves Carneiro",
+    "cnh": "00363457844",
+    "categoria": "B",
+    "emissao_cnh": "1998-08-19 00:00:00",
+    "validade_cnh": "2029-11-07 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)99098-0061",
+    "email": "samarcristo@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Ricardo Rios Mos Queira 2",
+    "complemento": "Fds",
+    "bairro": "Pq.Aeroporto",
+    "municipio": "Macae",
+    "cep": "27.963-786",
+    "banco": "290 – Pagseguro Internet InstituiÇãO De Pagamento S.A.",
+    "agencia": "0001",
+    "conta": "23923705",
+    "pix": "96927534768",
+    "data_nascimento": "1967-04-19 00:00:00",
+    "cpf": "996.927.534-76",
+    "rg": "07.802.883-4",
+    "estado_civil": "Casado(A)",
+    "filhos": "0",
+    "nome_familiar": "Sandra Aparecida",
+    "contato_familiar": "(21)97703-0735",
+    "indicado": "Sim",
+    "observacao": "Indicado Por RogÉRio Motorista",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/0kt5edjb6i99pepooj4rv/1762006331186_Marcelo-Goncalves-Carneiro-cnh_arquivo.jpg?rlkey=gkl3u0pirmft8rsfza9y7qszw&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/b7vofb0flw8qmwmng4tvx/1762006332981_Marcelo-Goncalves-Carneiro-comprovante_residencia.jpg?rlkey=rsb6ysc5jk2a18wuyuf7hcj0m&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/oi9q4w4pm90x3wtucimek/1762006334728_Marcelo-Goncalves-Carneiro-curriculo.jpg?rlkey=ss9eu0bzqp5n5g9albkknhiln&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-11-01 14:12:17.302000",
+    "data_envio_local": "2025-11-01 11:12:17"
+  }
+]

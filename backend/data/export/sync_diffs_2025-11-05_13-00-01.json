@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Nilo Sergio De Souza Benvenuti",
+    "cnh": "00057464080",
+    "categoria": "Ab",
+    "emissao_cnh": "1988-11-26 00:00:00",
+    "validade_cnh": "2030-07-16 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)96458-9081",
+    "email": "nilossbenvenuti@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista E. Manobrista",
+    "endereco": "Rua Joao De Sousa Numero 13",
+    "complemento": "Casa 1 Fundos",
+    "bairro": "Guaratiba",
+    "municipio": "Rio De Janeiro",
+    "cep": "23.032-400",
+    "banco": "033 – Banco Santander (Brasil) S.A.",
+    "agencia": "Agencia 1547",
+    "conta": "Conta 01047979-4",
+    "pix": "964589081",
+    "data_nascimento": "1965-06-13 00:00:00",
+    "cpf": "816.621.147-53",
+    "rg": "06.376.447-6",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "1",
+    "nome_familiar": "Leonardo Matos Da Silva Benvenuti",
+    "contato_familiar": "(21)96458-9081",
+    "indicado": "Nao",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/8xtp7019aaqlobeiijtt4/1762355564831_Nilo-Sergio-De-Souza-Benvenuti-cnh_arquivo.png?rlkey=mbi767fboy89bo5vdlg3qly8z&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/junwy077bz8w917xdfqxz/1762355566505_Nilo-Sergio-De-Souza-Benvenuti-comprovante_residencia.pdf?rlkey=0p8lpf7l7dp2cn3q4xr2rnh38&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/krf5heyivnisu0bya72hh/1762355567992_Nilo-Sergio-De-Souza-Benvenuti-curriculo.pdf?rlkey=etqjkerdht6imfwplic4u2769&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/l3lentbuku1sbwjm48a3g/1762355569701_Nilo-Sergio-De-Souza-Benvenuti-nada_consta.png?rlkey=rq3fxpcd647v0aj2vjs062s2j&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-11-05 15:12:52.372000",
+    "data_envio_local": "2025-11-05 12:12:52"
+  }
+]

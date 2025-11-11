@@ -1,0 +1,63 @@
+import express from 'express';
+import bcrypt from 'bcrypt';
+import User from '../model/User.js';
+
+const router = express.Router();
+
+// Criar novo usuário
+router.post('/', async (req, res) => {
+  try {
+    const { username, password, nome, email, role } = req.body;
+    const hashedPassword = await bcrypt.hash(password, 10);
+    const novoUsuario = new User({ username, password: hashedPassword, nome, email, role });
+    await novoUsuario.save();
+    res.status(201).json(novoUsuario);
+  } catch (err) {
+    res.status(400).json({ error: 'Erro ao criar usuário', message: err.message });
+  }
+});
+
+// Listar todos os usuários
+router.get('/usuarios', async (req, res) => {
+  try {
+    const usuarios = await User.find({});
+    res.json(usuarios);
+  } catch (error) {
+    res.status(500).json({ message: 'Erro ao buscar usuários' });
+  }
+});
+
+// Listar todos os usuários (sem senha)
+router.get('/', async (_, res) => {
+  const usuarios = await User.find().select('-password');
+  res.json(usuarios);
+});
+
+// Atualizar usuário (exceto senha)
+router.put('/:id', async (req, res) => {
+  try {
+    const { username, email, role, permittedModules } = req.body;
+    const usuarioAtualizado = await User.findByIdAndUpdate(
+      req.params.id,
+      { username, email, role, permittedModules },
+      { new: true }
+    );
+    res.json(usuarioAtualizado);
+  } catch (err) {
+    res.status(400).json({ error: 'Erro ao atualizar usuário', message: err.message });
+  }
+});
+
+// Alterar senha de usuário
+router.put('/:id/senha', async (req, res) => {
+  try {
+    const { password } = req.body;
+    const hashed = await bcrypt.hash(password, 10);
+    await User.findByIdAndUpdate(req.params.id, { password: hashed });
+    res.json({ message: 'Senha atualizada' });
+  } catch (err) {
+    res.status(500).json({ error: 'Erro ao atualizar senha', message: err.message });
+  }
+});
+
+export default router;

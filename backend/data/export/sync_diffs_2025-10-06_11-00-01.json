@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Vinicius Luiz Rezende",
+    "cnh": "05667388308",
+    "categoria": "Ad",
+    "emissao_cnh": "2012-10-14 00:00:00",
+    "validade_cnh": "2025-03-19 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)98055-5773",
+    "email": "rezendevluiz@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Camacho 160",
+    "complemento": "Bloco 10 Ap 502",
+    "bairro": "Santa Cruz",
+    "municipio": "Rio De Janeiro",
+    "cep": "23.575-100",
+    "banco": "077 – Banco Intermedium S.A.",
+    "agencia": "2306",
+    "conta": "2306504951950633",
+    "pix": "05436845711",
+    "data_nascimento": "1982-02-03 00:00:00",
+    "cpf": "054.368.457-11",
+    "rg": "11.663.426-2",
+    "estado_civil": "Casado(A)",
+    "filhos": "2",
+    "nome_familiar": "Iaponira Serafim Rezende",
+    "contato_familiar": "(21)96934-3826",
+    "indicado": "Robson Locar",
+    "observacao": "Motorista Locar Desde 2019",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/kxa666ffwz9nsizp98cyd/1759755557201_Vinicius-Luiz-Rezende-cnh_arquivo.jpg?rlkey=h0khs1573h0v3t308xwzjlf75&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/pqn2fkdr1ha3nh434hovy/1759755559151_Vinicius-Luiz-Rezende-comprovante_residencia.jpg?rlkey=e8jzcqwngrt61rr3f91shwg25&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/50n9q9wzsaz44xg2q2z0r/1759755561119_Vinicius-Luiz-Rezende-curriculo.jpg?rlkey=jberw91lat18c2d8de4293qoa&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/hupogbqcxes9gm43125hy/1759755562706_Vinicius-Luiz-Rezende-nada_consta.jpg?rlkey=zgua08ha5tr9wxcyk8yn2eork&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-06 12:59:25.358000",
+    "data_envio_local": "2025-10-06 09:59:25"
+  }
+]

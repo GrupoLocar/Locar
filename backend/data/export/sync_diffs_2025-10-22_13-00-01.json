@@ -1,0 +1,54 @@
+[
+  {
+    "nome": "Jairo Luiz Rosa Mauro",
+    "cnh": "05321340258",
+    "categoria": "B",
+    "emissao_cnh": "2011-10-07 00:00:00",
+    "validade_cnh": "2027-01-16 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)98916-0079",
+    "email": "jairoluizrosamauro1@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Doutor Noguchi",
+    "complemento": "69 Apt101",
+    "bairro": "Ramos",
+    "municipio": "Rio De Janeiro",
+    "cep": "21.060-420",
+    "banco": "260 – Nu Pagamentos S.A.",
+    "agencia": "5502",
+    "conta": "93150285",
+    "pix": "jlbarecia@gmail.com",
+    "data_nascimento": "1968-10-07 00:00:00",
+    "cpf": "000.928.427-39",
+    "rg": "08.901.009-4",
+    "estado_civil": "Divorciado(A)",
+    "filhos": "0",
+    "nome_familiar": "Maria Do Socorro Matos Maura",
+    "contato_familiar": "(21)99802-3242",
+    "indicado": "Karen",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/o1i547jlefns0ld7dvmsp/1761147251118_Jairo-Luiz-Rosa-Mauro-cnh_arquivo.pdf?rlkey=pcrw5xxq72r771fg2q0rwbwie&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/cwiyhg1ct9i9fp13ccdpe/1761147253022_Jairo-Luiz-Rosa-Mauro-comprovante_residencia.pdf?rlkey=hxueltzzspj31jfv8sn1dqyr1&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/f864o3ajvezg27ufi6zf2/1761147254792_Jairo-Luiz-Rosa-Mauro-curriculo.pdf?rlkey=jpaxjeqpalr37811k8fcymaks&dl=0"
+      ],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/3utg5gb7f6fzgkmpwsctv/1761147256310_Jairo-Luiz-Rosa-Mauro-nada_consta.pdf?rlkey=hawsyjapypvnpdbjxi2q1k0yr&dl=0"
+      ],
+      "comprovante_mei": [
+        "https://www.dropbox.com/scl/fi/uo1h6je6loosm0xdgz673/1761147257809_Jairo-Luiz-Rosa-Mauro-comprovante_mei.pdf?rlkey=dg945fb4rd272ffbhk4o8k8n9&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-22 15:34:20.606000",
+    "data_envio_local": "2025-10-22 12:34:20"
+  }
+]

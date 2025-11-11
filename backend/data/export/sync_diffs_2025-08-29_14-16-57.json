@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Marcio Rodrigues Barcellos",
+    "cnh": "01213995509",
+    "categoria": "Ab",
+    "emissao_cnh": "1994-08-12 00:00:00",
+    "validade_cnh": "2033-08-15 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97476-3763",
+    "email": "marcio.barcellos@outlook.com",
+    "sexo": "Masculino",
+    "profissao": "Analista De Negocios",
+    "endereco": "Rua Joaquim Teixeira Saraiva 115",
+    "complemento": "Casa",
+    "bairro": "Rocha",
+    "municipio": "Sao Goncalo",
+    "cep": "24.421-110",
+    "banco": "104 – Caixa EconÔMica Federal",
+    "agencia": "4143",
+    "conta": "000586925544-5",
+    "pix": "21974763763",
+    "data_nascimento": "1973-12-14 00:00:00",
+    "cpf": "022.279.437-26",
+    "rg": "09.971.995-7",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "0",
+    "nome_familiar": "Marcio Aurelio Barcellos",
+    "contato_familiar": "(21)98432-3935",
+    "indicado": "Ana Claudia",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/ruzelr3afi9mpq27s2ow9/1756487685353_Marcio-Rodrigues-Barcellos-cnh_arquivo.pdf?rlkey=tfh2brj4icf2otauswkofmhvn&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/fuc314w6jf7nzxs3jkug6/1756487687530_Marcio-Rodrigues-Barcellos-comprovante_residencia.png?rlkey=n93rp6kq4tu6oddtc922fkeyf&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/kf90vmdf3rdyhozykv44a/1756487689494_Marcio-Rodrigues-Barcellos-curriculo.pdf?rlkey=a4i7gf2qtf42m441d0hkrpuyo&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-08-29 17:14:52.268000",
+    "data_envio_local": "2025-08-29 14:14:52"
+  }
+]

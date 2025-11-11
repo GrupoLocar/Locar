@@ -1,0 +1,38 @@
+.logs-container {
+    padding: 30px;
+    background: linear-gradient(to bottom right, #f0f2f5, #e0e7ff);
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .logs-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logs-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logs-table th,
+  .logs-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .logs-table th {
+    background-color: #667eea;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .logs-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  

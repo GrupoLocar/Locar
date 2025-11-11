@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Francisco Carlos Santos Dias",
+    "cnh": "05044048350",
+    "categoria": "B",
+    "emissao_cnh": "2010-09-30 00:00:00",
+    "validade_cnh": "2032-09-25 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)96539-6588",
+    "email": "thiagosantos3545games@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Tecnico Computadores, Motorista B",
+    "endereco": "Avenida Estacio De Sa",
+    "complemento": "Lt 33 Qd 03 Numero 33",
+    "bairro": "Parque Novo Rio",
+    "municipio": "Sao Joao De Meriti",
+    "cep": "25.585-000",
+    "banco": "380 – Picpay InstituiÇãO De Pagamento S.A.",
+    "agencia": "0001",
+    "conta": "104954531-1 Conta Corrente",
+    "pix": "07224898627 cpf",
+    "data_nascimento": "1984-09-18 00:00:00",
+    "cpf": "072.248.986-27",
+    "rg": "30.138.641-3",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "0",
+    "nome_familiar": "Maria Arlete",
+    "contato_familiar": "(21)96539-6588",
+    "indicado": "000000000",
+    "observacao": "00000000",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/nnhck094kdimz4ups069g/1761250222730_Francisco-Carlos-Santos-Dias-cnh_arquivo.pdf?rlkey=szjjfpyirw7htz641n03bljfx&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/vsu71lpq6pk7gamxtdd2n/1761250224544_Francisco-Carlos-Santos-Dias-comprovante_residencia.pdf?rlkey=7ei8slev9cy4ntlgsh6zqnp4a&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/ho7fbsw784t3h0w3sl5em/1761250226079_Francisco-Carlos-Santos-Dias-curriculo.pdf?rlkey=2pxfeyc8ow1ux85zob45d5x8c&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/u0wlfeksq2sgbluh0566n/1761250227662_Francisco-Carlos-Santos-Dias-nada_consta.pdf?rlkey=xgssbs65080nx4sue6ojjed2b&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-23 20:10:30.262000",
+    "data_envio_local": "2025-10-23 17:10:30"
+  }
+]

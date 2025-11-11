@@ -1,0 +1,54 @@
+[
+  {
+    "nome": "Joao Carlos Duarte Da Costa",
+    "cnh": "03003578747",
+    "categoria": "D",
+    "emissao_cnh": "2003-08-28 00:00:00",
+    "validade_cnh": "2028-08-22 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)97338-6486",
+    "email": "maestrojoaocarlos@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista",
+    "endereco": "Rua Odilio Medeiros 220",
+    "complemento": "Casa 02",
+    "bairro": "Chatuba",
+    "municipio": "Mesquita",
+    "cep": "26.587-410",
+    "banco": "033 – Banco Santander (Brasil) S.A.",
+    "agencia": "3203",
+    "conta": "010901285",
+    "pix": "99fda5f8-22d9-4899-82cd-8dcfa06f8a8a",
+    "data_nascimento": "1970-07-05 00:00:00",
+    "cpf": "019.377.927-73",
+    "rg": "08.886.666-0",
+    "estado_civil": "Casado(A)",
+    "filhos": "3",
+    "nome_familiar": "Miriam Lima Da Costa",
+    "contato_familiar": "(21)97656-3004",
+    "indicado": "Amigo",
+    "observacao": "AtravÉS De Um Amigo Motorista De Uber Que Fez Uma Corrida A Um Dos Funcinarios Da Locar",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/d5laxyt67p9g5q450a3hm/1756164602520_Joao-Carlos-Duarte-Da-Costa-cnh_arquivo.pdf?rlkey=b4ghye6uy1627zj6ke3yxzbb9&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/hwlhzp92k3acwcwjl4fa2/1756164604766_Joao-Carlos-Duarte-Da-Costa-comprovante_residencia.pdf?rlkey=lhu9a04b356tu96hhf2hph9kt&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/9duym3tm7ppq6rflz0iwc/1756164606419_Joao-Carlos-Duarte-Da-Costa-curriculo.pdf?rlkey=sgvmz4yghj9ga288qo3wg04py&dl=0"
+      ],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/7yhja93e2cal1ru9e78b8/1756164608455_Joao-Carlos-Duarte-Da-Costa-nada_consta.pdf?rlkey=gjyk1tfyxiovvabmtfbwo8rz8&dl=0"
+      ],
+      "comprovante_mei": [
+        "https://www.dropbox.com/scl/fi/e04j1ae2iflj04uwynnc5/1756164610063_Joao-Carlos-Duarte-Da-Costa-comprovante_mei.pdf?rlkey=lv6czluruyurejlpbzgo5ld7e&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-08-25 23:30:12.810000",
+    "data_envio_local": "2025-08-25 20:30:12"
+  }
+]

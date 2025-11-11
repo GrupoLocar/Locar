@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Rafael Da Cruz Pereira",
+    "cnh": "05286477401",
+    "categoria": "B",
+    "emissao_cnh": "2011-08-26 00:00:00",
+    "validade_cnh": "2031-08-30 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(22)19943-6677",
+    "email": "leafarcruz06@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Nao Possuo",
+    "endereco": "Rua Natuba",
+    "complemento": "79",
+    "bairro": "Guadalupe",
+    "municipio": "Rio De Janeiro",
+    "cep": "21.660-510",
+    "banco": "380 – Picpay InstituiÇãO De Pagamento S.A.",
+    "agencia": "0001",
+    "conta": "94175736-6",
+    "pix": "21 994366774",
+    "data_nascimento": "1990-02-06 00:00:00",
+    "cpf": "127.475.417-89",
+    "rg": "11.282.468-9",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "1",
+    "nome_familiar": "Vania",
+    "contato_familiar": "(21)99115-1885",
+    "indicado": "Claudio",
+    "observacao": "",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/7ykd562tx8cbkjq9cqtqa/1760702788607_Rafael-Da-Cruz-Pereira-cnh_arquivo.jpg?rlkey=t5poayku54cxmuz742i311tit&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/uxidao1nka0cr1tyux16f/1760702790355_Rafael-Da-Cruz-Pereira-comprovante_residencia.pdf?rlkey=n96rtxzr33c1dhv2af4oygytc&dl=0"
+      ],
+      "nada_consta": [],
+      "comprovante_mei": [],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/lzmmm8pk9i3d52pdbuxh6/1760702791916_Rafael-Da-Cruz-Pereira-curriculo.pdf?rlkey=6z0df3rbt8yhvkyi65hbrgygr&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-10-17 12:06:34.595000",
+    "data_envio_local": "2025-10-17 09:06:34"
+  }
+]
