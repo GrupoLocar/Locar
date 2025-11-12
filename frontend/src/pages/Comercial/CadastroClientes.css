@@ -14,7 +14,7 @@
 
 /* Barra principal de filtro por texto (mantém o roxo) */
 .barra-filtro-texto {
-  background: #181893;
+  /* background: #181893; */
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -47,9 +47,9 @@
 
 /* Filtros Filial/Distrital (bloco claro com sombra leve) */
 .filtros-superiores {
-  background: linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%);
+  /* background: linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%); */
+  /* box-shadow: 0 2px 8px rgba(0,0,0,0.05); */
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -59,17 +59,19 @@
   margin-top: 10px;
   color: #222;
 }
+
 .filtro-bloco label {
   font-weight: 600;
   display: block;
   margin-bottom: 6px;
 }
+
 .filtro-bloco select {
   min-width: 160px;
   padding: 8px 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  background: #fff;
+  /* background: #fff; */
 }
 
 /* Subtítulos e containers */
@@ -80,10 +82,10 @@
 }
 
 .formulario-container {
-  background: linear-gradient(135deg, #f5f7fa, #e2eafc);
+  /* background: linear-gradient(135deg, #f5f7fa, #e2eafc); */
+  /* box-shadow: 0 4px 10px rgba(0,0,0,0.08); */
   padding: 0;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   color: #222;
 }
 
@@ -109,10 +111,10 @@
 
 /* Wrapper da tabela */
 .tabela-wrapper {
-  background: linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%);
+  /* background: linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%); */
+  /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* === Exportar abaixo do título da Tabela === */

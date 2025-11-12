@@ -43,7 +43,7 @@ const TabelaFuncionarios = ({ funcionarios, onEditar }) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
-    <div className="tabela-wrapper">
+    <div>
       <table className="tabela-funcionarios">
         <thead>
           <tr style={{ backgroundColor: '#181893', color: 'white' }}>
@@ -53,7 +53,7 @@ const TabelaFuncionarios = ({ funcionarios, onEditar }) => {
             <th>Idade</th>
             <th>Status CNH</th>
             <th>Dias CNH</th>
-            <th>Arquivos</th>
+            {/* <th>Arquivos</th> */}
             <th>Ações</th>
           </tr>
         </thead>
@@ -88,7 +88,7 @@ const TabelaFuncionarios = ({ funcionarios, onEditar }) => {
                     {status}
                   </td>
                   <td>{diasCNH}</td>
-                  <td>
+                  {/* <td>
                     {Object.entries(func.arquivos || {}).map(([tipo, lista]) =>
                       (lista || []).map((item, i) => {
                         const url = item.startsWith('http')
@@ -111,7 +111,7 @@ const TabelaFuncionarios = ({ funcionarios, onEditar }) => {
                         );
                       })
                     )}
-                  </td>
+                  </td> */}
                   <td>
                     <button
                       className="btnEditar"

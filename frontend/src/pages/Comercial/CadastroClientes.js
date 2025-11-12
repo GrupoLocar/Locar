@@ -289,7 +289,7 @@ const CadastroClientes = () => {
         </div>
       </div>
 
-      <div ref={anchorTabelaRef} className="tabela-wrapper">
+      <div ref={anchorTabelaRef}>
         <TabelaClientes
           clientes={clientes}
           onEditar={(c) => {

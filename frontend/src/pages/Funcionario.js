@@ -200,7 +200,7 @@ const Funcionario = () => {
       </div>
 
       <div style={{
-        background: 'linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%)',
+        // background: 'linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%)',
         borderRadius: '8px',
         boxShadow: '0 2px 8px rgba(0, 0, 0, 0.05)',
         display: 'flex',
@@ -250,11 +250,11 @@ const Funcionario = () => {
 
       <div ref={nomeRef}></div>
 
-      <div className="formulario-container" style={{
-        background: 'linear-gradient(135deg, #f5f7fa, #e2eafc)',
+      <div style={{
+      // <div className="formulario-container" style={{
+        // background: 'linear-gradient(135deg, #f5f7fa, #e2eafc)',
         padding: '0',
         borderRadius: '12px',
-        boxShadow: '0 4px 10px rgba(0, 0, 0, 0.08)'
       }}>
         <FormularioFuncionario
           ref={formularioRef}
@@ -287,7 +287,6 @@ const Funcionario = () => {
               top: '40px',
               left: '50%',
               transform: 'translateX(-50%)',
-              backgroundColor: '#f9f9f9',
               border: '1px solid #ccc',
               borderRadius: '12px',
               padding: '10px',
@@ -300,11 +299,8 @@ const Funcionario = () => {
         </div>
       </div>
 
-      <div className="tabela-wrapper" style={{
-        background: 'linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%)',
+      <div style={{
         padding: '20px',
-        borderRadius: '12px',
-        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
       }}>
         <TabelaFuncionarios
           funcionarios={funcionarios}

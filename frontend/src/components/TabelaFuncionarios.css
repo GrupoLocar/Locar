@@ -18,20 +18,20 @@
 /* Cores para o Status CNH */
 .status-cnh.vencido {
   /* background-color: #f44336; */
-  background-color: #add8e6;
+  /* background-color: #add8e6; */
   color: white;
   font-weight: bold;
 }
 
 .status-cnh.vencer {
   /* background-color: #ffcc00; */
-  background-color: #add8e6;
+  /* background-color: #add8e6; */
   color: black;
   font-weight: bold;
 }
 
 .status-cnh.prazo {
-  background-color: #add8e6;
+  /* background-color: #add8e6; */
   /* Azul Claro */
   color: black;
   font-weight: bold;
