@@ -1,16 +1,17 @@
+// src/pages/Comercial/CadastroPedidosPSL.js
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import './CadastroPedidosPSL.css';
 import axios from 'axios';
 import FormularioPedidosPSL from '../../components/comercial/FormularioPedidosPSL';
 import TabelaPedidosPSL from '../../components/comercial/TabelaPedidosPSL';
 import { OCORRENCIA_PSL } from '../../utils/FormUtilsComercial';
+import * as XLSX from 'xlsx';
+import Papa from 'papaparse';
 
-// ==== Base API (mesma estratégia usada em Filiais) ====
 const RAW = (process.env.REACT_APP_API_URL || (typeof window !== 'undefined' ? window.location.origin : '')).replace(/\/+$/, '');
 const API_ROOT = RAW || '';
 const API = `${API_ROOT}${/\/api$/.test(API_ROOT) ? '' : '/api'}`;
 
-// util
 const stripAccents = (s = '') =>
   s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ç/gi, 'c');
 const firstUpperRestLower = (s = '') =>
@@ -21,17 +22,15 @@ export default function CadastroPedidosPSL() {
   const [filiaisBase, setFiliaisBase] = useState([]);
   const [filtro, setFiltro] = useState('');
   const [pslSelecionado, setPslSelecionado] = useState(null);
-
-  // filtros
   const [dataDe, setDataDe] = useState('');
   const [dataAte, setDataAte] = useState('');
   const [filialFiltro, setFilialFiltro] = useState('Todos');
   const [distritalFiltro, setDistritalFiltro] = useState('Todos');
   const [ocorrenciaFiltro, setOcorrenciaFiltro] = useState('Todos');
+  const [exportOpen, setExportOpen] = useState(false);
 
   const formularioRef = useRef(null);
 
-  // === opções de ocorrência (label para exibição, value normalizado p/ filtro & banco)
   const ocorrenciaOptions = useMemo(() => {
     return [...OCORRENCIA_PSL]
       .map((label) => ({
@@ -41,14 +40,10 @@ export default function CadastroPedidosPSL() {
       .sort((a, b) => a.label.localeCompare(b.label, 'pt-BR'));
   }, []);
 
-  // Carregar filiais com mesma robustez dos componentes de Filial
   const fetchFiliais = async () => {
     try {
-      // 1ª tentativa
       let url = `${API}/filiais`;
       let resp = await fetch(url);
-
-      // fallback (caso base já inclua /api, etc.)
       if (!resp.ok && resp.status === 404) {
         const alt = `${API_ROOT || ''}/api/filiais`;
         if (alt !== url) resp = await fetch(alt);
@@ -63,16 +58,16 @@ export default function CadastroPedidosPSL() {
     }
   };
 
-  useEffect(() => { fetchFiliais(); }, []); // carrega filiais ao iniciar
+  useEffect(() => { fetchFiliais(); }, []);
 
   const filiaisOptions = useMemo(() => {
     const set = new Set((filiaisBase || []).map(f => (f?.filial || '').trim()).filter(Boolean));
-    return ['Todos', ...Array.from(set).sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' }))];
+    return ['Todos', ...Array.from(set).sort((a, b) => a.localeCompare(b, 'pt-BR'))];
   }, [filiaisBase]);
 
   const distritaisOptions = useMemo(() => {
     const set = new Set((filiaisBase || []).map(f => (f?.distrital || '').trim()).filter(Boolean));
-    return ['Todos', ...Array.from(set).sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' }))];
+    return ['Todos', ...Array.from(set).sort((a, b) => a.localeCompare(b, 'pt-BR'))];
   }, [filiaisBase]);
 
   const buscar = async (params = {}) => {
@@ -89,12 +84,11 @@ export default function CadastroPedidosPSL() {
     setItens(Array.isArray(data) ? data : []);
   };
 
-  useEffect(() => { buscar({}); }, []); // inicial
+  useEffect(() => { buscar({}); }, []);
 
   const scrollToTabela = () => document.getElementById('tabela-psl')?.scrollIntoView({ behavior: 'smooth' });
   const scrollToFormulario = () => document.getElementById('form-psl')?.scrollIntoView({ behavior: 'smooth' });
 
-  // Helper: aplica filtros com ou sem scroll
   const aplicarFiltros = async (opts = { scroll: true }) => {
     await buscar({
       q: filtro || undefined,
@@ -109,7 +103,6 @@ export default function CadastroPedidosPSL() {
 
   const handleFiltrar = async () => aplicarFiltros({ scroll: true });
 
-  // Limpar todos os filtros sem rolar para a tabela
   const limparTodosFiltros = async () => {
     setFiltro('');
     setDataDe('');
@@ -118,7 +111,6 @@ export default function CadastroPedidosPSL() {
     setDistritalFiltro('Todos');
     setOcorrenciaFiltro('Todos');
     await buscar({});
-    // sem scroll
   };
 
   const onAutoFiltro = async (novo) => {
@@ -139,22 +131,53 @@ export default function CadastroPedidosPSL() {
     setTimeout(() => formularioRef.current?.preencher(registro), 50);
   };
 
-  // Após salvar: atualiza a tabela SEM rolar a tela
   const onSaved = async () => { await aplicarFiltros({ scroll: false }); };
+
+  // ---------- EXPORTAÇÃO ----------
+  const prepararDadosExportacao = () => {
+    if (!Array.isArray(itens) || itens.length === 0) return null;
+    return itens.map(({ _id, createdAt, updatedAt, __v, ...rest }) => rest);
+  };
+
+  const exportarPedidosCSV = () => {
+    const dados = prepararDadosExportacao();
+    if (!dados) return window.alert('Nenhum dado disponível para exportar.');
+
+    const csv = Papa.unparse(dados);
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.setAttribute('download', 'psl_pedidos.csv');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const exportarPedidosXLSX = () => {
+    const dados = prepararDadosExportacao();
+    if (!dados) return window.alert('Nenhum dado disponível para exportar.');
+
+    const worksheet = XLSX.utils.json_to_sheet(dados);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'PSL');
+    XLSX.writeFile(workbook, 'psl_pedidos.xlsx');
+  };
 
   return (
     <div className="pagina-cadastro-psl">
-      {/* Título */}
       <h1 className="titulo-pagina">📑 PSL (Pedidos sem Loc)</h1>
 
-      {/* Barra principal (igual ao padrão fornecido) */}
-      <div style={{
-        background: '#181893',
-        padding: '30px',
-        display: 'flex',
-        justifyContent: 'center',
-        gap: '10px'
-      }}>
+      {/* BARRA SUPERIOR CORRIGIDA COM BORDER-RADIUS */}
+      <div
+        style={{
+          background: '#181893',
+          padding: '30px',
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '10px',
+          borderRadius: '12px'
+        }}
+      >
         <input
           style={{ width: '300px' }}
           type="text"
@@ -164,7 +187,6 @@ export default function CadastroPedidosPSL() {
         />
         <button className="botao" onClick={handleFiltrar}>Filtrar</button>
         <button className="botao" onClick={limparTodosFiltros}>Limpar Filtro</button>
-        {/* <button className="botao" onClick={handleImport}>Importar</button> */}
         <button
           className="botao"
           onClick={() => {
@@ -176,27 +198,18 @@ export default function CadastroPedidosPSL() {
         </button>
       </div>
 
-      {/* Filtros (centralizados e com mesmo fundo de .filtros-superiores) */}
+      {/* FILTROS SUPERIORES */}
       <div className="filtros-superiores filtros-psl">
-        {/* Período */}
         <div className="filtro-bloco">
           <label>De</label>
-          <input
-            type="date"
-            value={dataDe}
-            onChange={(e) => setDataDe(e.target.value)}
-          />
-        </div>
-        <div className="filtro-bloco">
-          <label>Até</label>
-          <input
-            type="date"
-            value={dataAte}
-            onChange={(e) => setDataAte(e.target.value)}
-          />
+          <input type="date" value={dataDe} onChange={(e) => setDataDe(e.target.value)} />
         </div>
 
-        {/* Filial */}
+        <div className="filtro-bloco">
+          <label>Até</label>
+          <input type="date" value={dataAte} onChange={(e) => setDataAte(e.target.value)} />
+        </div>
+
         <div className="filtro-bloco">
           <label>Filial</label>
           <select
@@ -208,11 +221,12 @@ export default function CadastroPedidosPSL() {
               else onAutoFiltro({ filial: val });
             }}
           >
-            {filiaisOptions.map(x => <option key={x} value={stripAccents(x)}>{x}</option>)}
+            {filiaisOptions.map(x => (
+              <option key={x} value={stripAccents(x)}>{x}</option>
+            ))}
           </select>
         </div>
 
-        {/* Distrital */}
         <div className="filtro-bloco">
           <label>Distrital</label>
           <select
@@ -224,17 +238,18 @@ export default function CadastroPedidosPSL() {
               else onAutoFiltro({ distrital: firstUpperRestLower(stripAccents(val)) });
             }}
           >
-            {distritaisOptions.map(x => <option key={x} value={x}>{x}</option>)}
+            {distritaisOptions.map(x => (
+              <option key={x} value={x}>{x}</option>
+            ))}
           </select>
         </div>
 
-        {/* Ocorrência PSL */}
         <div className="filtro-bloco">
           <label>Ocorrência</label>
           <select
             value={ocorrenciaFiltro}
             onChange={(e) => {
-              const val = e.target.value; // já vem normalizado nas options
+              const val = e.target.value;
               setOcorrenciaFiltro(val);
               if (/^tod(a|o)s?$/i.test(val)) limparTodosFiltros();
               else onAutoFiltro({ ocorrencia_psl: val });
@@ -248,8 +263,8 @@ export default function CadastroPedidosPSL() {
         </div>
       </div>
 
-      {/* Formulário (mesmo visual do form-filial) */}
-      <div id="form-psl" className="formulario-container-psl">
+      {/* FORMULÁRIO */}
+      <div id="form-psl">
         <FormularioPedidosPSL
           ref={formularioRef}
           filiais={filiaisBase}
@@ -257,16 +272,26 @@ export default function CadastroPedidosPSL() {
         />
       </div>
 
-      {/* Título + Tabela */}
-      <div className="cabecalho-tabela">
-        <h2 className="subtitulo">Tabela de Pedidos Sem Loc</h2>
+      {/* EXPORTAR */}
+      <div className="exportar-container">
+        <div className="exportar-dropdown">
+          <button className="botao" onClick={() => setExportOpen(v => !v)}>
+            Exportar ▾
+          </button>
+          {exportOpen && (
+            <div className="exportar-menu">
+              <button className="botao" onClick={exportarPedidosCSV}>Exportar .CSV</button><br />
+              <button className="botao" onClick={exportarPedidosXLSX}>Exportar .XLSX</button>
+            </div>
+          )}
+        </div>
       </div>
 
-      <div id="tabela-psl" className="tabela-wrapper">
+      {/* TABELA */}
+      <div id="tabela-psl">
         <TabelaPedidosPSL itens={itens} onEdit={onEdit} />
       </div>
 
-      {/* Voltar ao topo */}
       <button
         type="button"
         className="btn-voltar-topo"

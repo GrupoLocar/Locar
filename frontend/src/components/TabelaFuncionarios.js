@@ -46,15 +46,15 @@ const TabelaFuncionarios = ({ funcionarios, onEditar }) => {
     <div>
       <table className="tabela-funcionarios">
         <thead>
-          <tr style={{ backgroundColor: '#181893', color: 'white' }}>
-            <th style={{ width: 500 }}>Nome</th>
-            <th>Situação</th>
-            <th style={{ width: 150 }}>Telefone</th>
-            <th>Idade</th>
-            <th>Status CNH</th>
-            <th>Dias CNH</th>
-            {/* <th>Arquivos</th> */}
-            <th>Ações</th>
+          <tr style={{ backgroundColor: '#181893', color: 'white', width: '100%' }}>
+            <th style={{ fontSize: '16px', width: 500 }}>Nome</th>
+            <th style={{ fontSize: '16px', width: 300 }}>Cidade</th>
+            <th style={{ fontSize: '16px' }}>Situação</th>
+            <th style={{ fontSize: '16px', width: 150 }}>Telefone</th>
+            <th style={{ fontSize: '16px' }}>Idade</th>
+            <th style={{ fontSize: '16px' }}>Status CNH</th>
+            <th style={{ fontSize: '16px' }}>Dias CNH</th>
+            <th style={{ fontSize: '16px' }}>Ações</th>
           </tr>
         </thead>
 
@@ -69,6 +69,7 @@ const TabelaFuncionarios = ({ funcionarios, onEditar }) => {
               return (
                 <tr key={func._id}>
                   <td>{func.nome}</td>
+                  <td>{func.municipio}</td>
                   <td>{func.situacao}</td>
                   <td>{func.telefone}</td>
                   <td>{idade}</td>
@@ -87,31 +88,7 @@ const TabelaFuncionarios = ({ funcionarios, onEditar }) => {
                   >
                     {status}
                   </td>
-                  <td>{diasCNH}</td>
-                  {/* <td>
-                    {Object.entries(func.arquivos || {}).map(([tipo, lista]) =>
-                      (lista || []).map((item, i) => {
-                        const url = item.startsWith('http')
-                          ? item
-                          : `${process.env.REACT_APP_API_URL}/uploads/${item}`;
-                        const nomeExibicao = item.startsWith('http')
-                          ? decodeURIComponent(item.split('/').pop().split('?')[0])
-                          : item;
-
-                        return (
-                          <a
-                            key={i}
-                            href={url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ display: 'block' }}
-                          >
-                            {tipo.replace('_', ' ')} - {nomeExibicao}
-                          </a>
-                        );
-                      })
-                    )}
-                  </td> */}
+                  <td>{diasCNH}</td>              
                   <td>
                     <button
                       className="btnEditar"

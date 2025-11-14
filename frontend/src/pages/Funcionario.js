@@ -1,6 +1,6 @@
+// src/pages/Funcionario.js
 import React, { useRef, useEffect, useState } from 'react';
 import axios from 'axios';
-import Swal from 'sweetalert2';
 import FormularioFuncionario from '../components/FormularioFuncionario';
 import TabelaFuncionarios from '../components/TabelaFuncionarios';
 import SituacaoFuncionario from '../components/SituacaoFuncionario';
@@ -23,10 +23,45 @@ const Funcionario = () => {
   const [categoriaSelecionada, setCategoriaSelecionada] = useState(null);
   const [exportOpen, setExportOpen] = useState(false);
   const [funcionarioSelecionado, setFuncionarioSelecionado] = useState(null);
+  const [mostrarPainelFiltros, setMostrarPainelFiltros] = useState(false);
+  const [mostrarFormulario, setMostrarFormulario] = useState(false);
+
+  // helper para campos booleanos tipo PJ/MEI
+  const isMarcado = (valor) => {
+    if (valor === true) return true;
+    if (typeof valor === 'string') {
+      const v = valor.trim().toLowerCase();
+      return v === 'true' || v === 'sim' || v === '1';
+    }
+    if (typeof valor === 'number') {
+      return valor === 1;
+    }
+    return false;
+  };
+
+  const isMeiFuncionario = (f) => {
+    if (!f) return false;
+    if (isMarcado(f.mei)) return true;
+
+    // considera qualquer contrato que contenha "mei" (ex.: "Mei", "MEI", "MEI PJ", etc.)
+    const contratoNorm = (f.contrato ?? '')
+      .toString()
+      .trim()
+      .toLowerCase();
+
+    return contratoNorm.includes('mei');
+  };
 
   const fetchData = () => {
-    axios.get(`${process.env.REACT_APP_API_URL}/api/funcionarios/`)
-      .then(res => setFuncionarios(res.data))
+    axios
+      .get(`${process.env.REACT_APP_API_URL}/api/funcionarios/`)
+      .then((res) => {
+        const normalizados = (res.data || []).map((f) => ({
+          ...f,
+          mei: isMeiFuncionario(f),
+        }));
+        setFuncionarios(normalizados);
+      })
       .catch(console.error);
   };
 
@@ -37,15 +72,38 @@ const Funcionario = () => {
   useEffect(() => {
     const aplicarFiltrosLocais = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/funcionarios`);
-        let lista = res.data;
+        const res = await axios.get(
+          `${process.env.REACT_APP_API_URL}/api/funcionarios`
+        );
+
+        let lista = (res.data || []).map((f) => ({
+          ...f,
+          mei: isMeiFuncionario(f),
+        }));
 
         if (situacaoSelecionada) {
-          lista = lista.filter(f => f.situacao === situacaoSelecionada);
+          const sitNorm = situacaoSelecionada
+            .toString()
+            .trim()
+            .toLowerCase();
+
+          if (sitNorm === 'pj') {
+            lista = lista.filter((f) => isMarcado(f.pj));
+          } else if (sitNorm === 'mei') {
+            lista = lista.filter((f) => isMeiFuncionario(f));
+          } else {
+            lista = lista.filter(
+              (f) =>
+                (f.situacao ?? '')
+                  .toString()
+                  .trim()
+                  .toLowerCase() === sitNorm
+            );
+          }
         }
 
         if (categoriaSelecionada) {
-          lista = lista.filter(f => f.categoria === categoriaSelecionada);
+          lista = lista.filter((f) => f.categoria === categoriaSelecionada);
         }
 
         if (statusSelecionado) {
@@ -59,11 +117,12 @@ const Funcionario = () => {
             return 'Prazo';
           };
 
-          lista = lista.filter(f => calcularStatusCNH(f.validade_cnh) === statusSelecionado);
+          lista = lista.filter(
+            (f) => calcularStatusCNH(f.validade_cnh) === statusSelecionado
+          );
         }
 
         setFuncionarios(lista);
-
       } catch (error) {
         console.error('Erro ao aplicar filtros locais:', error);
       }
@@ -83,10 +142,19 @@ const Funcionario = () => {
   const handleFiltrar = async () => {
     try {
       const response = await axios.get(
-        `${process.env.REACT_APP_API_URL}/api/funcionarios/filtro?busca=${encodeURIComponent(filtro)}`
+        `${process.env.REACT_APP_API_URL}/api/funcionarios/filtro?busca=${encodeURIComponent(
+          filtro
+        )}`
       );
-      setFuncionarios(response.data);
-      setTimeout(() => tabelaRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
+      const normalizados = (response.data || []).map((f) => ({
+        ...f,
+        mei: isMeiFuncionario(f),
+      }));
+      setFuncionarios(normalizados);
+      setTimeout(
+        () => tabelaRef.current?.scrollIntoView({ behavior: 'smooth' }),
+        100
+      );
     } catch (error) {
       alert('Erro ao filtrar dados.');
     }
@@ -94,13 +162,43 @@ const Funcionario = () => {
 
   // ---------- AJUSTES DE EXPORTAÇÃO ----------
   const CAMPOS_ORDEM = [
-    'nome', 'profissao', 'sexo', 'situacao', 'contrato', 'pj',
-    'data_nascimento', 'data_admissao', 'data_demissao', 'dataUltimoServicoPrestado',
-    'telefone', 'endereco', 'complemento', 'bairro', 'municipio', 'estado', 'cep',
-    'banco', 'agencia', 'conta', 'pix', 'email', 'cpf', 'rg', 'estado_civil', 'filhos',
-    'cnh', 'categoria', 'emissao_cnh', 'validade_cnh',
-    'indicado', 'nome_familiar', 'contato_familiar', 'observacao',
-    'updatedAt', 'data_envio_utc', 'data_envio_local',
+    'nome',
+    'profissao',
+    'sexo',
+    'situacao',
+    'contrato',
+    'pj',
+    'data_nascimento',
+    'data_admissao',
+    'data_demissao',
+    'dataUltimoServicoPrestado',
+    'telefone',
+    'endereco',
+    'complemento',
+    'bairro',
+    'municipio',
+    'estado',
+    'cep',
+    'banco',
+    'agencia',
+    'conta',
+    'pix',
+    'email',
+    'cpf',
+    'rg',
+    'estado_civil',
+    'filhos',
+    'cnh',
+    'categoria',
+    'emissao_cnh',
+    'validade_cnh',
+    'indicado',
+    'nome_familiar',
+    'contato_familiar',
+    'observacao',
+    'updatedAt',
+    'data_envio_utc',
+    'data_envio_local',
   ];
 
   const CAMPOS_DATA_BR = new Set([
@@ -109,7 +207,7 @@ const Funcionario = () => {
     'data_admissao',
     'data_demissao',
     'dataUltimoServicoPrestado',
-    'emissao_cnh'
+    'emissao_cnh',
   ]);
 
   const formatDateBR = (v) => {
@@ -134,7 +232,7 @@ const Funcionario = () => {
     return lista
       .slice()
       .sort((a, b) => (a.nome ?? '').localeCompare(b.nome ?? ''))
-      .map(f => CAMPOS_ORDEM.map(k => mapValorCampo(k, f)));
+      .map((f) => CAMPOS_ORDEM.map((k) => mapValorCampo(k, f)));
   };
 
   const exportarCSV = () => {
@@ -145,7 +243,7 @@ const Funcionario = () => {
     const rows = prepararLinhasOrdenadas(funcionarios);
     const csv = Papa.unparse({
       fields: CAMPOS_ORDEM,
-      data: rows
+      data: rows,
     });
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
     const link = document.createElement('a');
@@ -162,25 +260,29 @@ const Funcionario = () => {
       return;
     }
     const rows = prepararLinhasOrdenadas(funcionarios);
-    const aoa = [CAMPOS_ORDEM, ...rows]; // header + data
+    const aoa = [CAMPOS_ORDEM, ...rows];
     const worksheet = XLSX.utils.aoa_to_sheet(aoa);
     const workbook = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(workbook, worksheet, 'Funcionários');
     XLSX.writeFile(workbook, 'funcionarios.xlsx');
   };
-  // ---------- FIM DOS AJUSTES ----------
 
   return (
     <div className="pagina-cadastro-funcionario">
       <h1 style={{ textAlign: 'center' }}>🧑‍💼Cadastro de Funcionários</h1>
 
-      <div style={{
-        background: '#181893',
-        padding: '30px',
-        display: 'flex',
-        justifyContent: 'center',
-        gap: '10px'
-      }}>
+      {/* BARRA AZUL COM FILTRO, NOVO, ÍCONE E EXPORTAR */}
+      <div
+        style={{
+          background: '#181893',
+          padding: '30px',
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '10px',
+          borderRadius: '12px',
+          alignItems: 'center',
+        }}
+      >
         <input
           style={{ width: '300px' }}
           type="text"
@@ -188,125 +290,169 @@ const Funcionario = () => {
           value={filtro}
           onChange={(e) => setFiltro(e.target.value)}
         />
-        <button className="botao" onClick={handleFiltrar}>Filtrar</button>
-        <button className="botao" onClick={limparTodosFiltros}>Limpar Filtro</button>
-        {/* <button className="botao" onClick={handleImport}>Importar</button> */}
-        <button className="botao" onClick={() => {
-          setFuncionarioSelecionado(null);
-          setTimeout(() => formularioRef.current?.dispararNovo(), 100);
-        }}>
+        <button className="botao" onClick={handleFiltrar}>
+          Filtrar
+        </button>
+        <button className="botao" onClick={limparTodosFiltros}>
+          Limpar Filtro
+        </button>
+        <button
+          className="botao"
+          onClick={() => {
+            setFuncionarioSelecionado(null);
+            setMostrarFormulario(true);
+            setTimeout(() => formularioRef.current?.dispararNovo(), 100);
+          }}
+        >
           Novo
         </button>
-      </div>
 
-      <div style={{
-        // background: 'linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%)',
-        borderRadius: '8px',
-        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.05)',
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-        alignItems: 'start',
-        gap: '30px',
-        padding: '10px',
-      }}>
-        <SituacaoFuncionario
-          funcionarios={funcionarios}
-          onFiltrarSituacao={(situacao) => {
-            // toggle somente a situação
-            setSituacaoSelecionada(prev => (prev === situacao ? null : situacao));
-            // rolar para a tabela quando aplicar algum valor
-            if (situacaoSelecionada !== situacao) {
-              setTimeout(() => tabelaRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
-            }
-          }}
-          situacaoSelecionada={situacaoSelecionada}
+        {/* ÍCONE DO FILTRO (MOSTRA/OCULTA QUADROS DE SITUAÇÃO/STATUS/CATEGORIA) */}
+        <img
+          src="/filtro.png"
+          alt="Mostrar/ocultar filtros avançados"
+          style={{ width: '40px', height: '40px', cursor: 'pointer' }}
+          onClick={() => setMostrarPainelFiltros((prev) => !prev)}
         />
 
-        <StatusCNH
-          funcionarios={funcionarios}
-          onFiltrarStatusCNH={(status) => {
-            // toggle somente o status
-            setStatusSelecionado(prev => (prev === status ? null : status));
-            if (statusSelecionado !== status) {
-              setTimeout(() => tabelaRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
-            }
-          }}
-          statusSelecionado={statusSelecionado}
-        />
-
-        <CategoriaCNH
-          onFiltrarCategoria={(categoria) => {
-            // toggle somente a categoria
-            setCategoriaSelecionada(prev => (prev === categoria ? null : categoria));
-            if (categoriaSelecionada !== categoria) {
-              setTimeout(() => tabelaRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
-            }
-          }}
-          categoriaSelecionada={categoriaSelecionada}
-        />
-
-      </div>
-
-      <div ref={nomeRef}></div>
-
-      <div style={{
-      // <div className="formulario-container" style={{
-        // background: 'linear-gradient(135deg, #f5f7fa, #e2eafc)',
-        padding: '0',
-        borderRadius: '12px',
-      }}>
-        <FormularioFuncionario
-          ref={formularioRef}
-          funcionario={funcionarioSelecionado}
-          onNovo={() => setFuncionarioSelecionado(null)}
-          onSalvar={() => {
-            fetchData();
-            setFuncionarioSelecionado(null);
-          }}
-        />
-      </div>
-
-      <h1 style={{ marginTop: '50px', textAlign: 'center' }}>Tabela de Funcionários</h1>
-
-      <div style={{
-        marginTop: '20px',
-        marginBottom: '20px',
-        display: 'flex',
-        justifyContent: 'center',
-        gap: '20px',
-        position: 'relative'
-      }}>
-        <div style={{ position: 'relative' }}>
-          <button className="botao" ref={tabelaRef} onClick={() => setExportOpen(!exportOpen)}>
-            Exportar Tabela
-          </button>
-          {exportOpen && (
-            <div style={{
-              position: 'absolute',
-              top: '40px',
-              left: '50%',
-              transform: 'translateX(-50%)',
-              border: '1px solid #ccc',
-              borderRadius: '12px',
-              padding: '10px',
-              zIndex: 999
-            }}>
-              <button className="botao" onClick={exportarCSV}>Exportar CSV</button><br />
-              <button className="botao" onClick={exportarXLSX}>Exportar XLSX</button>
-            </div>
-          )}
+        {/* BOTÃO EXPORTAR AO LADO DO FILTRO, COM AS MESMAS CLASSES DE ESTILIZAÇÃO */}
+        <div className="exportar-container" style={{ marginBottom: 0 }}>
+          <div className="exportar-dropdown">
+            <button
+              className="botao"
+              ref={tabelaRef}
+              onClick={() => setExportOpen((v) => !v)}
+            >
+              Exportar ▾
+            </button>
+            {exportOpen && (
+              <div className="exportar-menu">
+                <button className="botao" onClick={exportarCSV}>
+                  Exportar .CSV
+                </button>
+                <br />
+                <button className="botao" onClick={exportarXLSX}>
+                  Exportar .XLSX
+                </button>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
-      <div style={{
-        padding: '20px',
-      }}>
+      {/* QUADROS DE SITUAÇÃO / STATUS / CATEGORIA – INICIAM OCULTOS E SÃO CONTROLADOS PELO ÍCONE */}
+      {mostrarPainelFiltros && (
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            alignItems: 'start',
+            gap: '30px',
+            padding: '10px',
+          }}
+        >
+          <SituacaoFuncionario
+            funcionarios={funcionarios}
+            onFiltrarSituacao={(situacao) => {
+              setSituacaoSelecionada((prev) =>
+                prev === situacao ? null : situacao
+              );
+              if (situacaoSelecionada !== situacao) {
+                setTimeout(
+                  () =>
+                    tabelaRef.current?.scrollIntoView({
+                      behavior: 'smooth',
+                    }),
+                  100
+                );
+              }
+            }}
+            situacaoSelecionada={situacaoSelecionada}
+          />
+
+          <StatusCNH
+            funcionarios={funcionarios}
+            onFiltrarStatusCNH={(status) => {
+              setStatusSelecionado((prev) =>
+                prev === status ? null : status
+              );
+              if (statusSelecionado !== status) {
+                setTimeout(
+                  () =>
+                    tabelaRef.current?.scrollIntoView({
+                      behavior: 'smooth',
+                    }),
+                  100
+                );
+              }
+            }}
+            statusSelecionado={statusSelecionado}
+          />
+
+          <CategoriaCNH
+            onFiltrarCategoria={(categoria) => {
+              setCategoriaSelecionada((prev) =>
+                prev === categoria ? null : categoria
+              );
+              if (categoriaSelecionada !== categoria) {
+                setTimeout(
+                  () =>
+                    tabelaRef.current?.scrollIntoView({
+                      behavior: 'smooth',
+                    }),
+                  100
+                );
+              }
+            }}
+            categoriaSelecionada={categoriaSelecionada}
+          />
+        </div>
+      )}
+
+      <div ref={nomeRef}></div>
+
+      {/* FORMULÁRIO – começa oculto, aparece no botão NOVO e some após Salvar ou Cancelar */}
+      <div
+        style={{
+          padding: '0',
+          borderRadius: '12px',
+          display: mostrarFormulario ? 'block' : 'none',
+        }}
+      >
+        <FormularioFuncionario
+          ref={formularioRef}
+          funcionario={funcionarioSelecionado}
+          onNovo={() => {
+            setFuncionarioSelecionado(null);
+          }}
+          onSalvar={() => {
+            fetchData();
+            setFuncionarioSelecionado(null);
+            setMostrarFormulario(false);
+          }}
+          onCancelar={() => {
+            setFuncionarioSelecionado(null);
+            setMostrarFormulario(false);
+          }}
+        />
+      </div>
+
+      {/* TABELA */}
+      <div
+        style={{
+          padding: '0px',
+        }}
+      >
         <TabelaFuncionarios
           funcionarios={funcionarios}
           onEditar={(func) => {
             setFuncionarioSelecionado(func);
-            setTimeout(() => nomeRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
+            setMostrarFormulario(true);
+            setTimeout(
+              () => nomeRef.current?.scrollIntoView({ behavior: 'smooth' }),
+              100
+            );
           }}
         />
       </div>

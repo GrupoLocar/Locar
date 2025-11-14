@@ -1,117 +1,136 @@
-/* Página PSL – alinhada ao look&feel de CadastroFilial */
-.pagina-cadastro-psl {
-    min-height: 100vh;
-    padding: 20px;
-    color: #fff;
-  }
-  
-  .titulo-pagina {
-    text-align: center;
-    margin: 0 0 10px;
-    color: #000;
-    font-size: 28px;
-    font-weight: 700;
-  }
-  
-  /* mesmo visual dos filtros superiores da página de Filial */
-  .filtros-superiores {
-    background: linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%);
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 10px;
-    margin-top: 10px;
-    color: #222;
-  }
-  
-  .filtro-bloco label {
-    font-weight: 600;
-    display: block;
-    margin-bottom: 6px;
-  }
-  .filtro-bloco select,
-  .filtro-bloco input {
-    min-width: 160px;
-    padding: 8px 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background: #fff;
-  }
-  
-  /* reusa o “botao” do módulo */
-  .botao{
-    font-weight: bold;
-    background-color: #FF6700;
-    color: #FFFFFF;
-    border-radius: 12px;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
-  }
-  .botao:hover {
-    background-color: #FCDE0B;
-    color: #FFFFFF;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  /* container do formulário – estilo similar ao módulo Filial */
-  .formulario-container-psl {
-    background: linear-gradient(135deg, #f5f7fa, #e2eafc);
-    padding: 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    color: #222;
-    margin-top: 12px;
-  }
-  
-  /* Cabeçalho central da tabela */
-  .cabecalho-tabela {
-    position: relative;
-    margin-top: 28px;
-    min-height: 44px;
-  }
-  .cabecalho-tabela .subtitulo {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    color: #000;
-    font-size: 28px;
-    font-weight: 700;
-    text-align: center;
-  }
-  
-  /* Wrapper da tabela */
-  .tabela-wrapper {
-    background: linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  
-  /* Botão flutuante topo */
-  .btn-voltar-topo {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    border: none;
-    background: transparent;
-    padding: 0;
-    cursor: pointer;
-    z-index: 1000;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,.25));
-  }
-  .btn-voltar-topo img {
-    width: 56px;
-    height: 56px;
-    display: block;
-  }
-  .btn-voltar-topo:hover img {
-    transform: translateY(-2px);
-    transition: transform .2s ease;
-  }
+/* .pagina-cadastro-psl {
+  min-height: 100vh;
+  padding: 20px;
+  color: #fff;
+} */
+
+.titulo-pagina {
+  text-align: center;
+  margin: 0 0 10px;
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.filtros-superiores {
+  background: linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  color: #222;
+}
+
+.filtro-bloco label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+.filtro-bloco select,
+.filtro-bloco input {
+  min-width: 160px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.botao{
+  font-weight: bold;
+  background-color: #FF6700;
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+.botao:hover {
+  background-color: #FCDE0B;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #FFFFFF;
+}
+
+.formulario-container-psl {
+  background: linear-gradient(135deg, #f5f7fa, #e2eafc);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 0;
+  border-radius: 12px;
+  color: #222;
+  margin-top: 12px;
+}
+
+.cabecalho-tabela {
+  position: relative;
+  margin-top: 28px;
+  min-height: 44px;
+}
+.cabecalho-tabela .subtitulo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tabela-wrapper {
+  background: linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.btn-voltar-topo {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1000;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.25));
+}
+.btn-voltar-topo img {
+  width: 56px;
+  height: 56px;
+  display: block;
+}
+.btn-voltar-topo:hover img {
+  transform: translateY(-2px);
+  transition: transform .2s ease;
+}
+
+.exportar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.exportar-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.exportar-menu {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 10px;
+  z-index: 999;
+  min-width: 200px;
+  text-align: center;
+  background: #fff;
+}

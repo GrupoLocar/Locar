@@ -131,43 +131,20 @@ export default function TabelaPedidosPSL({ itens = [], onEdit }) {
 
   return (
     <div>
-      {/* Botão Exportar no mesmo formato da tabela de Filiais */}
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 10, position: 'relative' }}>
-        <div style={{ position: 'relative' }}>
-          <button type="button" className="botao" onClick={() => setOpenExport(v => !v)} aria-haspopup="true" aria-expanded={openExport}>
-            Exportar Tabela ▾
-          </button>
-          {openExport && (
-            <div
-              style={{
-                position: 'absolute', top: '110%', left: '50%', transform: 'translateX(-50%)',
-                background: '#fff', border: '1px solid #ddd', boxShadow: '0 4px 12px rgba(0,0,0,0.12)',
-                borderRadius: 6, zIndex: 10, minWidth: 180, padding: 6
-              }}
-              role="menu"
-            >
-              <button type="button" className="botao" onClick={exportarCSV} style={{ width: '100%', margin: '4px 0' }}>Exportar .CSV</button>
-              <button type="button" className="botao" onClick={exportarXLS} style={{ width: '100%', margin: '4px 0' }}>Exportar .XLSX</button>
-              <button type="button" className="botao" onClick={exportarPDF} style={{ width: '100%', margin: '4px 0' }}>Exportar .PDF</button>
-            </div>
-          )}
-        </div>
-      </div>
-
       <div style={{ overflowX: 'auto', marginTop: 10 }}>
-        <table className="tabela-psl" style={{ width: '100%', borderCollapse: 'collapse', background: '#fff', color: '#000' }}>
+        <table className="tabela-psl" style={{ fontSize: '16px', width: '100%', borderCollapse: 'collapse', background: '#fff', color: '#000' }}>
           <thead>
             <tr>
-              <th>Data</th>
-              <th>Filial</th>
-              <th>Distrital</th>
-              <th>Ocorrência PSL</th>
-              <th style={{ textAlign: 'center' }}>Ações</th>
+              <th style={{ fontSize: '16px' }}>Data</th>
+              <th style={{ fontSize: '16px' }}>Filial</th>
+              <th style={{ fontSize: '16px' }}>Distrital</th>
+              <th style={{ fontSize: '16px' }}>Ocorrência PSL</th>
+              <th style={{ fontSize: '16px', textAlign: 'center' }}>Ações</th>
             </tr>
           </thead>
           <tbody>
             {linhas.length === 0 ? (
-              <tr><td colSpan={6} style={{ padding: 12, textAlign: 'center' }}>Sem registros</td></tr>
+              <tr><td colSpan={6} style={{ padding: 18, textAlign: 'center' }}>Sem registros</td></tr>
             ) : linhas.map(r => (
               <tr key={r._id}>
                 <td>{formatarDataBR(r.data)}</td>

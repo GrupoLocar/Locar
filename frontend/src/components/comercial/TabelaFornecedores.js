@@ -156,50 +156,6 @@ export default function TabelaFornecedores({ filtro, refreshKey, fornecedores = 
 
   return (
     <div>
-      {/* Botão dropdown de exportação (centralizado acima da tabela) */}
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 10, position: 'relative' }}>
-        <div style={{ position: 'relative' }}>
-          <button
-            type="button"
-            className="botao"
-            onClick={() => setOpenExport(v => !v)}
-            aria-haspopup="true"
-            aria-expanded={openExport}
-          >
-            Exportar ▾
-          </button>
-
-          {openExport && (
-            <div
-              style={{
-                position: 'absolute',
-                top: '110%',
-                left: '50%',
-                transform: 'translateX(-50%)',
-                background: '#fff',
-                border: '1px solid #ddd',
-                boxShadow: '0 4px 12px rgba(0,0,0,0.12)',
-                borderRadius: 6,
-                zIndex: 10,
-                minWidth: 180,
-                padding: 6
-              }}
-              role="menu"
-            >
-              <button type="button" className="botao" onClick={handleExportCSV}  style={{ width: '100%', margin: '4px 0' }}>
-                Exportar .CSV
-              </button>
-              <button type="button" className="botao" onClick={handleExportXLSX} style={{ width: '100%', margin: '4px 0' }}>
-                Exportar .XLSX
-              </button>
-              <button type="button" className="botao" onClick={handleExportPDF}  style={{ width: '100%', margin: '4px 0' }}>
-                Exportar .PDF
-              </button>
-            </div>
-          )}
-        </div>
-      </div>
-
       {carregando ? <p>Carregando...</p> : (
         <div style={{ overflowX: 'auto', marginTop: 10 }}>
           <table
@@ -213,15 +169,15 @@ export default function TabelaFornecedores({ filtro, refreshKey, fornecedores = 
           >
             <thead>
               <tr style={{ background: '#181893', color: '#fff' }}>
-                <th style={{ textAlign: 'left', padding: 8, borderTopLeftRadius: '8px' }}>
+                <th style={{ fontSize: '16px', textAlign: 'left', padding: 20, borderTopLeftRadius: '8px' }}>
                   Razão Social
                 </th>
-                <th style={{ textAlign: 'left', padding: 8 }}>CNPJ</th>
-                <th style={{ textAlign: 'left', padding: 8 }}>Tipo de Fornecedor</th>
-                <th style={{ textAlign: 'left', padding: 8 }}>Responsável</th>
-                <th style={{ textAlign: 'left', padding: 8 }}>Telefone</th>
-                <th style={{ textAlign: 'left', padding: 8 }}>E-mail</th>
-                <th style={{ textAlign: 'center', padding: 8, borderTopRightRadius: '8px' }}>
+                <th style={{ fontSize: '16px', textAlign: 'left', padding: 8 }}>CNPJ</th>
+                <th style={{ fontSize: '16px', textAlign: 'left', padding: 8 }}>Tipo de Fornecedor</th>
+                <th style={{ fontSize: '16px', textAlign: 'left', padding: 8 }}>Responsável</th>
+                <th style={{ fontSize: '16px', textAlign: 'left', padding: 8 }}>Telefone</th>
+                <th style={{ fontSize: '16px', textAlign: 'left', padding: 8 }}>E-mail</th>
+                <th style={{ fontSize: '16px', textAlign: 'center', padding: 8, borderTopRightRadius: '8px' }}>
                   Ações
                 </th>
               </tr>

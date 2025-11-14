@@ -1,38 +1,41 @@
-.tabela-wrapper {
+/* .tabela-wrapper {
   position: relative;
-}
+} */
 
 .tabela-funcionarios {
-  width: 85%;
-  margin: 0 auto;
+  width: 100%;
   border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.tabela-funcionarios th,
-.tabela-funcionarios td {
-  padding: 8px;
-  border: 1px solid #ccc;
+.tabela-funcionarios th {
   text-align: left;
+  padding: 13px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+  color: #ffffff;
 }
 
-/* Cores para o Status CNH */
+.tabela-funcionarios td {
+  text-align: left;
+  padding: 18px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+  color: #000000;
+}
+
 .status-cnh.vencido {
-  /* background-color: #f44336; */
-  /* background-color: #add8e6; */
   color: white;
   font-weight: bold;
 }
 
 .status-cnh.vencer {
-  /* background-color: #ffcc00; */
-  /* background-color: #add8e6; */
   color: black;
   font-weight: bold;
 }
 
 .status-cnh.prazo {
-  /* background-color: #add8e6; */
-  /* Azul Claro */
   color: black;
   font-weight: bold;
 }

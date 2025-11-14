@@ -7,19 +7,17 @@
 .titulo-pagina {
   text-align: center;
   margin: 0 0 10px;
-  color: #000;          /* <<< preto */
-  font-size: 28px;      /* <<< tamanho base do título */
+  color: #000;
+  font-size: 28px;
   font-weight: 700;
 }
 
-/* Barra principal de filtro por texto (mantém o roxo) */
 .barra-filtro-texto {
-  /* background: #181893; */
   padding: 30px;
   display: flex;
   justify-content: center;
   gap: 10px;
-  border-radius: 12px;
+  /* border-radius: 12px; */
 }
 
 .input-filtro-texto {
@@ -29,7 +27,6 @@
   border: 1px solid #ccc;
 }
 
-/* Botão laranja com hover amarelo (como você já usava) */
 .botao {
   font-weight: bold;
   background-color: #FF6700;
@@ -42,14 +39,12 @@
 .botao:hover {
   background-color: #FCDE0B;
   color: #FFFFFF;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Filtros Filial/Distrital (bloco claro com sombra leve) */
 .filtros-superiores {
-  /* background: linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%); */
-  /* box-shadow: 0 2px 8px rgba(0,0,0,0.05); */
-  border-radius: 8px;
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -57,7 +52,6 @@
   gap: 30px;
   padding: 10px;
   margin-top: 10px;
-  color: #222;
 }
 
 .filtro-bloco label {
@@ -71,10 +65,8 @@
   padding: 8px 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  /* background: #fff; */
 }
 
-/* Subtítulos e containers */
 .subtitulo {
   margin: 16px 0 8px;
   color: #fff;
@@ -82,42 +74,34 @@
 }
 
 .formulario-container {
-  /* background: linear-gradient(135deg, #f5f7fa, #e2eafc); */
-  /* box-shadow: 0 4px 10px rgba(0,0,0,0.08); */
   padding: 0;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   color: #222;
 }
 
-/* Cabeçalho da tabela (título + botão) */
 .cabecalho-tabela {
   position: relative;
   margin-top: 28px;
-  min-height: 44px;     /* altura para caber título e botão */
+  min-height: 44px;
 }
 
-/* centraliza o texto do título da tabela, preto e mesmo tamanho */
 .cabecalho-tabela .subtitulo {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  color: #000;          /* <<< preto */
-  font-size: 28px;      /* <<< igual ao .titulo-pagina */
+  color: #000;
+  font-size: 28px;
   font-weight: 700;
   text-align: center;
 }
 
-/* Wrapper da tabela */
 .tabela-wrapper {
-  /* background: linear-gradient(135deg, #dfe9f3 0%, #f5f7fa 100%); */
-  /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
   padding: 20px;
   border-radius: 12px;
 }
 
-/* === Exportar abaixo do título da Tabela === */
 .exportar-container {
   display: flex;
   justify-content: center;
@@ -135,7 +119,6 @@
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 12px;
   padding: 10px;
@@ -144,7 +127,6 @@
   text-align: center;
 }
 
-/* === Botão flutuante "Voltar ao topo" === */
 .btn-voltar-topo {
   position: fixed;
   right: 20px;

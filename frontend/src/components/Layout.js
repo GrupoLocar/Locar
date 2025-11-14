@@ -52,11 +52,20 @@ function Layout({ onLogout }) {
   return (
     <div className="layout">
       <nav className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
+
+        {/* === NOVA DIV DO LOGO === */}
+        <div className="sidebar-header">
+          <img
+            src="/Logotipo.png"
+            alt="Logo Grupo Locar"
+            className="sidebar-logo"
+          />
+          {!collapsed && <h1>Grupo Locar</h1>}
+        </div>
+
         <button className="collapse-button" onClick={toggleCollapse}>
           {collapsed ? '▶' : '◀'}
         </button>
-
-        {!collapsed && <h3>Locar Grupo</h3>}
 
         <ul>
           <li>
@@ -91,7 +100,7 @@ function Layout({ onLogout }) {
                   <ul className="submenu">
                     <li>
                       <Link to="/rh/funcionario">
-                      <span className="icon">👩‍💼</span>
+                        <span className="icon">👩‍💼</span>
                         {!collapsed && <span className="label"> Cadastro de Funcionários</span>}
                       </Link>
                     </li>
@@ -122,7 +131,7 @@ function Layout({ onLogout }) {
             )}
           </li>
 
-          {/* === Comercial (com submenu) === */}
+          {/* === Comercial === */}
           <li>
             {isRestricted('comercial') ? (
               <button

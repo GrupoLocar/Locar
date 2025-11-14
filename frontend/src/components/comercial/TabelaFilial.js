@@ -132,42 +132,20 @@ export default function TabelaFilial({ filtro, refreshKey, onEditar }) {
 
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 10, position: 'relative' }}>
-        <div style={{ position: 'relative' }}>
-          <button type="button" className="botao" onClick={() => setOpenExport(v => !v)} aria-haspopup="true" aria-expanded={openExport}>
-            Exportar Tabela ▾
-          </button>
-          {openExport && (
-            <div
-              style={{
-                position: 'absolute', top: '110%', left: '50%', transform: 'translateX(-50%)',
-                background: '#fff', border: '1px solid #ddd', boxShadow: '0 4px 12px rgba(0,0,0,0.12)',
-                borderRadius: 6, zIndex: 10, minWidth: 180, padding: 6
-              }}
-              role="menu"
-            >
-              <button type="button" className="botao" onClick={exportarCSV} style={{ width: '100%', margin: '4px 0' }}>Exportar .CSV</button>
-              <button type="button" className="botao" onClick={exportarXLS} style={{ width: '100%', margin: '4px 0' }}>Exportar .XLS</button>
-              <button type="button" className="botao" onClick={exportarPDF} style={{ width: '100%', margin: '4px 0' }}>Exportar .PDF</button>
-            </div>
-          )}
-        </div>
-      </div>
-
       {erro && <p style={{ color: 'red', textAlign: 'center' }}>{erro}</p>}
 
       {carregando ? <p>Carregando...</p> : (
-        <div style={{ overflowX: 'auto', marginTop: 10 }}>
-          <table className="tabela-default" style={{ width: '100%', borderCollapse: 'collapse', background: '#fff', color: '#000' }}>
+        <div>
+          <table style={{ width: '100%', borderCollapse: 'collapse' }}>
             <thead>
               <tr style={{ background: '#181893', color: '#fff' }}>
-                <th style={{ textAlign: 'left', padding: 8, borderTopLeftRadius: '8px' }}>Filial</th>
-                <th style={{ textAlign: 'left', padding: 8 }}>Distrital</th>
-                <th style={{ textAlign: 'left', padding: 8 }}>CNPJ</th>
-                <th style={{ textAlign: 'left', padding: 8 }}>Responsável</th>
-                <th style={{ textAlign: 'left', padding: 8 }}>Telefone</th>
-                <th style={{ textAlign: 'left', padding: 8 }}>E-mail</th>
-                <th style={{ textAlign: 'center', padding: 8, borderTopRightRadius: '8px' }}>Ações</th>
+                <th style={{ fontSize: '16px', textAlign: 'left', padding: 20, borderTopLeftRadius: '8px' }}>Filial</th>
+                <th style={{ fontSize: '16px', textAlign: 'left', padding: 8 }}>Distrital</th>
+                <th style={{ fontSize: '16px', textAlign: 'left', padding: 8 }}>CNPJ</th>
+                <th style={{ fontSize: '16px', textAlign: 'left', padding: 8 }}>Responsável</th>
+                <th style={{ fontSize: '16px', textAlign: 'left', padding: 8 }}>Telefone</th>
+                <th style={{ fontSize: '16px', textAlign: 'left', padding: 8 }}>E-mail</th>
+                <th style={{ fontSize: '16px', textAlign: 'center', padding: 8, borderTopRightRadius: '8px' }}>Ações</th>
               </tr>
             </thead>
             <tbody>

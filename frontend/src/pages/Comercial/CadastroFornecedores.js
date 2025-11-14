@@ -1,40 +1,32 @@
-// src/pages/Comercial/CadastroFornecedores.js
 import React, { useRef, useState, useEffect, useMemo } from "react";
 import "./CadastroFornecedores.css";
-// ❌ Removido: import { MUNICIPIOS_RJ } from "../../utils/FormUtilsComercial";
 import TabelaFornecedores from "../../components/comercial/TabelaFornecedores";
 import FormularioFornecedor from "../../components/comercial/FormularioFornecedor";
 import axios from "axios";
 import Swal from "sweetalert2";
+import * as XLSX from "xlsx";
+import Papa from "papaparse";
 
 const API_HOST = (process.env.REACT_APP_API_URL || "").replace(/\/+$/, "");
 const API = `${API_HOST}/api`;
 
 const CadastroFornecedores = () => {
-  // Filtros/inputs
   const [filtroTexto, setFiltroTexto] = useState("");
   const [filtroFornecedor, setFiltroFornecedor] = useState("Todos");
   const [filtroTipoFornecedor, setFiltroTipoFornecedor] = useState("Todos");
   const [filtroResponsavel, setFiltroResponsavel] = useState("Todos");
-
-  // ✅ Novo: segue padrão do CadastroClientes ("" = Todas)
   const [filtroCidade, setFiltroCidade] = useState("");
-
-  // Lista e item selecionado
   const [fornecedores, setFornecedores] = useState([]);
   const [fornecedoresBase, setFornecedoresBase] = useState([]);
   const [fornecedorSelecionado, setFornecedorSelecionado] = useState(null);
-
-  // refresh para a tabela
   const [refreshKey, setRefreshKey] = useState(0);
+  const [exportOpen, setExportOpen] = useState(false); // controla dropdown Exportar
 
-  // refs
   const anchorFormRef = useRef(null);
   const anchorTabelaRef = useRef(null);
   const formularioRef = useRef(null);
   const filtroTextoRef = useRef(null);
 
-  // --- Carrega todos
   const fetchTodos = async () => {
     try {
       const { data } = await axios.get(`${API}/fornecedores`);
@@ -55,10 +47,9 @@ const CadastroFornecedores = () => {
     fetchTodos();
   }, []);
 
-  // Gera próximo codigo_fornecedor localmente
   const computeNextCodigoFromList = () => {
     const seqs = (fornecedoresBase || [])
-      .map(f => String(f?.codigo_fornecedor || ''))
+      .map(f => String(f?.codigo_fornecedor || ""))
       .map(code => {
         const m = code.match(/^FORN-(\d{1,})$/);
         if (m && m[1]) return parseInt(m[1], 10);
@@ -67,18 +58,19 @@ const CadastroFornecedores = () => {
         return 0;
       });
     const max = seqs.length ? Math.max(...seqs) : 0;
-    const next = String((max || 0) + 1).padStart(10, '0');
+    const next = String((max || 0) + 1).padStart(10, "0");
     return `FORN-${next}`;
   };
 
-  // Opções ordenadas alfabeticamente para os filtros
   const fornecedoresOptions = useMemo(() => {
     const set = new Set(
       (fornecedoresBase || [])
         .map(f => (f?.fornecedor || f?.razao_social || "").trim())
         .filter(Boolean)
     );
-    return Array.from(set).sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' }));
+    return Array.from(set).sort((a, b) =>
+      a.localeCompare(b, "pt-BR", { sensitivity: "base" })
+    );
   }, [fornecedoresBase]);
 
   const tipoFornecedorOptions = useMemo(() => {
@@ -87,7 +79,9 @@ const CadastroFornecedores = () => {
         .map(f => (f?.tipoFornecedor || "").trim())
         .filter(Boolean)
     );
-    return Array.from(set).sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' }));
+    return Array.from(set).sort((a, b) =>
+      a.localeCompare(b, "pt-BR", { sensitivity: "base" })
+    );
   }, [fornecedoresBase]);
 
   const responsaveisOptions = useMemo(() => {
@@ -96,31 +90,37 @@ const CadastroFornecedores = () => {
         .map(f => (f?.responsavel || "").trim())
         .filter(Boolean)
     );
-    return Array.from(set).sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' }));
+    return Array.from(set).sort((a, b) =>
+      a.localeCompare(b, "pt-BR", { sensitivity: "base" })
+    );
   }, [fornecedoresBase]);
 
-  // ✅ Novo: opções dinâmicas de cidade a partir de fornecedoresBase
   const opcoesCidade = useMemo(() => {
-    return [...new Set((fornecedoresBase || []).map(c => c.cidade).filter(Boolean))]
-      .sort((a, b) => String(a).localeCompare(String(b)));
+    return [...new Set((fornecedoresBase || []).map(c => c.cidade).filter(Boolean))].sort(
+      (a, b) => String(a).localeCompare(String(b))
+    );
   }, [fornecedoresBase]);
 
-  // filtro composto para a tabela
   const filtroComposto = [
     filtroTexto?.trim(),
     filtroFornecedor !== "Todos" ? filtroFornecedor : "",
     filtroTipoFornecedor !== "Todos" ? filtroTipoFornecedor : "",
     filtroResponsavel !== "Todos" ? filtroResponsavel : "",
-    filtroCidade || "" // "" = Todas
-  ].filter(Boolean).join(" ").trim();
+    filtroCidade || "",
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .trim();
 
-  // atualiza a tabela sempre que o filtro composto muda
   useEffect(() => {
-    setRefreshKey((k) => k + 1);
+    setRefreshKey(k => k + 1);
   }, [filtroComposto]);
 
   const rolarParaTabela = () =>
-    setTimeout(() => anchorTabelaRef.current?.scrollIntoView({ behavior: "smooth" }), 100);
+    setTimeout(
+      () => anchorTabelaRef.current?.scrollIntoView({ behavior: "smooth" }),
+      100
+    );
 
   const handleFiltrar = () => {
     rolarParaTabela();
@@ -131,9 +131,12 @@ const CadastroFornecedores = () => {
     setFiltroFornecedor("Todos");
     setFiltroTipoFornecedor("Todos");
     setFiltroResponsavel("Todos");
-    setFiltroCidade(""); // "" = Todas
+    setFiltroCidade("");
     setFornecedores(fornecedoresBase);
-    setTimeout(() => anchorTabelaRef.current?.scrollIntoView({ behavior: "smooth" }), 100);
+    setTimeout(
+      () => anchorTabelaRef.current?.scrollIntoView({ behavior: "smooth" }),
+      100
+    );
   };
 
   const handleLimparFiltros = () => {
@@ -145,7 +148,6 @@ const CadastroFornecedores = () => {
     }, 100);
   };
 
-  // Handlers dos selects: aplicam filtro e descem; se escolher "Todos/Todas", limpam tudo
   const onChangeFornecedor = (e) => {
     const val = e.target.value;
     if (val === "Todos") return handleLimparFiltros();
@@ -167,42 +169,40 @@ const CadastroFornecedores = () => {
     rolarParaTabela();
   };
 
-  // ❗ Mantida por compatibilidade (não usada no JSX), delega para a nova função
   const onChangeCidade = (e) => onChangeFiltroCidade(e.target.value);
 
-  // ✅ Novo: mesma lógica do CadastroClientes ("" = Todas), usando fornecedoresBase
   const onChangeFiltroCidade = (valor) => {
     if (valor === "") {
       limparTodosFiltrosLocal();
       return;
     }
     setFiltroCidade(valor);
-    // limpa filtros relacionados, como no exemplo de clientes
     setFiltroFornecedor("Todos");
     setFiltroResponsavel("Todos");
 
     let lista = [...fornecedoresBase];
     lista = lista.filter(c => (c.cidade || "") === valor);
     setFornecedores(lista);
-    setTimeout(() => anchorTabelaRef.current?.scrollIntoView({ behavior: "smooth" }), 100);
+    setTimeout(
+      () => anchorTabelaRef.current?.scrollIntoView({ behavior: "smooth" }),
+      100
+    );
   };
 
   const handleExportar = (tipo) => {
     console.log("Exportar:", tipo);
   };
 
-  // salvar/novo
   const handleSalvar = async () => {
     try {
       await fetchTodos();
       setFornecedorSelecionado(null);
-      setRefreshKey((k) => k + 1);
+      setRefreshKey(k => k + 1);
     } catch (e) {
       console.error(e);
     }
   };
 
-  // "Novo" da página já mostra codigo_fornecedor
   const handleNovo = () => {
     const nextCode = computeNextCodigoFromList();
     const seed = { codigo_fornecedor: nextCode };
@@ -215,11 +215,47 @@ const CadastroFornecedores = () => {
     }, 100);
   };
 
+  // --------- EXPORTAÇÃO CSV / XLSX (sem _id e updatedAt) ---------
+  const prepararDadosExportacao = () => {
+    if (!Array.isArray(fornecedores) || fornecedores.length === 0) {
+      return null;
+    }
+    // remove _id e updatedAt de cada registro
+    return fornecedores.map(({ _id, updatedAt, ...rest }) => rest);
+  };
+
+  const exportarFornecedoresCSV = () => {
+    const dados = prepararDadosExportacao();
+    if (!dados) {
+      Swal.fire("Aviso", "Nenhum dado disponível para exportar.", "info");
+      return;
+    }
+    const csv = Papa.unparse(dados);
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.setAttribute("download", "fornecedores.csv");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const exportarFornecedoresXLSX = () => {
+    const dados = prepararDadosExportacao();
+    if (!dados) {
+      Swal.fire("Aviso", "Nenhum dado disponível para exportar.", "info");
+      return;
+    }
+    const worksheet = XLSX.utils.json_to_sheet(dados);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Fornecedores");
+    XLSX.writeFile(workbook, "fornecedores.xlsx");
+  };
+  // ---------------------------------------------------------------
+
   return (
     <div className="pagina-cadastro-fornecedores">
       <h1 className="titulo-pagina">🪪 Cadastro de Fornecedores</h1>
-
-      {/* Faixa filtro texto */}
       <div className="barra-filtro-texto">
         <input
           ref={filtroTextoRef}
@@ -246,7 +282,6 @@ const CadastroFornecedores = () => {
         </button>
       </div>
 
-      {/* Filtros: Fornecedor, Tipo de Fornecedor, Responsável, Cidade */}
       <div className="filtros-superiores">
         <div className="filtro-bloco">
           <label>Fornecedor</label>
@@ -293,7 +328,6 @@ const CadastroFornecedores = () => {
           </select>
         </div>
 
-        {/* ✅ Cidade: agora usa opções dinâmicas de fornecedoresBase e "" = Todas */}
         <div className="filtro-bloco">
           <label>Cidade</label>
           <select
@@ -310,10 +344,9 @@ const CadastroFornecedores = () => {
         </div>
       </div>
 
-      {/* Âncora do formulário */}
       <div ref={anchorFormRef} />
 
-      <div className="formulario-container">
+      <div>
         <section style={{ marginTop: 16 }}>
           <FormularioFornecedor
             ref={formularioRef}
@@ -325,26 +358,40 @@ const CadastroFornecedores = () => {
         </section>
       </div>
 
-      {/* Cabeçalho centralizado da Tabela */}
-      <div className="cabecalho-tabela">
-        <h2 className="subtitulo">Tabela de Fornecedores</h2>
+      {/* BOTÃO EXPORTAR – mesmo padrão de CadastroClientes */}
+      <div className="exportar-container">
+        <div className="exportar-dropdown">
+          <button
+            className="botao"
+            onClick={() => setExportOpen(v => !v)}
+          >
+            Exportar ▾
+          </button>
+          {exportOpen && (
+            <div className="exportar-menu">
+              <button className="botao" onClick={exportarFornecedoresCSV}>Exportar .CSV</button><br />
+              <button className="botao" onClick={exportarFornecedoresXLSX}>Exportar .XLSX</button>
+            </div>
+          )}
+        </div>
       </div>
 
-      {/* Tabela */}
-      <div ref={anchorTabelaRef} className="tabela-wrapper">
+      <div ref={anchorTabelaRef}>
         <TabelaFornecedores
           filtro={filtroComposto}
           refreshKey={refreshKey}
           fornecedores={fornecedores}
           onEditar={(f) => {
             setFornecedorSelecionado(f);
-            setTimeout(() => anchorFormRef.current?.scrollIntoView({ behavior: "smooth" }), 100);
+            setTimeout(
+              () => anchorFormRef.current?.scrollIntoView({ behavior: "smooth" }),
+              100
+            );
           }}
           onExportar={handleExportar}
         />
       </div>
 
-      {/* Voltar ao topo */}
       <button
         type="button"
         className="btn-voltar-topo"

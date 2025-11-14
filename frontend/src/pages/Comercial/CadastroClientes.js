@@ -208,12 +208,11 @@ const CadastroClientes = () => {
   };
 
   return (
-    <div className="pagina-cadastro-clientes">
+    <div>
       <h1 className="titulo-pagina">📋 Cadastro de Clientes</h1>
-
       <div className="barra-filtro-texto">
         <input
-          className="input-filtro-texto"
+          className="input-texto"
           type="text"
           placeholder="Filtrar por qualquer campo..."
           value={filtroTexto}
@@ -260,30 +259,25 @@ const CadastroClientes = () => {
         <br></br>
       </div>
 
-      <div className="formulario-container">
+      <div>
         <FormularioCliente
           ref={formularioRef}
           cliente={clienteSelecionado}
           onSalvar={handleAposSalvar}
           onNovo={handleNovoGlobal}
-          // ⬇️ NOVO: para que o botão "Novo" do próprio formulário também gere e exiba o código
           getNextCodigoCliente={() => computeNextCodigoFromList()}
         />
-      </div>
-
-      <div className="cabecalho-tabela">
-        <h2 className="subtitulo">Tabela de Clientes</h2>
       </div>
 
       <div className="exportar-container">
         <div className="exportar-dropdown">
           <button className="botao" onClick={() => setExportOpen((v) => !v)}>
-            Exportar
+            Exportar ▾
           </button>
           {exportOpen && (
             <div className="exportar-menu">
-              <button className="botao" onClick={exportarClientesCSV}>Exportar CSV</button><br />
-              <button className="botao" onClick={exportarClientesXLSX}>Exportar XLSX</button>
+              <button className="botao" onClick={exportarClientesCSV}>Exportar .CSV</button><br />
+              <button className="botao" onClick={exportarClientesXLSX}>Exportar .XLSX</button>
             </div>
           )}
         </div>

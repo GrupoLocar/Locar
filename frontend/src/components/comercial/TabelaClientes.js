@@ -1,4 +1,3 @@
-// C:\Locar\frontend\src\components\comercial\TabelaClientes.js
 import React from "react";
 import "./TabelaClientes.css";
 
@@ -8,12 +7,12 @@ const TabelaClientes = ({ clientes = [], onEditar }) => {
       <table className="tabela-clientes">
         <thead>
           <tr style={{ backgroundColor: "#181893" }}>
-            <th style={{ color: "white" }}>Cliente</th>
-            <th style={{ color: "white" }}>CNPJ</th>
-            <th style={{ color: "white" }}>Responsável</th>
-            <th style={{ color: "white" }}>Telefone</th>
-            <th style={{ color: "white" }}>E-mail</th>
-            <th style={{ color: "white", width: 120 }}>Ações</th>
+            <th style={{ fontSize: '16px', color: "white" }}>Cliente</th>
+            <th style={{ fontSize: '16px', color: "white" }}>CNPJ</th>
+            <th style={{ fontSize: '16px', color: "white" }}>Responsável</th>
+            <th style={{ fontSize: '16px', color: "white" }}>Telefone</th>
+            <th style={{ fontSize: '16px', color: "white" }}>E-mail</th>
+            <th style={{ fontSize: '16px', color: "white", width: 120 }}>Ações</th>
           </tr>
         </thead>
         <tbody>

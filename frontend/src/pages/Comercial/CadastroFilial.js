@@ -1,45 +1,34 @@
-// src/pages/Comercial/CadastroFilial.js
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import './CadastroFilial.css';
-// ❌ Removido o uso do MUNICIPIOS_RJ no filtro de cidade
-// import { MUNICIPIOS_RJ } from '../../utils/FormUtilsComercial';
 import TabelaFilial from '../../components/comercial/TabelaFilial';
 import FormularioFilial from '../../components/comercial/FormularioFilial';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import * as XLSX from 'xlsx';
+import Papa from 'papaparse';
 
-// ==== Base API (robusta) ====
 const RAW = (process.env.REACT_APP_API_URL || (typeof window !== 'undefined' ? window.location.origin : '')).replace(/\/+$/, '');
 const API_ROOT = RAW || '';
 const API = `${API_ROOT}${/\/api$/.test(API_ROOT) ? '' : '/api'}`;
 
 export default function CadastroFilial() {
-  // Barra principal (texto livre)
   const [filtro, setFiltro] = useState('');
 
-  // Filtros por select (mantidos)
   const [selFilial, setSelFilial] = useState('Todos');
   const [selDistrital, setSelDistrital] = useState('Todas');
   const [selResponsavel, setSelResponsavel] = useState('Todos');
-
-  // 🔄 Novo estado de cidade no padrão do CadastroClientes ("" = Todas)
   const [filtroCidade, setFiltroCidade] = useState('');
-
-  // Dados
   const [filiaisBase, setFiliaisBase] = useState([]);
-  const [filiais, setFiliais] = useState([]); // mantido (útil para gerar opções e compatibilidade)
+  const [filiais, setFiliais] = useState([]);
   const [filialSelecionada, setFilialSelecionada] = useState(null);
-
-  // alias apenas para usar o bloco JSX solicitado literalmente
   const [funcionarioSelecionado, setFuncionarioSelecionado] = useState(null);
 
-  // refs
   const formularioRef = useRef(null);
   const anchorTabelaRef = useRef(null);
   const anchorFormRef = useRef(null);
 
-  // refresh da tabela
   const [refreshKey, setRefreshKey] = useState(0);
+  const [exportOpen, setExportOpen] = useState(false); // controla dropdown de exportação
 
   const fetchFiliais = async () => {
     try {
@@ -56,7 +45,6 @@ export default function CadastroFilial() {
     fetchFiliais();
   }, []);
 
-  // Opções ordenadas (mantidas)
   const filiaisOptions = useMemo(() => {
     const set = new Set((filiaisBase || []).map(f => (f?.filial || '').trim()).filter(Boolean));
     return Array.from(set).sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' }));
@@ -72,14 +60,11 @@ export default function CadastroFilial() {
     return Array.from(set).sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' }));
   }, [filiaisBase]);
 
-  // ✅ Novo: opções de cidade a partir de filiaisBase (como em CadastroClientes)
   const opcoesCidade = useMemo(() => {
     return [...new Set((filiaisBase || []).map(c => c.cidade).filter(Boolean))]
       .sort((a, b) => String(a).localeCompare(String(b)));
   }, [filiaisBase]);
 
-  // Filtro composto (texto + selects)
-  // ⚠️ substituí selCidade por filtroCidade ("" = Todas)
   const filtroComposto = [
     filtro?.trim(),
     selFilial !== 'Todos' ? selFilial : '',
@@ -103,19 +88,34 @@ export default function CadastroFilial() {
     setSelFilial('Todos');
     setSelDistrital('Todas');
     setSelResponsavel('Todos');
-    setFiltroCidade(''); // limpa cidade (Todas)
+    setFiltroCidade('');
     setFilialSelecionada(null);
     setFuncionarioSelecionado(null);
-    setFiliais(filiaisBase); // restaura base local (compatível com o padrão de clientes)
+    setFiliais(filiaisBase);
     setTimeout(() => formularioRef.current?.limparEIrTopo?.(), 100);
   };
 
-  // Versões que limpam e aplicam (mantidas)
-  const onChangeFilial = e => { const v = e.target.value; if (v === 'Todos') return limparTodosFiltros(); setSelFilial(v); rolarParaTabela(); };
-  const onChangeDistrital = e => { const v = e.target.value; if (v === 'Todas') return limparTodosFiltros(); setSelDistrital(v); rolarParaTabela(); };
-  const onChangeResponsavel = e => { const v = e.target.value; if (v === 'Todos') return limparTodosFiltros(); setSelResponsavel(v); rolarParaTabela(); };
+  const onChangeFilial = e => {
+    const v = e.target.value;
+    if (v === 'Todos') return limparTodosFiltros();
+    setSelFilial(v);
+    rolarParaTabela();
+  };
 
-  // ✅ Novo: filtro de cidade no mesmo padrão do CadastroClientes ("" = Todas)
+  const onChangeDistrital = e => {
+    const v = e.target.value;
+    if (v === 'Todas') return limparTodosFiltros();
+    setSelDistrital(v);
+    rolarParaTabela();
+  };
+
+  const onChangeResponsavel = e => {
+    const v = e.target.value;
+    if (v === 'Todos') return limparTodosFiltros();
+    setSelResponsavel(v);
+    rolarParaTabela();
+  };
+
   const limparTodosFiltrosLocal = () => {
     setFiltro('');
     setSelFilial('Todos');
@@ -132,8 +132,6 @@ export default function CadastroFilial() {
       return;
     }
     setFiltroCidade(valor);
-    // zera outros filtros de cidade/cliente/responsável (mantemos os selects padrões como estão)
-    // Aqui seguimos o padrão de clientes, mas preservando os selects de Filial/Distrital/Responsável existentes.
     let lista = [...filiaisBase];
     lista = lista.filter(c => (c.cidade || '') === valor);
     setFiliais(lista);
@@ -154,17 +152,56 @@ export default function CadastroFilial() {
     }, 100);
   };
 
+  // ---------- FUNÇÕES DE EXPORTAÇÃO (CSV / XLSX) ----------
+  const prepararDadosExportacao = () => {
+    if (!Array.isArray(filiais) || filiais.length === 0) {
+      return null;
+    }
+    return filiais.map(({ _id, updatedAt, ...rest }) => rest);
+  };
+
+  const exportarFiliaisCSV = () => {
+    const dados = prepararDadosExportacao();
+    if (!dados) {
+      Swal.fire('Aviso', 'Nenhum dado disponível para exportar.', 'info');
+      return;
+    }
+
+    const csv = Papa.unparse(dados);
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.setAttribute('download', 'filiais.csv');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const exportarFiliaisXLSX = () => {
+    const dados = prepararDadosExportacao();
+    if (!dados) {
+      Swal.fire('Aviso', 'Nenhum dado disponível para exportar.', 'info');
+      return;
+    }
+
+    const worksheet = XLSX.utils.json_to_sheet(dados);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'Filiais');
+    XLSX.writeFile(workbook, 'filiais.xlsx');
+  };
+  // ---------- FIM EXPORTAÇÃO ----------
+
   return (
     <div className="pagina-cadastro-filial">
       <h1 className="titulo-pagina">🏬 Cadastro de Filial</h1>
 
-      {/* === Barra principal (código fornecido) === */}
       <div style={{
         background: '#181893',
         padding: '30px',
         display: 'flex',
         justifyContent: 'center',
-        gap: '10px'
+        gap: '10px',
+        borderRadius: '12px'
       }}>
         <input
           style={{ width: '300px' }}
@@ -175,7 +212,6 @@ export default function CadastroFilial() {
         />
         <button className="botao" onClick={handleFiltrar}>Filtrar</button>
         <button className="botao" onClick={limparTodosFiltros}>Limpar Filtro</button>
-        {/* <button className="botao" onClick={handleImport}>Importar</button> */}
         <button className="botao" onClick={() => {
           setFuncionarioSelecionado(null);
           setTimeout(() => formularioRef.current?.dispararNovo(), 100);
@@ -184,7 +220,6 @@ export default function CadastroFilial() {
         </button>
       </div>
 
-      {/* === Filtros: Filial / Distrital / Responsável / Cidade === */}
       <div className="filtros-superiores">
         <div className="filtro-bloco">
           <label>Filial</label>
@@ -210,7 +245,6 @@ export default function CadastroFilial() {
           </select>
         </div>
 
-        {/* ✅ Cidade agora segue o padrão de CadastroClientes: opções de filiaisBase e "" = Todas */}
         <div className="filtro-bloco">
           <label>Cidade</label>
           <select value={filtroCidade} onChange={(e) => onChangeFiltroCidade(e.target.value)}>
@@ -222,9 +256,8 @@ export default function CadastroFilial() {
         </div>
       </div>
 
-      {/* === Formulário === */}
       <div ref={anchorFormRef} />
-      <div className="formulario-container">
+      <div>
         <section style={{ marginTop: 16 }}>
           <FormularioFilial
             ref={formularioRef}
@@ -235,14 +268,30 @@ export default function CadastroFilial() {
         </section>
       </div>
 
-      {/* === Tabela === */}
-      <div className="cabecalho-tabela">
-        <h2 className="subtitulo">Tabela de Filial</h2>
+      {/* DROPDOWN DE EXPORTAÇÃO (estilos agora no CSS) */}
+      <div className="exportar-container">
+        <div className="exportar-dropdown">
+          <button
+            type="button"
+            className="botao"
+            aria-haspopup="true"
+            aria-expanded={exportOpen ? 'true' : 'false'}
+            onClick={() => setExportOpen(v => !v)}
+          >
+            Exportar ▾
+          </button>
+
+          {exportOpen && (
+            <div className="exportar-menu">
+              <button className="botao" onClick={exportarFiliaisCSV}>Exportar .CSV</button><br />
+              <button className="botao" onClick={exportarFiliaisXLSX}>Exportar .XLSX</button><br />
+            </div>
+          )}
+        </div>
       </div>
 
-      <div ref={anchorTabelaRef} className="tabela-wrapper">
+      <div ref={anchorTabelaRef}>
         <TabelaFilial
-          // continua usando filtroComposto (inclui filtroCidade quando escolhido)
           filtro={filtroComposto}
           refreshKey={refreshKey}
           onEditar={(r) => {
@@ -252,7 +301,6 @@ export default function CadastroFilial() {
         />
       </div>
 
-      {/* Voltar ao topo (mesmo de Fornecedores) */}
       <button
         type="button"
         className="btn-voltar-topo"

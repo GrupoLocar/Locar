@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Tiago Jorge Rocha 10910052735 Mafia Rocha",
+    "cnh": "05551212048",
+    "categoria": "Ab",
+    "emissao_cnh": "2012-07-28 00:00:00",
+    "validade_cnh": "2032-08-16 00:00:00",
+    "situacao": "Aprovar",
+    "contrato": "Verificar",
+    "data_admissao": "1900-01-01",
+    "dataUltimoServicoPrestado": "1900-01-01",
+    "telefone": "(21)98183-1914",
+    "email": "tiagocfnrocha@gmail.com",
+    "sexo": "Masculino",
+    "profissao": "Motorista De Aplicativo",
+    "endereco": "Rua Jose Gomes Da Silva",
+    "complemento": "Casa 1",
+    "bairro": "Ville Blanche",
+    "municipio": "Cabo Frio",
+    "cep": "28.915-480",
+    "banco": "001 – Banco Do Brasil",
+    "agencia": "0329",
+    "conta": "66624-6",
+    "pix": "21981831914",
+    "data_nascimento": "1992-08-09 00:00:00",
+    "cpf": "109.100.527-35",
+    "rg": "21.230.931-4",
+    "estado_civil": "Solteiro(A)",
+    "filhos": "0",
+    "nome_familiar": "Felipe Jorge Rocha",
+    "contato_familiar": "(21)96438-9389",
+    "indicado": "00",
+    "observacao": "00",
+    "arquivos": {
+      "cnh_arquivo": [
+        "https://www.dropbox.com/scl/fi/jn5cxyqe3w5ee9kasribm/1762915005643_Tiago-Jorge-Rocha-Mafia-Rocha-cnh_arquivo.jpg?rlkey=1g65afd2opfbhzeilgvda6o9z&dl=0"
+      ],
+      "comprovante_residencia": [
+        "https://www.dropbox.com/scl/fi/sqvuxm38dwcoq6x3jkoz4/1762915007431_Tiago-Jorge-Rocha-Mafia-Rocha-comprovante_residencia.jpg?rlkey=kq4g46o91vhulxd9jf4pqz46j&dl=0"
+      ],
+      "curriculo": [
+        "https://www.dropbox.com/scl/fi/pfunmxm0ynrp179qxenlo/1762915009041_Tiago-Jorge-Rocha-Mafia-Rocha-curriculo.pdf?rlkey=4wfj4j8duegp4vlhe9gpy0ch5&dl=0"
+      ],
+      "comprovante_mei": [],
+      "nada_consta": [
+        "https://www.dropbox.com/scl/fi/gg93w7hp4tmuxmxl1krbh/1762915010438_Tiago-Jorge-Rocha-Mafia-Rocha-nada_consta.pdf?rlkey=q13dhpyul77vjc4hpwy1tl19s&dl=0"
+      ]
+    },
+    "data_envio_utc": "2025-11-12 02:36:53.963000",
+    "data_envio_local": "2025-11-11 23:36:53"
+  }
+]

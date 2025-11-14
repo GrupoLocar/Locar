@@ -1,9 +1,9 @@
-.pagina-cadastro-funcionario {
+/* .pagina-cadastro-funcionario {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
   padding: 20px;
   color: #fff;
-}
+} */
 
 form {
   overflow-x: auto;
@@ -164,5 +164,32 @@ form {
   background-color: #FCDE0B;
   color: #FFFFFF;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ====== EXPORTAÇÃO – mesmo padrão de CadastroClientes ====== */
+.exportar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.exportar-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.exportar-menu {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 10px;
+  z-index: 999;
+  min-width: 200px;
+  text-align: center;
+  background: #fff;
 }
 
