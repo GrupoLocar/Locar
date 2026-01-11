@@ -55,7 +55,6 @@ const funcionarioSchema = new mongoose.Schema(
   }
 );
 
-// Virtuais com checagem defensiva
 funcionarioSchema.virtual('idade').get(function () {
   if (!this.data_nascimento) return null;
   const today = new Date();
@@ -76,18 +75,6 @@ funcionarioSchema.virtual('diasVencimentoCNH').get(function () {
   return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 });
 
-// funcionarioSchema.virtual('statusCNH').get(function () {
-//   if (!this.dataValidadeCNH) return null;
-//   const today = new Date();
-//   const validade = new Date(this.dataValidadeCNH);
-//   const diffTime = validade - today;
-//   const dias = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-//   if (dias < 0) return 'Vencido';
-//   if (dias <= 30) return 'A Vencer';
-//   return 'Prazo';
-// });
-
-// Permitir que os virtuais apareçam no JSON
 funcionarioSchema.set('toJSON', { virtuals: true });
 funcionarioSchema.set('toObject', { virtuals: true });
 
