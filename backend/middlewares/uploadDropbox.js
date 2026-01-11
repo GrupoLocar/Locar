@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import multer from 'multer';
 
-const pastaDestino = 'C:/Users/contr/Dropbox/uploads'; // Caminho correto
+const pastaDestino = 'C:/Users/tigru/Dropbox/uploads'; // Caminho correto
 
 if (!fs.existsSync(pastaDestino)) {
   fs.mkdirSync(pastaDestino, { recursive: true });

@@ -9,6 +9,17 @@ dist/
 build/
 .cache/
 .temp/
+.vercel
+.vercel/
+
+# Data
+SincronizarBancosDeDados.txt
+
+# Excel
+*.xlsx
+
+# json
+*.json
 
 # Cobertura de testes
 coverage/
@@ -25,10 +36,14 @@ pnpm-debug.log*
 # =========================================
 *.env
 .env
+.env.*
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+server/.env
+server/.env*
+server/.env.*
 
 # =========================================
 # SISTEMA OPERACIONAL / EDITOR
@@ -39,19 +54,19 @@ Thumbs.db
 *.swo
 .idea/
 .vscode/
-
+ 
 # =========================================
 # DADOS LOCAIS QUE NÃO DEVEM SUBIR
 # (mantém data/, mas ignora export/excel)
 # =========================================
-
+ 
 # Dentro de C:\Locar\data\
 data/export/
 data/excel/
-
+ 
 # Dentro de C:\Locar\backend\data\
 backend/data/export/
-
+ 
 # =========================================
 # BINÁRIOS / COMPILADOS / CACHE
 # =========================================
@@ -63,12 +78,18 @@ backend/data/export/
 *.class
 *.o
 *.obj
-
+ 
 # Python cache
 __pycache__/
+.py
+*.py
 *.pyc
 *.pyo
 *.pyd
+
+# Arquivos de Lote
+.bat
+*.bat
 
 # Compactados temporários
 *.zip

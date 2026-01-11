@@ -79,7 +79,7 @@ app.get('/__routes', (req, res) => res.json(collectRoutes()));
 /* ==================================================================== */
 
 // Diretório para acesso público dos uploads
-const UPLOADS_DIR = 'C:/Users/contr/Dropbox/uploads';
+const UPLOADS_DIR = 'C:/Users/tigru/Dropbox/uploads';
 app.use('/uploads', express.static(UPLOADS_DIR));
 
 // Middlewares globais

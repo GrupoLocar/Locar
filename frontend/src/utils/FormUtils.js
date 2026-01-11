@@ -1,4 +1,4 @@
-// Aplica máscara (00)00000-0000 para telefone e contato_familiar
+// Aplicar máscara (00)00000-0000 para telefone e contato_familiar
 export const formatTelefone = (v) => {
   const cleaned = v.replace(/\D/g, '').slice(0, 11);
   return cleaned.length <= 10
@@ -6,7 +6,7 @@ export const formatTelefone = (v) => {
     : cleaned.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1)$2-$3');
 };
 
-// Aplica máscara 00.000-000 para CEP
+// Aplicar máscara 00.000-000 para CEP
 export const formatCEP = (value) => {
   return value
     .replace(/\D/g, '')

@@ -22,7 +22,7 @@ import { getConfiguracaoPerfilIdeal } from '../controllers/funcionarioController
 const router = express.Router();
 
 // Garantir que a pasta de uploads existe
-const ANEXOS_DIR = path.join('C:', 'Users', 'contr', 'Dropbox', 'uploads');
+const ANEXOS_DIR = path.join('C:', 'Users', 'tigru', 'Dropbox', 'uploads');
 fs.mkdirSync(ANEXOS_DIR, { recursive: true });
 
 /* ----------------------------------------------------------

@@ -3,7 +3,7 @@ r"""
 Backup automático (3 fases) — Grupo Locar
 
 • Fase 1: copiar somente novos arquivos
-    C:\Users\contr\Dropbox\uploads  ->  G:\BACKUP\DropBox\uploads
+    C:\Users\tigru\Dropbox\uploads  ->  G:\BACKUP\DropBox\uploads
 
 • Fase 2: copiar somente novos arquivos
     C:\Locar\data\export            ->  G:\BACKUP\DropBox\data_atlas
@@ -26,7 +26,7 @@ from pathlib import Path
 # =========================
 # CONFIG PADRÃO (ajuste se precisar)
 # =========================
-SRC1 = Path(r"C:\Users\contr\Dropbox\uploads")
+SRC1 = Path(r"C:\Users\tigru\Dropbox\uploads")
 DST1 = Path(r"G:\BACKUP\DropBox\uploads")
 
 SRC2 = Path(r"C:\Locar\data\export")
